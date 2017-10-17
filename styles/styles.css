@@ -1,0 +1,259 @@
+a {
+	color: #45474b;
+	text-decoration: none;
+}
+h1, h2, p, span {
+	color: #45474b;
+}
+.title {
+	font-family: 'Ramaraja', serif;
+	color: #45474b;
+}
+.author {
+	color: #da8913;
+	font-family: 'Amiri', serif
+}
+.author:hover {
+	color: #45474b;
+}
+.title:hover {
+    	color:#da8913;
+}
+.homepage {
+	margin: 0;
+}
+.container {
+	background-color: white;
+    box-shadow: 0 3px 7px 2px  rgba(16, 45, 53, 0.25);
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px 35px;
+    width: 1140px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 500;
+    right: 0;
+    left: 0
+
+}
+.header-nav .profie-link {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.header-menu {
+	text-transform: uppercase;
+	vertical-align: middle;
+	list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    width: 774px;
+    position: relative;
+    padding-left: 0px;
+
+}
+.header-menu li {
+    display: inline-block;
+    margin: 0 0;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+.header-menu li a:hover {
+    	color:#da8913;
+}
+
+
+ul:before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+}
+li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-icons-container {
+    list-style: none;
+    vertical-align: middle;
+ 	float: right;
+ 	margin-top: 5px;
+ 	margin-bottom: 0;
+ 	height: 39px;
+ 	padding-left: 0px;
+
+}
+
+.header-icons-container li{
+    margin: 0 0;
+    vertical-align: middle;
+    padding: 0 15px;
+    line-height: 28px;
+    margin: 0;
+}
+
+ul:before, li {
+	vertical-align: middle;
+}
+.slider1 {
+	background-color: rgba(223, 250, 255, 0.4);
+	height: 1080px;
+}
+.slider1:after {
+	clear: both;
+	width: 100%;
+}
+.slider1-book {
+	padding-top: 229px;
+	margin-left: 45px;
+}
+
+.slider1-content {
+	width: 1140px;
+	margin: 0 auto;
+}
+.slider1-book_back {
+	position: relative;
+	z-index: 1;
+	width: 45%;
+	float: left;
+
+}
+.slider1-book_cover {
+    position: absolute;
+    z-index: 2;
+    top: 67px;
+    left: 80px;
+    box-shadow: 0px 27px 45px 2px rgba(23, 39, 43, 0.54);
+}
+
+.slider1-book_genre {
+	position: absolute;
+    z-index: 3;
+    top: -9px;
+    right: -9px;
+    max-width: 190px;
+    background-color: white;
+    padding: 7px 15px;
+    border: 2px solid;
+    border-color: #da8913;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+}
+.desc {
+	position: absolute;
+	right: 50px;
+	width: 45%;
+    float: right;
+}
+.slider1-title {
+	position: absolute;
+	top: 129px;
+	width: 530px;
+	line-height: 1;
+	font-family: 'Ramaraja', serif;
+	font-weight: bold;
+	font-size: 57px;
+}
+.description .author {
+	position: absolute;
+	top: 260px;
+	color: #da8913;
+	width: fit-content;
+    font-family: 'Amiri', serif;
+    font-size: 21px;
+    line-height: 58px;
+}
+.description .author:after {
+	content: '';
+	width: 1px;
+	height: 20px;
+	display: inline-block;
+	background: #45474b;
+	margin: 20px 25px;
+	vertical-align: middle;
+	position: absolute;
+}
+.description span {
+	position: absolute;
+	top: 260px;
+	margin: 0 25px;	
+}
+.description {
+	width: 400px;
+    font-size: 23px;
+    font-family: 'Yrsa', serif;
+
+}
+.description p {
+	position: absolute;
+	top: 333px;
+	width: 400px;
+}
+.table1 {
+	height: 465px;
+	width: 1120px;
+}
+.col1, .col2 {
+	position: relative;
+	background-color: rgba(223, 250, 255, 0.4);
+	width: 533px;
+	height: 212px;
+	display: inline-block;
+	margin-top: 125px;
+	margin-bottom: 122px;
+}
+.col1 {
+	float: left;
+	margin-left: 135px;
+}
+.col1 .title {
+	position: absolute;
+	font-size: 26px;
+	top: 36px;
+	left: 32px;
+}
+.col1 .author {
+	position: absolute;
+	top: 74px;
+	left: 32px;
+	font-size: 18px;
+}
+.col1 span {
+	position: absolute;
+	top: 74px;
+	left: 132px;
+}
+.col1 a img {
+	position: absolute;
+	top: -18px;
+	right: 37px;
+}
+.col2 {
+	float: right;
+	margin-right: 135px;
+}
+.col2 .title {
+	position: absolute;
+	width: 249px;
+	font-size: 26px;
+	left: 32px;
+	top: 32px;
+}
+.col2 a img {
+	position: absolute;
+	top: -34px;
+	right: 39px;
+}
