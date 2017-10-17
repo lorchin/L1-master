@@ -17,7 +17,7 @@ h1, h2, p, span {
 	color: #45474b;
 }
 .title:hover {
-    	color:#da8913;
+	color:#da8913;
 }
 .homepage {
 	margin: 0;
@@ -37,7 +37,6 @@ h1, h2, p, span {
     z-index: 500;
     right: 0;
     left: 0
-
 }
 .header-nav .profie-link {
 	height: 30px;
@@ -110,18 +109,16 @@ ul:before, li {
 	background-color: rgba(223, 250, 255, 0.4);
 	height: 1080px;
 }
-.slider1:after {
-	clear: both;
-	width: 100%;
-}
+
 .slider1-book {
 	padding-top: 229px;
-	margin-left: 45px;
-}
+    margin-left: 190px;
 
-.slider1-content {
-	width: 1140px;
-	margin: 0 auto;
+}
+.slider1-book:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 .slider1-book_back {
 	position: relative;
@@ -153,13 +150,10 @@ ul:before, li {
     line-height: 1;
 }
 .desc {
-	position: absolute;
-	right: 50px;
 	width: 45%;
     float: right;
 }
 .slider1-title {
-	position: absolute;
 	top: 129px;
 	width: 530px;
 	line-height: 1;
@@ -168,7 +162,6 @@ ul:before, li {
 	font-size: 57px;
 }
 .description .author {
-	position: absolute;
 	top: 260px;
 	color: #da8913;
 	width: fit-content;
@@ -183,11 +176,8 @@ ul:before, li {
 	display: inline-block;
 	background: #45474b;
 	margin: 20px 25px;
-	vertical-align: middle;
-	position: absolute;
-}
+	vertical-align: middle;}
 .description span {
-	position: absolute;
 	top: 260px;
 	margin: 0 25px;	
 }
@@ -198,13 +188,11 @@ ul:before, li {
 
 }
 .description p {
-	position: absolute;
 	top: 333px;
 	width: 400px;
 }
 .table1 {
 	height: 465px;
-	width: 1120px;
 }
 .col1, .col2 {
 	position: relative;
@@ -217,7 +205,7 @@ ul:before, li {
 }
 .col1 {
 	float: left;
-	margin-left: 135px;
+	margin-left: 153px;
 }
 .col1 .title {
 	position: absolute;
@@ -243,7 +231,7 @@ ul:before, li {
 }
 .col2 {
 	float: right;
-	margin-right: 135px;
+	margin-right: 153px;
 }
 .col2 .title {
 	position: absolute;
@@ -256,4 +244,53 @@ ul:before, li {
 	position: absolute;
 	top: -34px;
 	right: 39px;
+}
+
+@media all and (max-width: 1024px) {
+	.container {
+	background-color: white;
+    box-shadow: 0 3px 7px 2px  rgba(16, 45, 53, 0.25);
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 760px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 500;
+    right: 0;
+    left: 0;
+}
+.header-menu {
+	text-transform: uppercase;
+	vertical-align: middle;
+	list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    width: 394px;
+    position: relative;
+    padding-left: 0px;
+}
+.header-menu li {
+    display: inline-block;
+    margin: 0 0;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+.header-icons-container {
+    list-style: none;
+    vertical-align: middle;
+ 	margin-top: 5px;
+ 	margin-bottom: 0;
+ 	height: 39px;
+
+}
+.slider1-book img {
+    max-width: 100%;
+    height: auto;
+}
 }
