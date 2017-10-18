@@ -5,13 +5,21 @@ a {
 h1, h2, p, span {
 	color: #45474b;
 }
+h2 {
+	text-align: center;
+}
+img {
+	display: block;
+}
 .title {
 	font-family: 'Ramaraja', serif;
 	color: #45474b;
+	display: block;
 }
 .author {
 	color: #da8913;
-	font-family: 'Amiri', serif
+	font-family: 'Amiri', serif;
+	display: block;
 }
 .author:hover {
 	color: #45474b;
@@ -22,7 +30,7 @@ h1, h2, p, span {
 .homepage {
 	margin: 0;
 }
-.container {
+.header {
 	background-color: white;
     box-shadow: 0 3px 7px 2px  rgba(16, 45, 53, 0.25);
     margin: 0 auto;
@@ -108,10 +116,13 @@ ul:before, li {
 .slider1 {
 	background-color: rgba(223, 250, 255, 0.4);
 	height: 1080px;
+	padding-top: 229px;
+	display: block;
 }
 
 .slider1-book {
-	padding-top: 229px;
+	display: inline-block;
+	width: fit-content;
     margin-left: 190px;
 
 }
@@ -151,7 +162,10 @@ ul:before, li {
 }
 .desc {
 	width: 45%;
+	padding-top: 120px;
     float: right;
+    display: inline-block;
+
 }
 .slider1-title {
 	top: 129px;
@@ -245,9 +259,36 @@ ul:before, li {
 	top: -34px;
 	right: 39px;
 }
+.catalog {
+	width: 1200px;
+	margin: 0 auto;
+}
+.catalog-images li {
+	padding: 0 20px;
+}
+.catalog-images li:nth-child(6n) {
+  padding-right: 0;
+} 
+.catalog-images li:nth-child(6n+1) {
+  padding-left: 0;
+} 
+.catalog-images .title, .author {
+	width: 140px;
+}
+.catalog-images .title {
+	vertical-align: top;
+/*	padding-top: 29px;*/
+}
+.catalog-images .author {
+	padding-bottom: 34px;
+}
+.catalog {
+	width: 1200px;
+	margin: 0 auto;
+}
 
 @media all and (max-width: 1024px) {
-	.container {
+.header {
 	background-color: white;
     box-shadow: 0 3px 7px 2px  rgba(16, 45, 53, 0.25);
     margin: 0 auto;
