@@ -279,8 +279,8 @@ ul:before, li {
 	display: inline-block;
 }
 .catalog span {
-	margin-left: 360px; 
 	font-family: 'Lato', serif;
+	margin-left: 360px; 
 	color: #45474b;
 	opacity: 0.6;
 	padding-bottom: 15px;
@@ -292,6 +292,12 @@ ul:before, li {
 	padding-bottom: 15px;
 	border-bottom: solid #45474b 1px;
 }
+/*.catalog span i:after {
+	content: '\f0da';
+ 	color: #45474b;
+ 	width: 12px;
+ 	height: 7px;
+}*/
 .catalog-menu li {
 	padding: 0 15px;
 }
@@ -469,6 +475,94 @@ ul:before, li {
 .articles .title {
 	width: 250px;
 	font-size: 19px;
+}
+footer {
+	background-color: rgba(223, 250, 255, 0.4);
+	height: 718px;
+}
+.footer-content {
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer-menu {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-top: 46px;
+}
+.footer-menu li {
+    display: inline-block;
+    margin: 0 0;
+    vertical-align: middle;
+    padding: 0 23px;
+}
+.footer-menu li:nth-child(1) {
+	padding-left: 0;
+}
+.footer-menu li a:hover {
+    color:#da8913;
+}
+footer .about {
+	width: 549px;
+	height: 314px;
+	text-align: left;
+	display: inline-block;
+	margin-top: 141px;
+	margin-right: 234px;
+}
+footer .about a {
+	font-family: 'Ramaraja', serif;
+	font-size: 28px;
+	letter-spacing: 0; 
+}
+footer .about p {
+	font-family: 'Yrsa', serif;
+	font-size: 19px;
+	letter-spacing: 0;
+}
+.footer-links {
+	padding-left: 0;
+}
+.footer-links li {
+	width: 154px;
+	padding: 20px 20px 20px 0;
+}
+footer .footer-links a {
+	font-family: 'Ramaraja', serif;
+	font-size: 21px; 
+}
+footer .footer-links p {
+	font-family: 'Lato', serif;
+	font-size: 14px;
+}
+footer input[type=email] {
+	font-family: 'Lato', serif
+	font-size: 15px;
+	width: 349px;
+	border: none;
+	border-bottom: 2px solid #45474b;
+	background-color: rgba(223, 250, 255, 0.4);
+}
+footer input[type=button] {
+	padding: 5px 20px;
+	cursor: pointer;
+	/*background-image: ()*/
+}
+footer .social {
+	width: 350px;
+	height: 259px;
+	margin-right: 0;
+	display: inline-block; 
+}
+footer .social a {
+	font-family: 'Ramaraja', serif;
+	font-size: 28px;
+	letter-spacing: 0;
+	margin-bottom: 35px;
+	display: inline-block;
 }
 
 @media all and (max-width: 1024px) {
