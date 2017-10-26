@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+      <link rel="stylesheet" type="text/css" href="styles/styles.css">
+      <link rel="stylesheet" type="text/css" href="normalize.css">
+<!--       <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+
+     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cart</title>
+     <meta name="description" content="All about literature">
+   </head>
+ <body class="homepage">
+  <div class="header">
+    <div class="header-nav">
+      <div class="logo">
+        <a href="#" title="Bookworm">
+          <img src="images/Logo.png" width="180" alt="Bookworm">
+        </a>
+      </div>
+        <ul class="header-menu">
+          <li><a href="#">books</a></li>
+          <li><a href="#">writers</a></li>
+          <li><a href="#">publishers</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+          </ul>
+        <ul class="header-icons-container">
+        <li>
+            <a href="#" title="search">
+            <img src="images/search.png" width="23" height="23" alt="search">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="cart">
+            <img src="images/cart.png" width="22" height="20" alt="cart">        
+            </a>
+          </li>
+          <li>
+          <a class="profile-link" href="#">
+            <img src="images/profile-foto.png" width="39" height="39" alt="profile">
+          </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+<div class="table-cart">
+  <h2>Your cart</h2>
+  <table>
+  <tr class="tr-menu">
+    <th> </th>
+    <th colspan="2">Product</th>
+    <th>Format</th>
+    <th>Language</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="#" class="remove-item"><img src="images/del.png"></a>
+    </td>
+    <td>
+      <a href="#" class="cart-item"><img src="images/png/1.2.png"></a>
+    </td>
+    <td>
+      <div class="item-desc">
+        <a class="title">The Meandering Corpse</a>
+        <a class="author">Richard S.Prather</a>
+      </div>
+    </td>
+    <td>Hardback, 170x215 mm</td>
+    <td>English</td>
+    <td>
+      <span class="del"><a href="#">&#45;</a></span>
+      <input type="number" step="1" min="0" max="99" value="1" name="cart" pattern="[0-9]*" inputmode="numeric">
+      <span class="add"><a href="#">&#43;</a></span>
+    </td>
+    <td class="price">$25</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="#" class="remove-item"><img src="images/del.png"></a>
+    </td>
+    <td>
+      <a href="#" class="cart-item"><img src="images/png/1.3.png"></a>
+    </td>
+    <td>
+      <div class="item-desc">
+      <a href="#" class="title">English Detective Stories</a>
+      <a class="author">Patricia Craig</a>
+      </div> 
+    </td>
+    <td>Hardback, 170x215 mm</td>
+    <td>English</td>
+    <td>
+        <span class="del"><a href="#">&#45;</a></span>
+        <input type="number" step="1" min="0" max="99" value="1" name="cart" pattern="[0-9]*" inputmode="numeric">
+        <span class="add"><a href="#">&#43;</a></span>
+    </td>
+    <td class="price">$25</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="#" class="remove-item"><img src="images/del.png"></a>
+    </td>
+    <td>
+      <a href="#" class="cart-item"><img src="images/png/1.4.png"></a>
+    </td>
+    <td>
+      <div class="item-desc">
+      <a href="#" class="title">Die Like a Dog</a>
+      <a class="author">Brett Halliday</a>
+      </div> 
+    </td>
+    <td>Hardback, 170x215 mm</td>
+    <td>English</td>
+    <td>
+        <span class="del"><a href="#">&#45;</a></span>
+        <input type="number" step="1" min="0" max="99" value="1" name="cart" pattern="[0-9]*" inputmode="numeric">
+        <span class="add"><a href="#">&#43;</a></span>
+    </td>
+    <td class="price">$25</td>
+  </tr>
+</table>
+</div>
+<div class="submition">
+  <div class="coupon">
+    <form>
+      <input type="numeric" placeholder="Coupon code">
+      <input type="button" value="Apply">
+    </form>
+    <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
+  </div>
+<div class="checkout">
+  <div class="subtotal">
+    <span class="entitle">Subtotal</span>
+    <span class="price">$25</span>
+  </div>
+  <div class="check"><a href="#" class="button">Checkout</a></div>
+  <div class="total">
+    <span class="entitle">Total</span>
+    <span class="price">$28.50</span>
+  </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-content">
+  <ul class="footer-menu">
+    <li> <a href="#">sitemap</a></li>
+    <li> <a href="#">help</a></li>
+    <li> <a href="#">delivery</a></li>
+    <li> <a href="#">pivacy policy</a></li>
+    <li> <a href="#">accessibillity</a></li>
+  </ul>
+  <div class="about">
+    <a>About</a>
+    <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
+    <ul class="footer-links">
+      <li><a href="#">Ade books</a>
+      <p>Rare Books &amp; Textbooks</p>
+      </li>
+      <li><a href="#">DpReview</a>
+        <p>Digital Photography</p>
+      </li>
+      <li><a href="#">Audible</a>
+        <p>Download Audio Books</p>
+      </li>
+      <li><a href="#">Junglee</a>
+        <p>Shop Online in India</p>
+      </li>
+      <li><a href="#">Look</a>
+        <p>Kid's clothing &amp; Shoes</p>
+      </li>
+      <li><a href="#">MYHABIT</a>
+        <p>Private Fashion Designer Sales</p>
+      </li>
+  </ul>
+  </div>
+<div class="social">
+    <span>Stay in touch</span>
+    <form>
+    <input type="email" placeholder="Your E-mail">
+    <input type="button" value="Subscribe">
+    </form>
+    <span>Follow us</span>
+    <ul class="social-icons">
+      <li><a href="#"><img src="images/facebook_icon.png"></a></li>
+      <li><a href="#"><img src="images/twitter_icon.png"></a></li>
+      <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
+      <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+    </ul>
+</div>
+</footer>
+
+</body>
+</html>
