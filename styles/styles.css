@@ -936,6 +936,9 @@ footer input[type=email] {
 	width: 211px;
 	border: none;
 	background: none;
+	display: inline-block;
+    padding: 0; 
+    margin: 0;
 }
 
 footer input[type=button] {
@@ -1162,10 +1165,7 @@ table .item-desc .title {
     margin-left: 150px;
 	vertical-align: top;
 }
-.subtotal {
-	display: inline-block;
-	vertical-align: top;
-}
+
 .check {
 	display: inline-block;
 	width: 190px;
@@ -1174,13 +1174,33 @@ table .item-desc .title {
 .check .button {
 	margin: 0 auto;
 }
-.subtotal .entitle {
+.shipping-check {
+	padding-bottom: 32px;
+	display: inline-block;
+	vertical-align: top;
+}
+.subtotal, .cart-subtotal {
+	padding-bottom: 32px;
+}
+.shipping-check .entitle {
+	font-family: 'Ramaraja', serif;
+	font-size: 21px;
+	padding-right: 13px;
+	display: inline-block;
+}
+.shipping-check .price {
+	font-family: 'Yrsa', serif;
+	font-size: 25px;
+	display: inline-block;
+	color: #555963;
+}
+.subtotal .entitle, .cart-subtotal {
 	font-family: 'Ramaraja', serif;
 	font-size: 21px;
 	padding-right: 18px;
 	display: inline-block;
 }
-.subtotal .price {
+.subtotal .price, .cart-subtotal {
 	font-family: 'Yrsa', serif;
 	font-size: 25px;
 	display: inline-block;
@@ -1198,3 +1218,143 @@ table .item-desc .title {
 	display: inline-block;
 	color: #555963;
 }
+.billing-form {
+	width: 1140px;
+    padding-top: 250px;
+    margin: 0 auto;
+}
+.billing-form input, textarea {
+	border: none;
+	border-bottom: 1px solid #555963;
+}
+.billing-info, .billing-address {
+	width: 47%;
+	margin: 0 auto;
+	display: inline-block;	
+}
+.billing-form span {
+	font-family: 'Ramaraja', serif;
+	font-size: 28px;
+	color: #45474b;
+	display: block;
+	padding-bottom: 67px;
+}
+.gender span {
+	font-family: 'Ramaraja', serif;
+	font-size: 21px;
+	color: #45474b;
+	display: inline-block;
+	padding-bottom: 0px;
+}
+.billing-info label {
+	font-family: 'Lato', serif;
+	font-size: 16px;
+	color: #45474b;
+}
+.billing-info input[type="radio"]{
+	display: inline-block;
+}
+.billing-info .halfwidth {
+	font-family: 'Lato', serif;
+	font-size: 16px;
+	color: #959ba1;
+	width: 46%;
+	border: none;
+	border-bottom: 1px solid #555963;
+	display: inline-block;
+	padding: 40px 0 20px 0;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+.billing-address {
+	margin-left: 40px;
+}
+.shipping span, form input[type=radio] {
+	display: inline-block;
+}
+.billing-address datalist option, input[list=countries], input[type=text], input[type=email], input[type=tel]{
+	font-family: 'Lato', serif;
+	font-size: 16px;
+	color: #959ba1;
+	width: 45%;
+	border: none;
+	border-bottom: 1px solid #555963;
+	display: inline-block;
+	padding: 40px 0 20px 0;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+.billing-address datalist option, input[list=countries], input[type=text], input[type=email], input[type=tel]:before {
+	content: '*';
+	color: #ffbb58;
+}
+.billing-address .halfwidth {
+	font-family: 'Lato', serif;
+	font-size: 16px;
+	color: #959ba1;
+	width: 46%;
+	border: none;
+	border-bottom: 1px solid #555963;
+	display: inline-block;
+	padding: 40px 0 20px 0;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+.billing-address textarea[name="address"] {
+	font-family: 'Lato', serif;
+	font-size: 16px;
+	color: #959ba1;
+	border: none;
+	border-bottom: 1px solid #555963;
+	display: block;
+	width: 100%;
+	margin-right: 0;
+
+}
+.checkout form {
+	border: none; 
+}
+.checkout form a {
+	text-decoration: underline;
+	color: #dd9327;
+}
+.shipping, .payment label {
+	font-family: 'Lato', serif;
+	font-size: 16px;
+
+}
+.payment .method{
+	background-repeat: no-repeat;
+	width: 24%;
+	display: inline-block;
+	background-position: 120px;
+	margin-bottom: 33px;
+}
+/*.payment .creditcard span {
+	display: inline-block;	
+
+}*/
+/*.payment .bancontact {
+	background-image: url(images/mistercash.png);
+
+}
+.payment .paypal {
+	background-image: url(images/paypal.png);
+
+}
+.payment .bank_transfer {
+	background-image: url(images/banktransfer.png);
+
+}
+.payment .ideal {
+	background-image: url(images/ideal.png);
+
+}
+.payment .sofort_banking {
+	background-image: url(images/sofort.png);
+
+}
+.payment .bitcoin {
+	background-image: url(images/bitcoin.png);
+
+}*/

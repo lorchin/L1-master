@@ -1,23 +1,19 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="en-us">
     <head>
       <link rel="stylesheet" type="text/css" href="styles/styles.css">
       <link rel="stylesheet" type="text/css" href="normalize.css">
-      <link rel="stylesheet" type="text/css" href="select-inspiration/css/stylesheets/cs-skin-underline.css">
-    <script src='select-inspiration/js/selectFx.js'></script>
-<!--       <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-
 
      <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Bookworm</title>
+     <title>Billing</title>
      <meta name="description" content="All about literature">
    </head>
- <body class="homepage">
-<!--   <div class="header">
+ <body class="cart-billing">
+  <div class="header">
     <div class="header-nav">
       <div class="logo">
         <a href="#" title="Bookworm">
@@ -49,39 +45,103 @@
           </li>
         </ul>
       </div>
-  </div> -->
+  </div>
 
-<!-- <section>
-        
-      <div class="cs-select cs-skin-underline" tabindex="0">
-        <span class="cs-placeholder">Country</span>
-        <div class="cs-options">
-          <ul>
-            <li data-option="" data-value="1">
-              <span>Venesuela</span>
-            </li>
-            <li data-option="" data-value="2">
-              <span>Mali</span>
-            </li>
-            <li data-option="" data-value="3">
-              <span>Papua New Guinea</span>
-            </li>
-            <li data-option="" data-value="4">
-              <span>Spain</span>
-            </li>
-            <li data-option="" data-value="5">
-              <span>Kongo</span>
-            </li>
-          </ul>
-        </div><select class="cs-select cs-skin-underline">
-          <option value="" disabled="" selected="">Choose a Bouquet
-          </option>
-          <option value="1">Venesuela</option>
-          <option value="2">Mali</option>
-          <option value="3">Papua New Guinea</option>
-          <option value="4">Spain</option>
-          <option value="5">Kongo</option>
-        </select></div></section> -->
+<div class="billing-form">
+  <h2>Your cart</h2>
+  <span>Billing address</span>
+<div class="billing-info">
+<div class="gender">
+  <span>Gender:</span>
+  <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+  <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+</div>
+  <input type="text" placeholder="First name" pattern="[A-Za-zА-Яа-яЁё]">
+  <input type="text" class="halfwidth" placeholder="Last name">
+  <input type="email" placeholder="E-mail">
+  <input type="tel" class="halfwidth" placeholder="Phone" pattern="+[0-9] {2}-[0-9] {3}-[0-9]{3}-[0-9]">
+</div>
+<div class="billing-address">
+  <textarea name="address" rows="2" cols="50" placeholder="Address"></textarea>
+  <input list="countries" list="country" placeholder="Country">
+  <datalist id="countries">
+    <option>France</option>
+    <option>Georgia</option>
+    <option>Spain</option>
+    <option>Russia</option>
+    <option>USA</option>
+    <option>United Kingdom</option>
+    <option>Ukraine</option>
+    <option>Kazakhstan</option>
+  </datalist>
+  <input type="text" class="halfwidth" placeholder="City">
+  <input type="text" placeholder="State/Providence">
+  <input type="numeric" class="halfwidth" placeholder="Zip/Postal" pattern="[0-9] {6}">
+</div>
+<div class="shipping">
+  <span>Shipping method:</span>
+    <input type="radio" name="shipping" value="ups_saver" id="ups_saver"> <label for="ups_saver">UPS_SAVER &nbsp; Free</label>
+    <input type="radio" name="shipping" value="ups express" id="ups express"> <label for="ups express">UPS Express &nbsp; $7.50</label>
+    <input type="checkbox" name="create" value="create" id="create"> <label for="create">Create account for later use</label>
+</div>
+<div class="payment">
+  <span>Payment method</span>
+<div class="method creditcard">
+  <input type="radio" name="payment" value="credit card" id="credit card"><label for="credit card"> Credit card &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/creditcard.png"></label>
+</div>
+<div class="method bancontact">
+  <input type="radio" name="payment" value="bancontact" id="bancontact">
+  <label for="bancontact"> Bancontact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/mistercash.png"></label>
+</div>
+<div class="method paypal">
+  <input type="radio" name="payment" value="paypal" id="paypal">
+  <label for="paypal"> PayPal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/paypal.png"></label>
+</div>
+<div class="method bank_transfer">
+  <input type="radio" name="payment" value="bank transfer" id="bank transfer">
+  <label for="bank transfer"> Bank Transfer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/banktransfer.png"></label>
+</div>
+<div class="method ideal">
+  <input type="radio" name="payment" value="ideal" id="ideal"> 
+  <label for="ideal"> iDEAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ideal.png"></label>
+</div>
+<div class="method sofort_banking">
+  <input type="radio" name="payment" value="sofort_banking" id="sofort banking">
+  <label for="sofort banking"> SOFORT Banking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/sofort.png"></label>
+</div>
+<div class="method bitcoin">
+  <input type="radio" name="payment" value="bitcoin" id="bitcoin"> 
+  <label for="bitcoin"> Bitcoin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/bitcoin.png"></label>
+</div>
+</div>
+</div>
+<div class="submition">
+  <div class="coupon">
+    <form>
+      <input type="numeric" placeholder="Coupon code">
+      <input type="button" value="Apply">
+    </form>
+    <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
+  </div>
+<div class="checkout">
+  <form>
+  <input type="checkbox" name="terms" value="terms">I accept the <a href="#">Terms &amp; conditions</a>
+  </form> 
+  <div class="shipping-check">
+    <span class="entitle">Shipping</span>
+    <span class="price">$4.95</span>
+  </div>
+<div class="check"><a href="#" class="button">Proceed to payment</a></div>
+  <div class="subtotal">
+    <span class="entitle">Subtotal</span>
+    <span class="price">$25</span>
+  </div>
+  <div class="total">
+    <span class="entitle">Total</span>
+    <span class="price">$28.50</span>
+  </div>
+</div>
+</div>
 
 <footer>
   <div class="footer-content">
@@ -116,7 +176,7 @@
       </li>
   </ul>
   </div>
-  <div class="social">
+<div class="social">
     <span>Stay in touch</span>
     <form>
     <input type="email" placeholder="Your E-mail">
@@ -131,5 +191,6 @@
     </ul>
 </div>
 </footer>
+
 </body>
 </html>
