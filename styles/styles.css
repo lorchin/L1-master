@@ -305,7 +305,7 @@ ul:before, li {
     width: 77px;
 }
 .catalog span:hover {
-	font-color: #45474b;
+	font-color: #45474b; /* fixme: Такого свойства не существует */
 	opacity: 1.0;
 	padding-bottom: 15px;
 	border-bottom: solid #45474b 1px;
@@ -319,7 +319,7 @@ ul:before, li {
 	opacity: 0.6;
 }
 .catalog-menu a:hover {
-	font-color: #45474b;
+	font-color: #45474b; /* fixme: Такого свойства не существует */
 	opacity: 1.0;
 	padding-bottom: 15px;
 	border-bottom: solid #45474b 1px;
@@ -387,7 +387,7 @@ ul:before, li {
 	opacity: 0.6;
 }
 .slider2-menu a:hover {
-	font-color: #45474b;
+	font-color: #45474b; /* fixme: Такого свойства не существует */
 	opacity: 1.0;
 	padding-bottom: 15px;
 	border-bottom: solid #45474b 1px;
@@ -1113,7 +1113,7 @@ table .remove-item {
 }
 table .item-desc {
 	font-size: 19px;
-	width: 168px;
+	width: 168px; /* fixme: Не стоит ограничивать ширину текста. Пре переполнении не очень красиво. Достаточнео отступов ячейки */
 	margin-right: 20px;
 }
 table .item-desc .title {
