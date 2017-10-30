@@ -51,7 +51,7 @@
 
 <div class="table-cart">
   <h2>Your cart</h2>
-  <table>
+  <table><!-- fixme: Не хватает формы и скрытых инпутов для ID продуктов  -->
   <tr class="tr-menu">
     <th> </th>
     <th colspan="2">Product</th>
@@ -62,7 +62,7 @@
   </tr>
   <tr>
     <td>
-      <a href="#" class="remove-item"><img src="images/del.png"></a>
+      <a href="#" class="remove-item"><img src="images/del.png"></a><!-- fixme: Аттрибут alt обязателен для изображений. Тут и дальше -->
     </td>
     <td>
       <a href="#" class="cart-item"><img src="images/png/1.2.png"></a>
@@ -78,6 +78,7 @@
     <td>
       <span class="del"><a href="#">&#45;</a></span>
       <input type="number" step="1" min="0" max="99" value="1" name="cart" pattern="[0-9]*" inputmode="numeric">
+      <!-- fixme: Аттрибут pattern не нужен для инпута number. Аттрибут inputmode не поддерживается и не нужен здесь  -->
       <span class="add"><a href="#">&#43;</a></span>
     </td>
     <td class="price">$25</td>
@@ -141,7 +142,7 @@
     <span class="entitle">Subtotal</span>
     <span class="price">$25</span>
   </div>
-  <div class="check"><a href="#" class="button">Checkout</a></div>
+  <div class="check"><a href="#" class="button">Checkout</a></div><!-- fixme: Это кнопка отправки формы  -->
   <div class="total">
     <span class="entitle">Total</span>
     <span class="price">$28.50</span>
@@ -151,7 +152,7 @@
 
 
 <footer>
-  <div class="footer-content">
+  <div class="footer-content"><!-- fixme: Незакрытый тег  -->
   <ul class="footer-menu">
     <li> <a href="#">sitemap</a></li>
     <li> <a href="#">help</a></li>
