@@ -4,7 +4,7 @@
       <link rel="stylesheet" type="text/css" href="styles/styles.css">
       <link rel="stylesheet" type="text/css" href="normalize.css">
 
-     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,9 +51,9 @@
 
 <div id="overlay">
 <div class="login-container" id="login-container">
-  <a href="#" class="close"><img src="images/close.svg"></a>
+  <a class="close" id="close"><img src="images/close.svg"></a>
   <div class="login-content">
-      <h2>Login</h2>
+      <a class="block-title">Login</a class="block-title">
   <form action="#">
     <input type="email" placeholder="E-mail">
     <input type="password" placeholder="Password">
@@ -62,8 +62,9 @@
     <span> <a href="#"> Forgot password </a></span>
   </form>
   <a href="#" class="button">Sign in</a>
-  <form action="#" class="login-submit">
-    <button type="submit"> Create an account </button> 
+  <form action="#" class="submit">
+    <button type="submit"> Create an account <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+  <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"/></svg> </button> 
   </form>
   <a class="sign">Sign in with social:</a>
 <div class="login-icons">

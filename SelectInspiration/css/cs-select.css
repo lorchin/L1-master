@@ -7,7 +7,6 @@ div.cs-select {
 	background: #fff;
 	z-index: 100;
 	width: 100%;
-	max-width: 500px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -28,22 +27,17 @@ div.cs-select:focus {
 	display: block;
 	position: relative;
 	cursor: pointer;
-	padding: 1em;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
-/* Placeholder and selected option */
-.cs-select > span {
-	padding-right: 3em;
-}
 
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
 	speak: none;
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-font-smoothing: antialiased;
@@ -77,6 +71,15 @@ div.cs-active {
 	background: #fff;
 	visibility: hidden;
 }
+.billing-form .data-option span {
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    color: #959ba1;
+    border: none;
+    border-bottom: 1px solid #555963;
+    margin-right: 0px;
+    padding: 0;
+}
 
 .cs-select.cs-active .cs-options {
 	visibility: visible;
@@ -91,6 +94,21 @@ div.cs-active {
 
 .cs-select ul span {
 	padding: 1em;
+	font-family: 'Lato', serif;
+    font-size: 16px;
+    color: #959ba1;
+    border: none;
+    border-bottom: 1px solid #555963;
+    margin-right: 0px;
+
+}
+.cs-select ul span:hover {
+	content: '';
+	color: #ffbb58;
+}
+.cs-select ul span:checked {
+	content: '';
+	color: #45474b;
 }
 
 .cs-select ul li.cs-focus span {
