@@ -755,14 +755,23 @@ ul:before, li {
 .table3 {
 	margin: 0 auto;
 	width: 1134px;
+	position: relative;
+}
+.table3 img{
+	width: 100%;
 }
 .table3 .discount-catalog {
 	position: relative;
 }
+.table3-container {
+	position: absolute;
+    top: 213px;
+    right: 380px;
+}
+.table3-container .block-title {
+	padding-bottom: 58px;
+}
 .table3-desc {
-    position: absolute;
-    top: 173px;
-    left: 384px;
     text-align: center;
     width: 370px;
 }
@@ -772,13 +781,12 @@ ul:before, li {
     width: 333px;
     font-family: 'Yrsa', serif;
     font-size: 21px;
+    padding-bottom: 77px;
 }
 .table3-prices {
-	position: absolute;
-    top: 468px;
-    left: 384px;
     text-align: center;
     width: 370px;
+    padding-bottom: 106px;
 }
 .table3-prices:after, .table3-prices:before {
     content: '';
@@ -794,9 +802,6 @@ ul:before, li {
     color: #dd9327;
 }
 .discount-catalog .button {
-	position: absolute;
-    top: 568px;
-    left: 468px;
     text-align: center;
     width: 370px;
 }
@@ -1162,6 +1167,7 @@ table .item-desc .title {
     font-size: 16px;
     border: none;
     border-left: 1px solid #45474b;
+    border-radius: 0;
     color: rgb(85, 89, 99);
     background: none;
     background-image: url(../images/check.png);
@@ -1218,6 +1224,7 @@ table .item-desc .title {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin-left: 137px;
+    border-radius: 0;
 }
 .subtotal, .cart-subtotal {
 	padding-bottom: 32px;
@@ -1252,6 +1259,7 @@ table .item-desc .title {
     padding: 13px 44px;
     text-align: center;
     border: 2px solid #45474b;
+    border-radius: 0;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin-left: 137px;
@@ -1637,7 +1645,7 @@ a#profile {
 
 .login-container {
 	width: 460px;
-	height: 751px;
+	height: max-content;
 	margin: 206px auto;
 	background-color: white;
     box-shadow: 0 22px 39px 2px rgba(15, 52, 61, 0.15);
@@ -1645,6 +1653,7 @@ a#profile {
     z-index: 450;
 
 }
+
 .login-container .close {
 	position: absolute;
     right: 40px;
@@ -1664,16 +1673,14 @@ a#profile {
     width: fit-content;
 }
 .substrate {
-	width: 460px;
-	height: 751px;
-	background-color: white;
-    box-shadow: 0 22px 39px 2px rgba(15, 52, 61, 0.15);
+    width: 100%;
     position: absolute;
-    z-index: 440;
-    top: 239px;
-    left: 503px;
-
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 22px 39px 2px rgba(15, 52, 61, 0.15);
+    margin: 20px 0 0 20px;
 }
+
 #overlay {
 	width: 100%;
 	height: 100%;
@@ -1691,6 +1698,10 @@ a#profile {
 }
 .login-content {
 	padding: 71px 56px 71px 43px;
+	position: relative;
+    background: white;
+    box-shadow: 0 22px 39px 2px rgba(15, 52, 61, 0.15);
+
 }
 
 .login-content form {
@@ -2103,6 +2114,7 @@ span.date:before {
 .more-btn button {
 	width: 100%;
     border: 2px solid #45474b;
+    border-radius: 0;
     background: none;
     height: 43px;
     margin-top: 79px;
@@ -2214,6 +2226,7 @@ footer button {
 	font-size: 15px;
 	border: none;
 	border-left: 1px solid #45474b;
+	border-radius: 0;
 	color: rgb(85, 89, 99);
 	background: none;
 	background-image: url(../images/mail.png);
@@ -2421,10 +2434,11 @@ footer .social-icons {
 .table3 {
 	width: 100%;
 }
-.table3 img{
-	width: 100%;
+.table3-container {
+    top: 140px;
+    right: 201px;
 }
-.table3-desc {
+/*.table3-desc {
 	top: 136px;
     left: 198px;
 }
@@ -2435,7 +2449,7 @@ footer .social-icons {
 .discount-catalog .button {
 	top: 391px;
     left: 288px;
-}
+}*/
 .cascad {
 	width: 100%;
 }
@@ -2530,9 +2544,6 @@ table th:nth-child(6) {
 .payment .method{
 	width: 48%;
 }
-.substrate {
-	left: 191px;
-}
 
 footer {
 	width: 100%;
@@ -2602,7 +2613,7 @@ footer form {
 }
 
 }
-@media all and (max-width: 1396px) {
+@media all and (max-width: 1400px) {
 .header-menu {
 	width: 66%;
 }
@@ -2822,10 +2833,12 @@ footer form {
 .table3 {
 	width: 100%;
 }
-.table3 img{
-	width: 100%;
+.table3-container {
+    top: 182px;
+    right: 332px;
 }
-.table3-desc {
+
+/*.table3-desc {
 	top: 136px;
     left: 327px;
 }
@@ -2836,7 +2849,7 @@ footer form {
 .discount-catalog .button {
 	top: 391px;
     left: 409px;
-}
+}*/
 .cascad {
 	width: 100%;
 }
@@ -2896,6 +2909,7 @@ footer form {
 	width: 94%;
 }
 }
+
 @media all and (max-width: 425px) {
 .header {
 	width: 95%;
@@ -3074,9 +3088,6 @@ footer form {
 
 .login-container {
 	width: 88%;
-}
-.substrate {
-	display: none;
 }
 .login-content label {
     padding-right: 0;
