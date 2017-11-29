@@ -37,7 +37,8 @@ if (element_1.quantity > 0) {
 
 function removeItem_1() {
 	event.preventDefault();
-	document.RemoveItem_1.classList.toggle('hide');
+	item_1.classList.toggle('hide');
+	console.log('hide');
 }
 
 
@@ -63,7 +64,7 @@ var DelItem_2 = document.getElementById('del_item_2');
 var RemoveItem_2 = document.getElementById('remove_2')
 
 
-var inputField_2 = document.getElementById(count_item_2);
+var inputField_2 = document.getElementById('count_item_2');
 var priceField_2 = document.getElementById('price_item_2');
 
 
@@ -76,25 +77,72 @@ RemoveItem_2.addEventListener('click', removeItem_2)
 function addItem_2() {
 	event.preventDefault();
 	element_2.quantity += 1,
+
 	element_2.sum = element_2.quantity * element_2.price;
 
-//	inputField.value // выведи quantity
+	inputField_2.value = element_2.quantity;
 	priceField_2.innerHTML = element_2.sum;
 }
 
 
 function deleteItem_2() {
 	event.preventDefault();
-	element_2.quantity -= 1,
-	// element_2.sum = element_2.sum / 35;
-	element_2.sumMin = element_2.quantity * element_2.price;
+
+if (element_2.quantity > 0) {
+	element_2.quantity -= 1;
+	inputField_2.value = element_2.quantity;
+	element_2.sum = element_2.sum - element_2.price;
 	priceField_2.innerHTML = element_2.sum;
-
-
+};
 }
-
 
 function removeItem_2() {
-
+	event.preventDefault();
+	item_2.classList.toggle('hide');
+	console.log('hide');
 }
 
+var AddItem_3 = document.getElementById('add_item_3');
+var DelItem_3 = document.getElementById('del_item_3');
+var RemoveItem_3 = document.getElementById('remove_3')
+var inputField_3 = document.getElementById('count_item_3');
+var priceField_3 = document.getElementById('price_item_3');
+
+
+AddItem_3.addEventListener("click", addItem_3);
+DelItem_3.addEventListener("click", deleteItem_3);
+RemoveItem_3.addEventListener('click', removeItem_3)
+
+
+
+function addItem_3() {
+	event.preventDefault();
+	element_3.quantity += 1,
+
+	element_3.sum = element_3.quantity * element_3.price;
+
+	inputField_3.value = element_3.quantity;
+	priceField_3.innerHTML = element_3.sum;
+}
+
+
+function deleteItem_3() {
+	event.preventDefault();
+
+if (element_3.quantity > 0) {
+	element_3.quantity -= 1;
+	inputField_3.value = element_3.quantity;
+	element_3.sum = element_3.sum - element_3.price;
+	priceField_3.innerHTML = element_3.sum;
+};
+}
+
+function removeItem_3() {
+	event.preventDefault();
+	item_3.classList.toggle('hide');
+	console.log('hide');
+}
+
+
+var total = getElementById('total_cart');
+ total = element_1.sum + element_2.sum + element_3.sum;

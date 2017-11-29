@@ -56,7 +56,7 @@
   <a class="block-title">Your cart</a>
 <form id="table">
   <div class="table">
-  <table>
+  <table id="t_cart">
   <tr class="tr-menu">
     <th> </th>
     <th colspan="2">Product</th>
@@ -128,7 +128,7 @@
         <input type="number" id="count_item_2" step="1" min="0" max="99" value="1" name="cart">
         <span class="add"><a id="add_item_2">&#43;</a></span>
     </td>
-    <td class="price" id="price_item_2">$35</td>
+    <td class="price">$<span class="price" id="price_item_2">35</span></td>
   </tr>
 
 
@@ -139,9 +139,9 @@
 
 
 
-  <tr>
+  <tr id="item_3">
     <td>
-      <a href="#" class="remove-item"><img src="images/del.png"></a>
+      <a id="remove_3" class="remove-item"><img src="images/del.png"></a>
     </td>
     <td>
       <a href="#" class="cart-item"><img src="images/png/1.4.png"></a>
@@ -155,11 +155,11 @@
     <td>Hardback, 170x215 mm</td>
     <td>English</td>
     <td>
-        <span class="del"><a href="#">&#45;</a></span>
-        <input type="number" step="1" min="0" max="99" value="1" name="cart">
-        <span class="add"><a href="#">&#43;</a></span>
+        <span class="del"><a id="del_item_3">&#45;</a></span>
+        <input type="number" id="count_item_3" step="1" min="0" max="99" value="1" name="cart">
+        <span class="add"><a id="add_item_3">&#43;</a></span>
     </td>
-    <td class="price">$25</td>
+    <td class="price">$<span class="price" id="price_item_3">15</span></td>
   </tr>
 
 
@@ -188,7 +188,7 @@
   </div>
   <div class="total">
     <span class="entitle">Total</span>
-    <span class="price">$28.50</span>
+    <span class="price">$<span class="price" id="total_cart">75</span>
   </div>
   </div>
 </div>
