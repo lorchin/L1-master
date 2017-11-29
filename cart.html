@@ -65,9 +65,16 @@
     <th>Quantity</th>
     <th>Price</th>
   </tr>
-  <tr>
+  
+
+
+
+
+
+
+  <tr id="item_1">
     <td>
-      <a href="#" class="remove-item"><img src="images/del.png"></a>
+      <a id="remove_1" class="remove-item"><img src="images/del.png"></a>
     </td>
     <td>
       <a href="#" class="cart-item"><img src="images/png/1.2.png"></a>
@@ -81,15 +88,29 @@
     <td>Hardback, 170x215 mm</td>
     <td>English</td>
     <td>
-      <span class="del"><a href="#">&#45;</a></span>
-      <input type="number" step="1" min="0" max="99" value="1" name="cart">
-      <span class="add"><a href="#">&#43;</a></span>
+      <span class="del"><a id="del_item_1">&#45;</a></span>
+      <input type="number" id="count_item_1" step="1" min="0" max="99" value="1" name="cart">
+      <span class="add"><a id="add_item_1">&#43;</a></span>
     </td>
-    <td class="price">$25</td>
+    <td class="price" id="price_item_1">$</td>
   </tr>
-  <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <tr id="item_2">
     <td>
-      <a href="#" class="remove-item"><img src="images/del.png"></a>
+      <a id="remove_2" class="remove-item"><img src="images/del.png"></a>
     </td>
     <td>
       <a href="#" class="cart-item"><img src="images/png/1.3.png"></a>
@@ -103,12 +124,21 @@
     <td>Hardback, 170x215 mm</td>
     <td>English</td>
     <td>
-        <span class="del"><a href="#">&#45;</a></span>
-        <input type="number" step="1" min="0" max="99" value="1" name="cart">
-        <span class="add"><a href="#">&#43;</a></span>
+        <span class="del"><a id="del_item_2">&#45;</a></span>
+        <input type="number" id="count_item_2" step="1" min="0" max="99" value="1" name="cart">
+        <span class="add"><a id="add_item_2">&#43;</a></span>
     </td>
-    <td class="price">$25</td>
+    <td class="price" id="price_item_2">$</td>
   </tr>
+
+
+
+
+
+
+
+
+
   <tr>
     <td>
       <a href="#" class="remove-item"><img src="images/del.png"></a>
@@ -244,6 +274,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/calc.js"></script>
 
 </body>
 </html>

@@ -1111,6 +1111,7 @@ table .price, table input, span .add, span .del {
 table .add, table .del {
 	font-family: 'Yrsa', serif;
 	font-size: 25px;
+	cursor: pointer;
 }
 table input {
 	border: none;
