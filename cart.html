@@ -89,7 +89,7 @@
     <td>English</td>
     <td>
       <span class="del"><a id="del_item_1">&#45;</a></span>
-      <input type="number" id="count_item_1" step="1" min="0" max="99" value="1" name="cart">
+      <input type="number" id="count_item_1" step="1" min="0" max="10" value="1" name="cart" readonly>
       <span class="add"><a id="add_item_1">&#43;</a></span>
     </td>
     <td class="price">$<span class="price" id="price_item_1">25</span></td>
@@ -125,7 +125,7 @@
     <td>English</td>
     <td>
         <span class="del"><a id="del_item_2">&#45;</a></span>
-        <input type="number" id="count_item_2" step="1" min="0" max="99" value="1" name="cart">
+        <input type="number" id="count_item_2" step="1" min="0" max="10" value="1" name="cart" readonly>
         <span class="add"><a id="add_item_2">&#43;</a></span>
     </td>
     <td class="price">$<span class="price" id="price_item_2">35</span></td>
@@ -156,7 +156,7 @@
     <td>English</td>
     <td>
         <span class="del"><a id="del_item_3">&#45;</a></span>
-        <input type="number" id="count_item_3" step="1" min="0" max="99" value="1" name="cart">
+        <input type="number" id="count_item_3" step="1" min="0" max="10" value="1" name="cart" readonly>
         <span class="add"><a id="add_item_3">&#43;</a></span>
     </td>
     <td class="price">$<span class="price" id="price_item_3">15</span></td>
@@ -183,7 +183,7 @@
 <div class="checkout">
   <div class="cart-subtotal">
     <span class="entitle">Subtotal</span>
-    <span class="price">$25</span>
+    <span class="price">$<span class="price" id="subtotal_cart">75</span>
     <button type="submit" form="table"> Checkout </button>
   </div>
   <div class="total">
