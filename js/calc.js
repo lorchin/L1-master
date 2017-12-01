@@ -4,16 +4,19 @@ var DelItem_1 = document.getElementById('del_item_1');
 var RemoveItem_1 = document.getElementById('remove_1');
 var inputField_1 = document.getElementById('count_item_1');
 var priceField_1 = document.getElementById('price_item_1');
+
 var AddItem_2 = document.getElementById('add_item_2');
 var DelItem_2 = document.getElementById('del_item_2');
 var RemoveItem_2 = document.getElementById('remove_2')
 var inputField_2 = document.getElementById('count_item_2');
 var priceField_2 = document.getElementById('price_item_2');
+
 var AddItem_3 = document.getElementById('add_item_3');
 var DelItem_3 = document.getElementById('del_item_3');
 var RemoveItem_3 = document.getElementById('remove_3')
 var inputField_3 = document.getElementById('count_item_3');
 var priceField_3 = document.getElementById('price_item_3');
+
 var total = document.getElementById('total_cart');
 var subtotal = document.getElementById('subtotal_cart');
 
@@ -21,9 +24,11 @@ var subtotal = document.getElementById('subtotal_cart');
 AddItem_1.addEventListener('click', addItem_1);
 DelItem_1.addEventListener('click', deleteItem_1);
 RemoveItem_1.addEventListener('click', removeItem_1);
+
 AddItem_2.addEventListener('click', addItem_2);
 DelItem_2.addEventListener('click', deleteItem_2);
 RemoveItem_2.addEventListener('click', removeItem_2);
+
 AddItem_3.addEventListener('click', addItem_3);
 DelItem_3.addEventListener('click', deleteItem_3);
 RemoveItem_3.addEventListener('click', removeItem_3);
