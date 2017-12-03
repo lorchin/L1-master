@@ -72,6 +72,7 @@ h1, p, span {
 .logo {
 	display: inline-block;
 	vertical-align: middle;
+	float: left;
 
 }
 .header-menu {
@@ -82,16 +83,16 @@ h1, p, span {
     display: inline-block;
     text-align: center;
     line-height: 28px;
-    width: 771px;
     position: relative;
     padding-left: 0px;
+    float: right;
 
 }
 .header-menu li {
     display: inline-block;
     margin: 0;
     vertical-align: middle;
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .header-menu li a:hover {
@@ -110,7 +111,7 @@ h1, p, span {
  	margin-top: 5px;
  	margin-bottom: 0;
  	height: 39px;
- 	padding-left: 0px;
+ 	padding-left: 154px;
 
 }
 
@@ -2268,9 +2269,9 @@ footer .social-icons {
 
 }
 @media all and (max-width: 1400px) {
-.header-menu {
+/*.header-menu {
 	width: 66%;
-}
+}*/
 .col1 {
 	margin-left: 10%;
 }
@@ -2293,16 +2294,24 @@ footer .social-icons {
 	left: 454px;
 }
 }
+@media all and (max-width: 1400px) {
+.header-icons-container {
+	padding-left: 76px;
+}
+}
 @media all and (max-width: 1024px) {
 .header {
     padding: 1.5% 2.5%;
     width: 95%;
 }
-.header-menu {
+/*.header-menu {
 	width: 55%;
-}
+}*/
 .header-menu li {
-	padding: 0 8px;
+	padding: 10px;
+}
+.header-icons-container {
+	padding-left: 111px;
 }
 .header-icons-container li {
 	padding: 0 8px;
@@ -2987,15 +2996,17 @@ footer input[type=email] {
 }
 .open-menu {
 	display: block;
-	/*background: #ffffff;*/
+	background: #ffffff;
+	height: -webkit-fill-available;
+    box-shadow: 0px 16px 20px 0px rgba(16, 45, 53, 0.25);
 }
 .header-icons-container li {
 	display: block;
 }
-.mobile li {
+.mobile-btn li {
     display: none;
 }
-.mobile {
+.mobile-btn {
 	position: relative;
 	display:  inline-block;
 	width: 30px;
@@ -3003,51 +3014,51 @@ footer input[type=email] {
 	margin: 10px 15px 5px;
 	float: right;
 }
-.mobile span {
+.mobile-btn span {
 	margin: 0 auto;
 	position: relative;
 	top: 12px;
 }
-.mobile span:before, .mobile span:after {
+.mobile-btn span:before, .mobile-btn span:after {
 	position: absolute;
 	content: '';
 }
-.mobile span, .mobile span:before, .mobile span:after {
+.mobile-btn span, .mobile-btn span:before, .mobile-btn span:after {
 	width: 30px;
 	height: 2px;
 	background-color: #45474b;
 	display: block;
 }
-.mobile span:before {
+.mobile-btn span:before {
 	margin-top: -12px;
 }
-.mobile span:after {
+.mobile-btn span:after {
 	margin-top: 12px;
 }
-.mobile span {
+.mobile-btn span {
 	-webkit-transition-duration: 0s; transition-duration: 0s;
 	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
 }
-.mobile:hover span {
+.mobile-btn:hover span {
 	background-color: rgba(0,0,0,0.0);
 	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
 }
-.mobile span:before {
+.mobile-btn span:before {
 	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
 	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
 	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
 }
-.mobile:hover span:before {
+.mobile-btn:hover span:before {
 	margin-top: 0;
 	-webkit-transform: rotate(45deg); transform: rotate(45deg);
 	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
 }
-.mobile span:after {
+.mobile-btn span:after {
 	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
 	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
 	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
 }
-.mobile:hover span:after {
+.mobile-btn:hover span:after {
 	margin-top: 0;
 	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
 	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
@@ -3068,33 +3079,37 @@ footer input[type=email] {
 	width: 100%;
 	height: 73vh;
 }
-.slide1-book {
-	width: 45%;
-	margin: 0;
+.slide-book {
+	width: 38%;
+    margin-left: 10%;
 }
-.slide1-book_back, .slide1-book_cover, .description, .description p {
+
+.slide-book_back, .slide1-book_cover, .description {
 	width: 100%;
 }
-.slide1-book_back img, .slide1-book_cover img {
+.slide-book_back img, .slide-book_cover img {
 	width: 100%;
 }
-.slide1-book_cover {
-	top: 57px;
-    left: 50px;
+.slide-book_cover {
+	top: 43px;
+    left: 32px;
 }
-.slider1 .prev {
-    left: 33px;
+.description p {
+	width: 93%;
 }
-.slider1 .next {
-    right: 33px;
+.slider1 #prev {
+    left: 23px;
+}
+.slider1 #next {
+    right: 23px;
 }
 
 .desc {
-	width: 45%;
+	width: 41%;
 	padding-top: 57px;
 }
-.slide1-title {
-	font-size: 45px;
+.slide-title {
+	font-size: 33px;
 }
 .table1 {
 	width: 100%;
