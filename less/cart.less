@@ -1,0 +1,234 @@
+.cart {
+	margin: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 1140px;
+    margin: 0 auto;
+}
+.table-cart .block-title {
+    padding-top: 250px;
+    margin-top: 0px;
+    font-size: 42px;
+    color: #555963;
+    font-family: @title-font;
+    margin: 0 auto 88px;
+    width: fit-content;
+}
+table td, th {
+	padding: 25px 10px;
+	text-align: left;
+	width: 168px;
+}
+table th:nth-child(1) {
+	width: 17px;
+}
+table th:nth-child(3) {
+	width: 100px;
+	padding-left: 10px;
+    padding-right: 100px;
+}
+table th:nth-child(4) {
+	width: 69px;
+	padding-left: 10px;
+    padding-right: 100px;
+}
+table th:nth-child(5) {
+	width: 69px;
+	padding-left: 10px;
+    padding-right: 100px;
+}
+table th:nth-child(6) {
+	width: 69px;
+}
+table .cart-item img {
+	width: 100%;
+}
+table tr {
+	border-bottom: #ffffff solid 30px;
+    background: @bg-color;
+}
+table .tr-menu {
+	background: transparent;
+	border-bottom: #ffffff solid 0px;
+	font-size: 18px;
+}
+table td{
+	font-family: 'Lato', serif;
+	font-size: 15px;
+	width: 69px;
+}
+table td:nth-child(1){
+	width: 17px;
+}
+table td:nth-child(2) {
+	width: 55px;
+}
+table td:nth-child(3){
+	width: 150px;
+	vertical-align: top;
+}
+table td:nth-child(4){
+	width: 89px;
+}
+table .price, table input, span .add, span .del {
+	font-family: 'Yrsa', serif;
+	font-size: 25px;
+}
+table .add, table .del {
+	font-family: 'Yrsa', serif;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+table input {
+	border: none;
+	background: none;
+	width: 38px;
+    text-align: center;
+}
+table .add {
+	padding-right: 10px;
+}
+table .del {
+	padding-right: 10px;
+}
+table .remove-item {
+	padding-right: 20px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+table .item-desc {
+	font-size: 19px;
+	width: 168px;
+	margin-right: 20px;
+}
+table .item-desc .title {
+	padding-bottom: 10px;
+}
+.submition {
+	width: 1140px;
+	margin: 70px auto 115px;
+}
+.coupon {
+	width: 31%;
+	display: inline-block;
+    margin-right: 150px;
+}
+.submition form {
+	border-bottom: 2px solid @main-color;
+	margin-bottom: 37px;
+}
+.submition input[type=numeric] {
+	font-family: 'Lato', serif;
+	font-size: 15px;
+	line-height: 32px;
+	color: rgba(85, 89, 99, 0.6);
+	width: 234px;
+	border: none;
+	background: none;
+}
+.coupon button {
+	margin: 6px 0 8px 9px;
+    padding: 0 33px 0 25px;
+    cursor: pointer;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    border: none;
+    border-left: 1px solid @main-color;
+    border-radius: 0;
+    color: rgb(85, 89, 99);
+    background: none;
+    background-image: url(../images/check.png);
+    background-position: 81px 2px;
+    background-repeat: no-repeat;
+}
+.coupon input[type=text] {
+	font-family: 'Lato', serif;
+    font-size: 16px;
+    color: #959ba1;
+    width: 67%;
+    border: none;
+    display: inline-block;
+    padding: 40px 0 20px 0;
+    margin: 0px;
+}
+.coupon p {
+	font-family: 'Yrsa', serif;
+	font-size: 19px;
+}
+.checkout{
+	display: inline-block;
+    margin-left: 150px;
+	vertical-align: top;
+	width: 41%;
+}
+.submit {
+	display: inline-block;
+	width: 190px;
+	padding: 0;
+}
+.submit button {
+    background: none;
+    border: 2px solid @main-color;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    width: 161px;
+    color: @main-color;
+    line-height: 33px;
+    padding:0;
+}
+.check button {
+	background-color: white;
+    margin: 30px auto;
+    max-width: 190px;
+    padding: 13px 0px;
+    display: block;
+    text-align: center;
+    border: 2px solid @main-color;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.cart-subtotal button {
+	background-color: white;
+    margin: 0 auto;
+    max-width: 190px;
+    padding: 13px 44px;
+    text-align: center;
+    border: 2px solid @main-color;
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin-left: 137px;
+}
+.cart-subtotal {
+	padding: 0px;
+	display: block;
+}
+.subtotal .entitle {
+	font-family: @title-font;
+	font-size: 21px;
+	padding-right: 18px;
+	display: inline-block;
+}
+.subtotal .price {
+	font-family: 'Yrsa', serif;
+	font-size: 25px;
+	display: inline-block;
+	color: #555963;
+}
+.total .entitle {
+	font-family: @title-font;
+	font-size: 28px;
+	padding-right: 26px;
+	display: inline-block;
+}
+.total .price {
+	font-family: 'Yrsa', serif;
+	font-size: 31px;
+	display: inline-block;
+	color: #555963;
+}
+span .price {
+	color: @main-color;
+}

@@ -1,14 +1,4 @@
-/**
- * selectFx.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-;( function( window ) {
+( function( window ) {
 	
 	'use strict';
 
@@ -135,14 +125,14 @@
 			}
 		} );
 
-		var opts_el = '<div class="cs-options"><ul>' + options + '</ul></div>';
-		this.selEl = document.createElement( 'div' );
-		this.selEl.className = this.el.className;
-		this.selEl.tabIndex = this.el.tabIndex;
-		this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + '</span>' + opts_el;
-		this.el.parentNode.appendChild( this.selEl );
-		this.selEl.appendChild( this.el );
-	}
+	// 	var opts_el = '<div class="cs-options"><ul>' + options + '</ul></div>';
+	// 	this.selEl = document.createElement( 'div' );
+	// 	this.selEl.className = this.el.className;
+	// 	this.selEl.tabIndex = this.el.tabIndex;
+	// 	this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + '</span>' + opts_el;
+	// 	this.el.parentNode.appendChild( this.selEl );
+	// 	this.selEl.appendChild( this.el );
+	// }
 
 	/**
 	 * initialize the events

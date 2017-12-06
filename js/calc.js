@@ -86,7 +86,7 @@ function deleteItem_1() {
 function removeItem_1() {
 	event.preventDefault();
 	item_1.classList.toggle('hide');
-	if (item_1.className.indexOf('hide') > -1){
+	if (item_1.classList.contains('hide')){
 	element_1.sum = 0;
 	};
 	total.innerHTML = getTotal();
@@ -128,7 +128,7 @@ function deleteItem_2() {
 function removeItem_2() {
 	event.preventDefault();
 	item_2.classList.toggle('hide');
-	if (item_2.className.indexOf('hide') > -1){
+	if (item_2.classList.contains('hide')){
 	element_2.sum = 0;
   
 	};
@@ -175,7 +175,7 @@ function deleteItem_3() {
 function removeItem_3() {
 	event.preventDefault();
 	item_3.classList.toggle('hide')
-	if (item_3.className.indexOf('hide') > -1){
+	if (item_3.classList.contains('hide')){
 
 		element_3.sum = 0;
   

@@ -2,10 +2,10 @@
     <html lang="en-us">
     <head>
       <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
       <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-select.css">
       <link rel="stylesheet" type="text/css" href="styles/dropdown.css">
-      <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,7 @@
      <meta name="description" content="All about literature">
    </head>
  <body class="cart-billing">
+  </div>
   <div class="header">
     <div class="header-nav">
       <div class="logo">
@@ -21,121 +22,140 @@
           <img src="images/Logo.png" width="180" alt="Bookworm">
         </a>
       </div>
-        <ul class="header-menu">
+        <div class="mobile-btn" id="mobile"><span></span></div>
+        <ul class="header-menu" id="mobile-menu">
           <li><a href="#">books</a></li>
           <li><a href="#">writers</a></li>
           <li><a href="#">publishers</a></li>
           <li><a href="article.html">blog</a></li>
           <li><a href="#">contact</a></li>
-          </ul>
+          
+
         <ul class="header-icons-container">
         <li>
-            <a href="#" title="search">
-            <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
-  <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"/>
-</svg></a>
+          <a href="#" title="search">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
+          <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"/>
+            </svg>
+          </a>
           </li>
-          <li>
-            <a href="cart.html" title="cart">
-            <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
-  <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"/>
-</svg>        
-            </a>
-          </li>
-          <li>
+        <li>
+          <a href="cart.html" title="cart">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
+          <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
           <a class="profile-link" title="profile" id="profile" >
             <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
           </a>
-          </li>
+        </li>
         </ul>
+      </ul>
       </div>
   </div>
 
 <div class="billing-form">
-  <a class="block-title">Your cart</a>
-  <form action="#" id="billing">
-  <span>Billing address</span>
-<div class="billing-info">
-<div class="gender">
-  <span>Gender:</span>
-  <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
-  <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
-</div>
-  <input type="text" placeholder="First name" required="required" aria-required="true" aria-invalid="false">
-  <input type="text" class="halfwidth" placeholder="Last name" required="required" aria-required="true" aria-invalid="false">
-  <input type="email" placeholder="E-mail" required="required" aria-required="true" aria-invalid="false">
-  <input type="tel" class="halfwidth" placeholder="Phone" pattern="\d{10,13}" required="required" aria-required="true" aria-invalid="false">
-</div>
-<div class="billing-address">
-  <textarea name="address" rows="2" cols="50" placeholder="Address" required="required" maxlength="150" aria-required="true" aria-invalid="false"></textarea>
- 
-  <section class="dropdown">
-  <select class="countries cs-select">
-    <option value="" disabled selected>Country</option>
-    <option value="1">France</option>
-    <option value="2">Georgia</option>
-    <option value="3">Spain</option>
-    <option value="4">Russia</option>
-    <option value="5">USA</option>
-  </select>
-  </section>
-
-  <input type="text" class="halfwidth" placeholder="City" required="required" aria-required="true" aria-invalid="false">
-  <input type="text" placeholder="State/Providence" required="required" aria-required="true" aria-invalid="false">
-  <input type="text" class="halfwidth" placeholder="Zip/Postal" pattern="[0-9]{5,10}">
-</div>
-<div class="shipping">
-  <span>Shipping method:</span>
-    <input type="radio" name="shipping" value="ups_saver" id="ups_saver"><label for="ups_saver">UPS_SAVER <span class="shipping-method"> Free </span> </label>
-    <input type="radio" name="shipping" value="ups express" id="ups_express"> <label for="ups_express">UPS Express <span class="shipping-method"> $7.50</span> </label>
-    <input type="checkbox" name="create" value="create" id="create">  <label for="create" class="create">Create account for later use</label>
-</div>
-<div class="payment">
-  <span>Payment method</span>
-<div class="method creditcard">
-  <input type="radio" name="payment" value="credit card" id="credit_card"><label for="credit_card"> Credit card &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/creditcard.png"></label>
-</div>
-<div class="method bancontact">
-  <input type="radio" name="payment" value="bancontact" id="bancontact">
-  <label for="bancontact"> Bancontact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/mistercash.png"></label>
-</div>
-<div class="method paypal">
-  <input type="radio" name="payment" value="paypal" id="paypal">
-  <label for="paypal"> PayPal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/paypal.png"></label>
-</div>
-<div class="method bank_transfer">
-  <input type="radio" name="payment" value="bank transfer" id="bank_transfer">
-  <label for="bank_transfer"> Bank Transfer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/banktransfer.png"></label>
-</div>
-<div class="method ideal">
-  <input type="radio" name="payment" value="ideal" id="ideal"> 
-  <label for="ideal"> iDEAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ideal.png"></label>
-</div>
-<div class="method sofort_banking">
-  <input type="radio" name="payment" value="sofort_banking" id="sofort_banking">
-  <label for="sofort_banking"> SOFORT Banking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/sofort.png"></label>
-</div>
-<div class="method bitcoin">
-  <input type="radio" name="payment" value="bitcoin" id="bitcoin"> 
-  <label for="bitcoin"> Bitcoin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/bitcoin.png"></label>
-</div>
-</div>
-</form>
-</div>
+    <a class="block-title">Your cart</a>
+    <form action="#" id="billing">
+    <span>Billing address</span>
+  <div class="billing-info">
+    <div class="gender">
+      <span>Gender:</span>
+      <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+    </div>
+    <div class="field-group">
+      <input type="text" placeholder="First name" required="required" aria-required="true" aria-invalid="false">
+    </div>
+    <div class="field-group halfwidth">
+      <input type="text" placeholder="Last name" required="required" aria-required="true" aria-invalid="false">
+    </div>
+    <div class="field-group">
+      <input type="email" placeholder="E-mail" required="required" aria-required="true" aria-invalid="false">
+     </div>
+    <div class="field-group halfwidth">
+      <input type="tel" placeholder="Phone" pattern="\d{10,13}" required="required" aria-required="true" aria-invalid="false">
+    </div>
+  </div>
+  <div class="billing-address">
+    <div class="address">
+      <textarea name="address" rows="2" cols="50" placeholder="Address" required="required" maxlength="150" aria-required="true" aria-invalid="false"></textarea>
+    </div>
+    <div class="dropdown">
+    <select class="countries cs-select cs-skin-border cs-selected">
+      <option value="" disabled selected>Country</option>
+      <option value="1">France</option>
+      <option value="2">Georgia</option>
+      <option value="3">Spain</option>
+      <option value="4">Russia</option>
+      <option value="5">USA</option>
+      <option value="6">Italy</option>
+      <option value="7">Great Britain</option>
+    </select>
+    </div>
+    <div class="field-group halfwidth">
+      <input type="text" placeholder="City" required="required" aria-required="true" aria-invalid="false">
+    </div>
+    <div class="field-group">
+      <input type="text" placeholder="State/Providence" required="required" aria-required="true" aria-invalid="false">
+    </div>
+    <div class="field-group halfwidth">
+      <input type="text" placeholder="Zip/Postal" pattern="[0-9]{5,10}">
+    </div>
+  </div>
+  <div class="shipping">
+    <span>Shipping method:</span>
+      <input type="radio" name="shipping" value="ups_saver" id="ups_saver"><label for="ups_saver">UPS_SAVER <span class="shipping-method"> Free </span> </label>
+      <input type="radio" name="shipping" value="ups express" id="ups_express"> <label for="ups_express">UPS Express <span class="shipping-method"> $7.50</span> </label>
+      <input type="checkbox" name="create" value="create" id="create">  <label for="create" class="create">Create account for later use</label>
+  </div>
+  <div class="payment">
+    <span>Payment method</span>
+  <div class="method creditcard">
+    <input type="radio" name="payment" value="credit card" id="credit_card">
+    <label for="credit_card">Credit card<img class="pay-icon" src="images/creditcard.png"></label>
+  </div>
+  <div class="method bancontact">
+    <input type="radio" name="payment" value="bancontact" id="bancontact">
+    <label for="bancontact">Bancontact<img class="pay-icon" src="images/mistercash.png"></label>
+  </div>
+  <div class="method paypal">
+    <input type="radio" name="payment" value="paypal" id="paypal">
+    <label for="paypal"> PayPal<img class="pay-icon" src="images/paypal.png"></label>
+  </div>
+  <div class="method bank_transfer">
+    <input type="radio" name="payment" value="bank transfer" id="bank_transfer">
+    <label for="bank_transfer"> Bank Transfer<img class="pay-icon" src="images/banktransfer.png"></label>
+  </div>
+  <div class="method ideal">
+    <input type="radio" name="payment" value="ideal" id="ideal"> 
+    <label for="ideal"> iDEAL<img class="pay-icon" src="images/ideal.png"></label>
+  </div>
+  <div class="method sofort_banking">
+    <input type="radio" name="payment" value="sofort_banking" id="sofort_banking">
+    <label for="sofort_banking"> SOFORT Banking<img class="pay-icon" src="images/sofort.png"></label>
+  </div>
+  <div class="method bitcoin">
+    <input type="radio" name="payment" value="bitcoin" id="bitcoin"> 
+    <label for="bitcoin"> Bitcoin<img class="pay-icon" src="images/bitcoin.png"></label>
+  </div>
+  </form>
 </div>
 <div class="submition">
   <div class="coupon">
     <form action="#" id="coupon">
-    <input type="text" placeholder="Coupon code">
-    <button type="submit" form="coupon">Apply</button> 
-  </form>
+      <input type="text" placeholder="Coupon code">
+      <button type="submit" form="coupon">Apply</button> 
+    </form>
     <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
   </div>
 <div class="checkout">
   <div class="checkbox">
-  <input type="checkbox" name="terms" value="terms" id="terms">
-  <label for="terms"> I accept the </label> <a href="#">Terms &amp; conditions</a>
-</div>
+    <input type="checkbox" name="terms" value="terms" id="terms">
+    <label for="terms"> I accept the </label> <a href="#">Terms &amp; conditions</a>
+  </div>
   <div class="shipping-check">
     <span class="entitle">Shipping</span>
     <span class="price">$4.95</span>
@@ -150,6 +170,7 @@
     <span class="entitle">Total</span>
     <span class="price">$28.50</span>
   </div>
+</div>
 </div>
 </div>
 
@@ -169,7 +190,7 @@
   </form>
   <a href="#" class="button">Sign in</a>
   <form action="#" class="submit">
-    <button type="submit"> Create an account <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+    <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
   <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"/></svg> </button> 
   </form>
   <a class="sign">Sign in with social:</a>
