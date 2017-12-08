@@ -1,5 +1,26 @@
-.cart {
-	margin: 0;
+#cart {
+    position: relative;
+	
+	&:after {
+	    content: '';
+	    position: absolute;
+	    top: -8px;
+	    left: 17px;
+	    border: 1px solid #ffbe5f;
+	    border-radius: 50%;
+	    width: 22px;
+	    height: 22px;
+	    background: #ffbe5f;
+}
+}
+.item-amount {
+	position: absolute;
+	top: -10px;
+    left: 25.5px;
+    z-index: 1;
+    font-family: @item-font;
+    font-size: 11px;
+    color: #555963;
 }
 table {
     border-collapse: collapse;
@@ -53,34 +74,33 @@ table .tr-menu {
 	border-bottom: #ffffff solid 0px;
 	font-size: 18px;
 }
-table td{
+table td {
 	font-family: 'Lato', serif;
 	font-size: 15px;
 	width: 69px;
 }
-table td:nth-child(1){
+table td:nth-child(1) {
 	width: 17px;
 }
 table td:nth-child(2) {
 	width: 55px;
 }
-table td:nth-child(3){
+table td:nth-child(3) {
 	width: 150px;
 	vertical-align: top;
 }
-table td:nth-child(4){
+table td:nth-child(4) {
 	width: 89px;
 }
 table .price, table input, span .add, span .del {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 25px;
 }
 table .add, table .del {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 25px;
 	cursor: pointer;
 }
-
 table input {
 	border: none;
 	background: none;
@@ -120,7 +140,7 @@ table .item-desc .title {
 	margin-bottom: 37px;
 }
 .submition input[type=numeric] {
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 15px;
 	line-height: 32px;
 	color: rgba(85, 89, 99, 0.6);
@@ -132,7 +152,7 @@ table .item-desc .title {
 	margin: 6px 0 8px 9px;
     padding: 0 33px 0 25px;
     cursor: pointer;
-    font-family: 'Lato', serif;
+    font-family: @item-font;
     font-size: 16px;
     border: none;
     border-left: 1px solid @main-color;
@@ -143,25 +163,25 @@ table .item-desc .title {
     background-position: 81px 2px;
     background-repeat: no-repeat;
 }
-.coupon input[type=text] {
-	font-family: 'Lato', serif;
+.coupon input {
+	font-family: @item-font;
     font-size: 16px;
     color: #959ba1;
     width: 67%;
     border: none;
     display: inline-block;
-    padding: 40px 0 20px 0;
+    padding-bottom: 20px;
     margin: 0px;
 }
 .coupon p {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 19px;
 }
 .checkout{
 	display: inline-block;
-    margin-left: 150px;
+    margin-left: 199px;
 	vertical-align: top;
-	width: 41%;
+	width: 38%;
 }
 .submit {
 	display: inline-block;
@@ -171,7 +191,7 @@ table .item-desc .title {
 .submit button {
     background: none;
     border: 2px solid @main-color;
-    font-family: 'Lato', serif;
+    font-family: @item-font;
     font-size: 16px;
     width: 161px;
     color: @main-color;
@@ -186,49 +206,110 @@ table .item-desc .title {
     display: block;
     text-align: center;
     border: 2px solid @main-color;
-    font-family: 'Lato', sans-serif;
+    font-family: @item-font;
     font-size: 16px;
 }
 .cart-subtotal button {
 	background-color: white;
     margin: 0 auto;
     max-width: 190px;
-    padding: 13px 44px;
+    padding: 11px 57px;
     text-align: center;
     border: 2px solid @main-color;
     border-radius: 0;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    margin-left: 137px;
+    margin-left: 121px;
+    vertical-align: text-top;
 }
 .cart-subtotal {
 	padding: 0px;
-	display: block;
+	display: inline-block;
+}
+.cart-subtotal .entitle {
+	padding-right: 7px;
 }
 .subtotal .entitle {
 	font-family: @title-font;
 	font-size: 21px;
 	padding-right: 18px;
 	display: inline-block;
+	padding-bottom: 0;
+	line-height: 21px;
 }
 .subtotal .price {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 25px;
 	display: inline-block;
 	color: #555963;
+	line-height: 21px;
+	padding-bottom: 0;
+	line-height: 21px;
+}
+.total {
+	display: inline-block;
+	padding-top: 16px;
 }
 .total .entitle {
 	font-family: @title-font;
 	font-size: 28px;
-	padding-right: 26px;
+	padding-right: 22px;
 	display: inline-block;
+	padding-bottom: 0;
 }
 .total .price {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 31px;
 	display: inline-block;
 	color: #555963;
+	line-height: 21px;
+	padding-bottom: 0;
 }
 span .price {
 	color: @main-color;
+}
+@media all and (max-width: 1024px) {
+.table {
+	overflow-x:auto;
+}
+.submition {
+    width: 100%;
+}
+.coupon {
+	width: 37%;
+}
+.coupon, .checkout {
+	margin: 0 50px;
+}
+}
+@media all and (max-width: 769px) {
+.table {
+	overflow-x:auto;
+}
+table {
+	width: 70%;
+}
+table th:nth-child(3) {
+	padding-right: 163px;
+}
+table th:nth-child(4) {
+	padding-right: 76px;
+}
+table th:nth-child(6) {
+	padding-right: 40px;
+}
+.submition {
+	width: 100%;
+	margin: 70px auto;
+}
+.coupon {
+	width: 61%;
+	margin: 0 auto;
+	display: block;
+}
+.checkout {
+	width: 61%;
+	margin: 41px auto 0;
+	display: block;
+}
 }

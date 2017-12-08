@@ -1,8 +1,9 @@
+
 .cart-billing {
 	margin: 0;
 }
 .billing-info, .billing-address {
-	width: 47%;
+	width: 48%;
 	margin: 0 auto;
 	display: inline-block;	
 }
@@ -26,9 +27,7 @@
     font-family: @title-font;
     width: fit-content;
 }
-.gender {
-	margin-bottom: 10px;
-}
+
 .gender label {
 	padding-left: 9px;
     padding-right: 30px;
@@ -72,6 +71,7 @@
 	display: inline-block;
 	padding-bottom: 0px;
 	padding-right: 30px;
+	line-height: 21px;
 }
 .billing-info label {
 	font-family: 'Lato', serif;
@@ -82,34 +82,50 @@
 	display: inline-block;
 	border-bottom: 1px solid #555963;
 	margin-bottom: 20px;
-	width: 45%;
+	width: 44%;
+	margin-left: 10px;
 }
+.require {
+	position: relative;
+	
+	&:after {
+	    content: '*';
+	    color: #ffbb58;
+	    position: absolute;
+	    top: 26px;
+	    left: -11px;
+}
+}
+
 .field-group input	{
 	font-family: 'Lato', serif;
 	font-size: 16px;
 	border: none;
 	display: inline-block;
-	padding: 40px 0 20px 0;
+	padding: 40px 0 18px 0;
 	margin-right: 0px;
 	width: 100%;
 }
 .billing-address {
 	color: #959ba1;
-	width: 45%;
 	border: none;
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 20px;
+}
+.address {
+	position: relative;
+	width: 97%;
+
+	&:after {
+	    content: '*';
+	    color: #ffbb58;
+	    position: absolute;
+	    top: -10px;
+	    left: 0px;
+}
 }
 .halfwidth {
 	margin-left: 40px; 
-}
-.dropdown {
-	width: 45%;
-    border: none;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 20px;
-    height: 60px;
 }
 .billing-address textarea {
 	font-family: 'Lato', serif;
@@ -119,17 +135,19 @@
 	border-bottom: 1px solid #555963;
 	display: block;
 	width: 98%;
-	margin-right: 0;
+	margin-left: 10px;
 }
 .countries .cs-placeholder {
 	font-family: 'Lato', serif;
     font-size: 16px;
     color: #959ba1;
     border: none;
-    border-bottom: 1px solid #555963;
     margin-right: 0px;
-    padding: 20px 0;
-}
+    padding: 15px 0;
+    background-image: url(../images/dropdown.png);
+    background-repeat: no-repeat;
+    background-position: 228px 23px;
+}    
 .pay-icon {
 	padding-left: 20px;
 }
@@ -159,6 +177,10 @@
 }
 .checkbox {
 	display: block;
+}
+.checkbox label{
+	padding: 0;
+	padding-left: 37px;
 }
 .checkout input[type="checkbox"] {
 	display: none;
@@ -263,22 +285,25 @@
 	transform: translateY(-50%);
 }
 .shipping-check .entitle, .shipping-check .price {
-	padding-bottom: 20px;
+	padding-bottom: 14px;
 }
 .shipping-check {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 47px;
+}
+.shipping-check span {
+    vertical-align: top;
 }
 .shipping-check button {
 	background-color: white;
-    margin: 30px auto;
     max-width: 190px;
     padding: 13px 19px;;
     text-align: center;
     border: 2px solid @main-color;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    margin-left: 137px;
+    margin-left: 109px;
     border-radius: 0;
 }
 .shipping-check .entitle {
@@ -292,34 +317,6 @@
 	font-size: 25px;
 	display: inline-block;
 	color: #555963;
-}
-.subtotal .entitle {
-	font-family: @title-font;
-	font-size: 21px;
-	padding-right: 18px;
-	display: inline-block;
-	padding-bottom: 20px;
-}
-.subtotal .price {
-	font-family: 'Yrsa', serif;
-	font-size: 25px;
-	display: inline-block;
-	color: #555963;
-	padding-bottom: 20px;
-}
-.total .entitle {
-	font-family: @title-font;
-	font-size: 28px;
-	padding-right: 26px;
-	display: inline-block;
-	padding-bottom: 20px;
-}
-.total .price {
-	font-family: 'Yrsa', serif;
-	font-size: 31px;
-	display: inline-block;
-	color: #555963;
-	padding-bottom: 20px;
 }
 .payment .method{
 	background-repeat: no-repeat;
@@ -361,4 +358,36 @@
 	left: 1px;
 	top: 50%;
 	transform: translateY(-50%);
-}	
+}
+@media all and (max-width: 769px) {
+.billing-form {
+	width: 92%;
+}
+.billing-info, .billing-address {
+    width: 100%;
+}
+.field-group {
+	width: 95%;
+}
+.billing-address {
+	margin-left: 0; 
+	padding-top: 40px;
+}
+.dropdown {
+	width: 95%;
+	margin-right: 0;
+}
+.halfwidth {
+	margin-left: 10px;
+}
+.payment {
+    margin: 0 auto;
+    width: 90%;
+}
+.method {
+	vertical-align: top;
+}
+.payment .method {
+	width: 48%;
+}
+}

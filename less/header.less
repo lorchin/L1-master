@@ -1,0 +1,202 @@
+.header {
+	background-color: white;
+    box-shadow: 0 3px 7px 2px  rgba(16, 45, 53, 0.25);
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px 35px;
+    width: 80%;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 500;
+    right: 0;
+    left: 0
+}
+.header-nav .profie-link {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+
+}
+.header-menu {
+	text-transform: uppercase;
+	vertical-align: middle;
+	list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+    padding-left: 0px;
+    float: right;
+}
+.header-menu li {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    padding: 10px 15px;
+}
+.menu:hover {
+    	color: @font-color;
+    	border-bottom: 2px solid @font-color;
+}
+.header-icons-container li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-icons-container {
+    list-style: none;
+    vertical-align: middle;
+ 	float: right;
+ 	margin-top: 5px;
+ 	margin-bottom: 0;
+ 	height: 39px;
+ 	padding-left: 154px;
+}
+.header-icons-container li{
+    margin: 0 0;
+    vertical-align: middle;
+    padding: 0 15px;
+    line-height: 28px;
+    margin: 0;
+}
+ul:before, li {
+	vertical-align: middle;
+}
+@media all and (min-width: 1861px) {
+.header-menu {
+    font-size: large;
+    width: 75%;
+}
+.header-menu li {
+    padding: 0 31px;
+}
+}
+@media all and (max-width: 1400px) {
+.header-icons-container {
+    padding-left: 76px;
+}
+}
+@media all and (max-width: 1024px) {
+.header {
+    padding: 1.5% 2.5%;
+    width: 95%;
+}
+.header-menu li {
+    padding: 10px;
+}
+.header-icons-container {
+    padding-left: 111px;
+}
+.header-icons-container li {
+    padding: 0 8px;
+}
+}
+@media all and (max-width: 769px) {
+.header {
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 20px 0px rgba(16, 45, 53, 0.25);
+    font-weight: 400;
+    font-size: 18px;
+}
+.header-menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 79px;
+    text-align: right;
+    width: auto;
+}
+.header-menu li {
+    display: block;
+    padding: 20px 8px;
+}
+.header-icons-container li {
+    display: none;
+    padding-right: 20px;
+}
+.logo {
+    padding-left: 15px;
+}
+.open-menu {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0px 16px 20px 0px rgba(16, 45, 53, 0.25);
+}
+.header-icons-container li {
+    display: block;
+}
+.mobile-btn li {
+    display: none;
+}
+.mobile-btn {
+    position: relative;
+    display:  inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 5px;
+    float: right;
+}
+.mobile-btn span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+    width: 30px;
+    height: 2px;
+    background-color: #45474b;
+    display: block;
+    transition-duration: 0s;
+    transition-delay: 0.2s;
+    
+    &:before {
+        position: absolute;
+        content: '';
+        margin-top: -12px;
+        width: 30px;
+        height: 2px;
+        background-color: #45474b;
+        display: block;
+        transition-property: margin, transform;
+        transition-duration: 0.2s;
+        transition-delay: 0.2s, 0s;
+
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        margin-top: 12px;
+        width: 30px;
+        height: 2px;
+        background-color: #45474b;
+        display: block;
+        transition-property: margin, transform;
+        transition-duration: 0.2s;
+        transition-delay: 0.2s, 0s;
+    }
+}
+.mobile-btn.active span {
+    background-color: rgba(0,0,0,0.0);
+    transition-delay: 0.2s;
+    
+    &:before {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition-delay: 0s, 0.2s;
+    }
+    &:after {
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition-delay: 0s, 0.2s;
+    }
+}
+}

@@ -5,8 +5,14 @@
 body.nonScroll {
 	overflow: hidden;
 }
+body {
+	margin: 0;
+}
 .homepage {
 	margin: 0;
+}
+.hide {
+	display: none;
 }
 a {
 	color: @main-color;
@@ -42,4 +48,22 @@ h1, p, span {
 	&:hover {
 		color:@font-color;
 }
+}
+.author {
+	color: @font-color;
+	font-family: 'Amiri', serif;
+	display: block;
+
+	&:hover {
+		color: @main-color;
+}
+}
+a:hover .svg-icon path {
+	fill: @font-color;
+}
+button:hover .svg-icon path {
+	fill: #da8913;
+}
+button .svg-icon {
+	padding-left: 10px;
 }

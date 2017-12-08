@@ -37,17 +37,19 @@ div.cs-select:focus {
 .cs-select .cs-selected span::after {
 	speak: none;
 	position: absolute;
-	top: 60%;
+	top: 48%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.cs-select > span::after {
-	content: '\25BE';
+/*.cs-select > span::after {
+	content: '';
+	background-image: url(../images/dropdown.png);
+	/*content: '\25BE';*/
 	right: 1em;
-}
+}*/
 
 .cs-select .cs-selected span::after {
 	content: '\2713';
