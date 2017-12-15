@@ -69,12 +69,12 @@
 	font-size: 21px;
 	color: @main-color;
 	display: inline-block;
-	padding-bottom: 0px;
+	padding-bottom: 0;
 	padding-right: 30px;
 	line-height: 21px;
 }
 .billing-info label {
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 16px;
 	color: @main-color;
 }
@@ -103,7 +103,7 @@
 	border: none;
 	display: inline-block;
 	padding: 40px 0 18px 0;
-	margin-right: 0px;
+	margin-right: 0;
 	width: 100%;
 }
 .billing-address {
@@ -121,14 +121,14 @@
 	    color: #ffbb58;
 	    position: absolute;
 	    top: -10px;
-	    left: 0px;
+	    left: 0;
 }
 }
 .halfwidth {
 	margin-left: 40px; 
 }
 .billing-address textarea {
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 16px;
 	color: #959ba1;
 	border: none;
@@ -138,15 +138,14 @@
 	margin-left: 10px;
 }
 .countries .cs-placeholder {
-	font-family: 'Lato', serif;
+	font-family: @item-font;
     font-size: 16px;
     color: #959ba1;
     border: none;
-    margin-right: 0px;
+    margin-right: 0;
     padding: 15px 0;
-    background-image: url(../images/dropdown.png);
-    background-repeat: no-repeat;
-    background-position: 228px 23px;
+    background-image: url(../../images/dropdown.png) 228px 23px no-repeat;
+
 }    
 .pay-icon {
 	padding-left: 20px;
@@ -166,14 +165,13 @@
 	text-decoration: underline;
 	color: #dd9327;
 	font-family: 'Amiri', serif;
-	font-family: 16px;
+	font-size: 16px;
 }
 .checkout label {
-	padding-right: 6px;
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 16px;
 	position: relative;
-    padding: 40px 0 20px 35px
+    padding: 40px 6px 20px 35px
 }
 .checkbox {
 	display: block;
@@ -192,7 +190,7 @@
 	width: 17px;
 	height: 17px;
 	position: absolute;
-	left: 0px;
+	left: 0;
 	top: 64%;
 	transform: translateY(-50%);
 }
@@ -213,13 +211,13 @@
 .shipping label {
 	position: relative;
 	padding-left: 11px;
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 16px;
 	color: #45474b;
 }
 .shipping label .shipping-method {
 	font-size: 20px;
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	padding: 0 0 0 20px;
 }
 .shipping .create {
@@ -255,7 +253,7 @@
 .shipping label {
 	position: relative;
 	padding-left: 23px;
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 16px;
 	color: #45474b;
 }
@@ -313,7 +311,7 @@
 	display: inline-block;
 }
 .shipping-check .price {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 25px;
 	display: inline-block;
 	color: #555963;
@@ -328,9 +326,9 @@
 .payment label {
 	position: relative;
 	padding-left: 30px;
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 16px;
-	color: #45474b;
+	color: @main-color;
 }
 .payment input[type="radio"] {
 	display: none;
@@ -338,12 +336,12 @@
 .payment input[type="radio"] + label:before {
 	display: inline-block;
 	content: '';
-	border: 1px solid #45474b;
+	border: 1px solid @main-color;
 	border-radius: 50%;
 	width: 17px;
 	height: 17px;
 	position: absolute;
-	left: 0px;
+	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -380,14 +378,143 @@
 .halfwidth {
 	margin-left: 10px;
 }
+.coupon, .checkout {
+	width: 81%;
+}
 .payment {
     margin: 0 auto;
     width: 90%;
+}
+.shipping-check button {
+	margin-left: 250px;
 }
 .method {
 	vertical-align: top;
 }
 .payment .method {
 	width: 48%;
+}
+}
+@media all and (max-width: 425px) {
+.gender {
+    width: 100%;
+}
+.address {
+	margin-bottom: 20px;
+}
+.countries .cs-placeholder {
+	background-position: 358px 46px;
+	padding: 40px 0 18px 0;
+}
+.submition {
+    width: 100%;
+}
+.shipping {
+    width: 100%;
+    padding-left: 6px;
+}
+.shipping-check button {
+	margin-left: 66px;
+}
+.shipping label {
+	padding-bottom: 20px;
+}
+.shipping input[type="radio"] + label:before {
+	top: 25%;
+}
+.shipping input[type="radio"]:checked + label:after {
+	top: 25%;
+}
+.shipping .create {
+	padding-bottom: 0;
+	float: unset;
+}
+.shipping input[type="checkbox"] + label:before {
+	left: -6px;
+}
+.shipping input[type="checkbox"]:checked + label:after {
+	left: -4px;
+}
+.payment .method {
+    width: 100%;
+}
+.payment {
+    margin: 51px auto 0;
+    width: 100%;
+}
+.shipping {
+    width: 100%;
+}
+.coupon, .checkout {
+	width: 100%;
+}
+}
+@media all and (max-width: 375px) {
+.coupon input {
+	width: 65%;
+}
+.shipping-check button {
+	margin-left: 20px;
+}
+}
+@media all and (max-width: 320px) {
+.billing-form {
+    width: 90%;
+    padding: 10px;
+}
+.billing-address input[list=countries], input[type=text], input[type=email], input[type=tel] {
+	width: 100%;
+	margin-right: 0;
+}
+.field-group {
+	width: 95%;
+}
+.countries .cs-placeholder {
+    background-position: 260px 46px;
+}
+.billing-address {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 40px;
+}
+.billing-info {
+    margin-left: 0;
+    width: 100%;
+}
+.shipping {
+    width: 95%;
+}
+.shipping label {
+	padding-bottom: 20px;
+}
+.shipping input[type="radio"] + label:before {
+	top: 25%;
+}
+.shipping input[type="radio"]:checked + label:after {
+	top: 25%;
+}
+.shipping .create {
+	padding-bottom: 0;
+	float: unset;
+}
+.shipping input[type="checkbox"] + label:before {
+	left: -6px;
+}
+.shipping input[type="checkbox"]:checked + label:after {
+	left: -4px;
+}
+.payment .method {
+    width: 100%;
+}
+.coupon, .checkout {
+	width: 100%;
+	margin: 0;
+}
+.coupon input[type=text] {
+    width: 60%;
+}
+.shipping-check button {
+	width: 100%;
+	margin-left: 0;
 }
 }

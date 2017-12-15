@@ -77,7 +77,7 @@ figcaption {
 	color: @font-color;
 }
 blockquote {
-	font-family: 'PT Serif';
+	font-family: 'PT Serif', serif;
 	font-weight: bold;
 	font-style: italic;
 	font-size: 20px;
@@ -111,7 +111,7 @@ blockquote {
 	padding-bottom: 25px;
 }
 .h5 .small {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 19px;
 	line-height: 26px;
 	color: #555963;
@@ -135,7 +135,7 @@ h4 {
 	color: #555963;	
 }
 .h4 li {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 23px;
 	line-height: 26px;
 	color: #555963;
@@ -165,7 +165,7 @@ h5 {
 	line-height: 23px;
 }
 .align_left .small {
-	font-family: 'Lato', serif;
+	font-family: @item-font;
 	font-size: 15px;
 	color: #555963;
 	line-height: 23px;
@@ -215,7 +215,7 @@ span.date {
 	    background: rgba(229, 230, 231, .5);
 	    position: absolute;
 	    left: 6px;
-	    top: 0px;
+	    top: 0;
 }
 }
 .post_comments {
@@ -232,7 +232,7 @@ span.date {
 .comments_count {
     float: right;
     color: #bfbfbf;
-    font-family: Lato;
+    font-family: @item-font;
     font-size: 16px;
 }
 .new-comment {
@@ -242,7 +242,7 @@ span.date {
     margin-bottom: 80px;
 }
 .post_comments textarea {
-    font-family: 'Lato', serif;
+    font-family: @item-font;
     font-size: 15px;
     font-style: italic;
     line-height: 32px;
@@ -257,7 +257,7 @@ span.date {
 .post_comments button {
     padding: 0 0 0 25px;
     cursor: pointer;
-    font-family: 'Lato', serif;
+    font-family: @item-font;
     font-size: 15px;
     border: none;
     color: rgb(85, 89, 99);
@@ -288,7 +288,7 @@ span.date {
 	color: #eaad54;
 }
 .single_comment p {
-	font-family: 'Yrsa', serif;
+	font-family: @text-font;
 	font-size: 19px;
 	color: #555963;
 	line-height: 26px;
@@ -301,7 +301,7 @@ span.date {
     height: 43px;
     margin-top: 79px;
     margin-bottom: 120px;
-    font-family: 'Lato',serif;
+    font-family: @item-font;
     font-size: 16px;
 }
 @media all and (max-width: 1024px){
@@ -338,5 +338,64 @@ span.date {
 }
 .related {
 	max-width: 40%;
+}
+}
+@media all and (max-width: 425px) {
+article {
+    padding: 178px 10px 105px;
+}
+.h5 p {
+	width: 100%;
+	margin:0;
+	float: none;
+}
+.h5 p img {
+	width: 100%;
+}
+.h5 h5 {
+    padding: 0 8px 31px;
+    width: 97%;
+}
+.h5 .small {
+	width: 97%;
+	padding: 0 8px 31px;
+}
+.align_left {
+    max-width: 80%;
+    margin-right: 0;
+}
+.related_posts {
+    max-width: 100%;
+}
+.related {
+    max-width: 90%;
+    padding: 40px 30px;
+}
+.new-comment {
+    padding: 28px 10px;
+}
+.post_comments {
+    max-width: 100%;
+    padding: 0 10px;
+}
+.post_comments textarea {
+    width: 65%;
+}
+}
+@media all and (max-width: 375px) {
+.h5 h5 {
+    padding: 0 8px 31px;
+    width: 97%;
+}
+.post_comments textarea {
+    width: 62%;
+}
+}
+@media all and (max-width: 320px) {
+.post_comments textarea {
+    width: 58%;
+}
+.post_comments button {
+	padding-left: 15px;
 }
 }

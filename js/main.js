@@ -9,13 +9,13 @@ function showPopup() {
 		mobileMenu.classList.toggle('open-menu');
 		activeMenu.classList.toggle('active');
 		document.body.classList.toggle('nonScroll');
-	};
+	}
 	document.body.classList.toggle('nonScroll')
 }
 function closePopup() {
 	popup.classList.toggle('opened');
 	document.body.classList.toggle('nonScroll')
-};
+}
 profileLink.addEventListener('click', showPopup);
 close.addEventListener('click', closePopup);
 
@@ -29,8 +29,8 @@ function showMobileMenu() {
 	mobileMenu.classList.toggle('open-menu');
 	document.body.classList.toggle('nonScroll');
 	activeMenu.classList.toggle('active')
-};
-pie.addEventListener('click',showMobileMenu)
+}
+pie.addEventListener('click',showMobileMenu);
 
 
 
@@ -71,31 +71,40 @@ pie.addEventListener('click',showMobileMenu)
 // slides[currentSlide].className = 'wrap show';
 // }
 
+function initMap() {
+var mapId = document.getElementById('map');
+var mapCenter = {
+	lat: 36.175172, 
+	lng: -86.778092
+};
 
+var coord = {
+	lat: 36.173380,
+	lng: -86.787027
+};
 
+var map = new google.maps.Map ( 
+	mapId,
+{
+	zoom: 16,
+	center: mapCenter,
+	fullscreenControl: false
+}
+);
+var infoWindow = new google.maps.InfoWindow({
+          content: "1001 5th Avenue North Nashville, TN 37219 USA"
+        });
 
+var marker = new google.maps.Marker({
+	position: coord,
+	map: map,
+	icon: "../images/map-marker.png"
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+marker.addListener('click', function () {
+	infoWindow.open(map, marker);
+});
+}
 
 
 

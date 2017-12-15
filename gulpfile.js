@@ -8,21 +8,15 @@ var minify = require ('gulp-minify');
 var rename = require ('gulp-rename');
 var browserSync = require('browser-sync').create();
 
-gulp.task('less', function() {
-	gulp.src ('less/style.less')
-	.pipe(less())
-	.pipe(gulp.dest('css'));
-});
-
 gulp.task('styles', function(){
 	gulp.src('./less/style.less')
 	.pipe(sourcemaps.init())
 	.pipe(less())
 	.pipe(autoprefixer())
-	.pipe(gulp.dest('css'))
+	.pipe(gulp.dest('./build/css'))
 	.pipe(rename('style.min.css'))
 	.pipe(cleanCSS())
-	.pipe(gulp.dest('css'))
+	.pipe(gulp.dest('./build/css'))
 	.pipe(browserSync.stream())
 });
 
@@ -34,25 +28,28 @@ gulp.task('scripts', function(){
 		'./js/main.js'
 	])
 		.pipe(sourcemaps.init())
-		.pipe(concat('classie.js'))
-		.pipe(concat('selectFx.js'))
-		.pipe(concat('calc.js'))
-		.pipe(concat('main.js'))
-		.pipe(gulp.dest('/js'))
-		.pipe(rename('classie.js'))
-		.pipe(rename('selectFx.js'))
-		.pipe(rename('calc.js'))
-		.pipe(rename('main.js'))
+		.pipe(concat('app.js'))
+		.pipe(gulp.dest('./build/js'))
 		.pipe(minify())
-		.pipe(gulp.dest('/js'))
+        .pipe(gulp.dest('./build/js'))
+
+	gulp.src(['node_modules/jquery/dist/jquery.js',
+		'node_modules/slick-carousel/slick/slick.js'
+	])
+        .pipe(sourcemaps.init())
+        .pipe(concat('libs.js'))
+        .pipe(gulp.dest('./build/js'))
+        .pipe(minify())
+        .pipe(gulp.dest('./build/js'))
 });
 
 gulp.task('watch', ['styles', 'scripts'], function() {
 	browserSync.init({
 		server: "./"
 	});
-		gulp.watch('less/**/*.less', ['less']).on('change',browserSync.reload);
-		gulp.watch('./html').on('change',browserSync.reload);
+		gulp.watch('less/**/*.less', ['styles']);
+		gulp.watch('js/**/*.js', ['scripts']).on('change',browserSync.reload);
+		gulp.watch('(./*.html').on('change',browserSync.reload);
 
 });
 

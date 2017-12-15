@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/lorchin/L1-master#readme",
   "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^3.9.0",
@@ -25,8 +30,5 @@
     "gulp-minify": "^2.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.13"
   }
 }

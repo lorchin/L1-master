@@ -1,248 +1,263 @@
- <!DOCTYPE html>
-    <html lang="en-us">
-    <head>
-      <link rel="stylesheet" type="text/css" href="css/style.css">  
-      <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
-<!--       <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
-
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cart</title>
-     <meta name="Cart" content="Cart">
-   </head>
- <body class="cart">
-  <div class="header">
-    <div class="header-nav">
-      <div class="logo">
-        <a href="index.html" title="Bookworm">
-          <img src="images/Logo.png" width="180" alt="Bookworm">
-        </a>
-      </div>
-        <div class="mobile-btn" id="mobile"><span></span></div>
-        <ul class="header-menu" id="mobile-menu">
-          <li><a class="menu" href="#">books</a></li>
-          <li><a class="menu" href="#">writers</a></li>
-          <li><a class="menu" href="#">publishers</a></li>
-          <li><a class="menu" href="article.html">blog</a></li>
-          <li><a class="menu" href="#">contact</a></li>
-          
-
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="stylesheet" type="text/css" href="build/css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
+  <!--       <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#45474b">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <meta name="Cart" content="Cart">
+</head>
+<body class="cart">
+<div class="header">
+  <div class="header-nav">
+    <div class="logo">
+      <a href="index.html" title="Bookworm">
+        <img src="images/Logo.png" alt="Bookworm">
+      </a>
+    </div>
+    <div class="mobile-btn" id="mobile"><span></span></div>
+    <ul class="header-menu" id="mobile-menu">
+      <li><a class="menu" href="#">books</a></li>
+      <li><a class="menu" href="#">writers</a></li>
+      <li><a class="menu" href="#">publishers</a></li>
+      <li><a class="menu" href="article.html">blog</a></li>
+      <li><a class="menu" href="contact.html">contact</a></li>
+      <li>
         <ul class="header-icons-container">
-        <li>
-          <a href="#" title="search">
-            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
-          <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"/>
-            </svg>
-          </a>
+          <li>
+            <a href="#" title="search">
+              <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
+                <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"></path>
+              </svg>
+            </a>
           </li>
-        <li>
-          <a href="cart.html" id="cart" title="cart">
-            <span class="item-amount">3</span>
-            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
-          <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="profile-link" title="profile" id="profile" >
-            <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
-          </a>
-        </li>
+          <li>
+            <a href="cart.html" id="cart" title="cart">
+              <span class="item-amount">3</span>
+              <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
+                <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="profile-link" title="profile" id="profile" >
+              <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
+            </a>
+          </li>
         </ul>
-      </ul>
-      </div>
+      </li>
+    </ul>
   </div>
+</div>
 <div class="table-cart">
   <a class="block-title">Your cart</a>
-<form id="table">
-  <div class="table">
-  <table id="t_cart">
-  <tr class="tr-menu">
-    <th> </th>
-    <th colspan="2">Product</th>
-    <th>Format</th>
-    <th>Language</th>
-    <th>Quantity</th>
-    <th>Price</th>
-  </tr>
-  <tr id="item_1">
-    <td>
-      <a id="remove_1" class="remove-item"><img src="images/del.png"></a>
-    </td>
-    <td>
-      <a href="#" class="cart-item"><img src="images/png/1.2.png"></a>
-    </td>
-    <td>
-      <div class="item-desc">
-        <a href="#" class="title">The Meandering Corpse</a>
-        <a href="#" class="author">Richard S.Prather</a>
-      </div>
-    </td>
-    <td>Hardback, 170x215 mm</td>
-    <td>English</td>
-    <td>
-      <span class="del"><a id="del_item_1">&#45;</a></span>
-      <input type="number" id="count_item_1" step="1" min="0" max="10" value="1" name="cart" readonly>
-      <span class="add"><a id="add_item_1">&#43;</a></span>
-    </td>
-    <td class="price">$<span class="price" id="price_item_1">25</span></td>
-  </tr>
- <tr id="item_2">
-    <td>
-      <a id="remove_2" class="remove-item"><img src="images/del.png"></a>
-    </td>
-    <td>
-      <a href="#" class="cart-item"><img src="images/png/1.3.png"></a>
-    </td>
-    <td>
-      <div class="item-desc">
-      <a href="#" class="title">English Detective Stories</a>
-      <a href="#" class="author">Patricia Craig</a>
-      </div> 
-    </td>
-    <td>Hardback, 170x215 mm</td>
-    <td>English</td>
-    <td>
-        <span class="del"><a id="del_item_2">&#45;</a></span>
-        <input type="number" id="count_item_2" step="1" min="0" max="10" value="1" name="cart" readonly>
-        <span class="add"><a id="add_item_2">&#43;</a></span>
-    </td>
-    <td class="price">$<span class="price" id="price_item_2">35</span></td>
-  </tr>
-  <tr id="item_3">
-    <td>
-      <a id="remove_3" class="remove-item"><img src="images/del.png"></a>
-    </td>
-    <td>
-      <a href="#" class="cart-item"><img src="images/png/1.4.png"></a>
-    </td>
-    <td>
-      <div class="item-desc">
-      <a href="#" class="title">Die Like a Dog</a>
-      <a href="#" class="author">Brett Halliday</a>
-      </div> 
-    </td>
-    <td>Hardback, 170x215 mm</td>
-    <td>English</td>
-    <td>
-        <span class="del"><a id="del_item_3">&#45;</a></span>
-        <input type="number" id="count_item_3" step="1" min="0" max="10" value="1" name="cart" readonly>
-        <span class="add"><a id="add_item_3">&#43;</a></span>
-    </td>
-    <td class="price">$<span class="price" id="price_item_3">15</span></td>
-  </tr>
-</table>
+  <form id="table">
+    <div class="table">
+      <table id="t_cart">
+        <tr class="tr-menu">
+          <th> </th>
+          <th colspan="2">Product</th>
+          <th>Format</th>
+          <th>Language</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr id="item_1">
+          <td>
+            <a id="remove_1" class="remove-item"><img src="images/del.png"></a>
+          </td>
+          <td>
+            <a href="#" class="cart-item"><img src="images/png/1.2.png"></a>
+          </td>
+          <td>
+            <div class="item-desc">
+              <a href="#" class="title">The Meandering Corpse</a>
+              <a href="#" class="author">Richard S.Prather</a>
+            </div>
+          </td>
+          <td>Hardback, 170x215 mm</td>
+          <td>English</td>
+          <td>
+            <span class="del"><a id="del_item_1">&#45;</a></span>
+            <input type="number" id="count_item_1" step="1" min="0" max="10" value="1" name="cart" readonly>
+            <span class="add"><a id="add_item_1">&#43;</a></span>
+          </td>
+          <td class="price">$<span class="price" id="price_item_1">25</span></td>
+        </tr>
+        <tr id="item_2">
+          <td>
+            <a id="remove_2" class="remove-item"><img src="images/del.png"></a>
+          </td>
+          <td>
+            <a href="#" class="cart-item"><img src="images/png/1.3.png"></a>
+          </td>
+          <td>
+            <div class="item-desc">
+              <a href="#" class="title">English Detective Stories</a>
+              <a href="#" class="author">Patricia Craig</a>
+            </div>
+          </td>
+          <td>Hardback, 170x215 mm</td>
+          <td>English</td>
+          <td>
+            <span class="del"><a id="del_item_2">&#45;</a></span>
+            <input type="number" id="count_item_2" step="1" min="0" max="10" value="1" name="cart" readonly>
+            <span class="add"><a id="add_item_2">&#43;</a></span>
+          </td>
+          <td class="price">$<span class="price" id="price_item_2">35</span></td>
+        </tr>
+        <tr id="item_3">
+          <td>
+            <a id="remove_3" class="remove-item"><img src="images/del.png"></a>
+          </td>
+          <td>
+            <a href="#" class="cart-item"><img src="images/png/1.4.png"></a>
+          </td>
+          <td>
+            <div class="item-desc">
+              <a href="#" class="title">Die Like a Dog</a>
+              <a href="#" class="author">Brett Halliday</a>
+            </div>
+          </td>
+          <td>Hardback, 170x215 mm</td>
+          <td>English</td>
+          <td>
+            <span class="del"><a id="del_item_3">&#45;</a></span>
+            <input type="number" id="count_item_3" step="1" min="0" max="10" value="1" name="cart" readonly>
+            <span class="add"><a id="add_item_3">&#43;</a></span>
+          </td>
+          <td class="price">$<span class="price" id="price_item_3">15</span></td>
+        </tr>
+      </table>
+    </div>
+  </form>
 </div>
-</form>
-</div>
-<div class="submition">
-  <div class="coupon">
-    <form action="#" id="coupon">
-      <input type="text" placeholder="Coupon code">
-      <button type="submit" for="coupon">Apply</button>
-    </form>
-       
-    <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
-  </div>
-<div class="checkout">
-  <div class="cart-subtotal">
-    <span class="entitle">Subtotal</span>
-    <span class="price">$<span class="price" id="subtotal_cart">75</span>
-    <button type="submit" form="table"> Checkout </button>
-  </div>
-  <div class="total">
-    <span class="entitle">Total</span>
-    <span class="price">$<span class="price" id="total_cart">75</span>
-  </div>
-  </div>
-</div>
+<div class="cart-submit">
+  <div class="submition">
+    <div class="coupon">
+      <form action="#" id="coupon">
+        <input type="text" placeholder="Coupon code">
+        <button type="submit" for="coupon">Apply</button>
+      </form>
 
+      <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
+    </div>
+    <!-- <div class="checkout">
+      <div class="cart-subtotal">
+        <span class="entitle">Subtotal</span>
+        <span class="price">$<span class="price" id="subtotal_cart">75</span>
+        <button type="submit" form="table"> Checkout </button>
+      </div>
+      <div class="total">
+        <span class="entitle">Total</span>
+        <span class="price">$<span class="price" id="total_cart">75</span>
+      </div>
+      </div> -->
+    <div class="checkout">
+      <div class="cart-subtotal">
+        <span class="entitle">Subtotal</span>
+        <span class="price">$<span class="price" id="subtotal_cart">75</span></span>
+      </div>
+      <div class="total">
+        <span class="entitle">Total</span>
+        <span class="price">$<span class="price" id="total_cart">75</span></span>
+      </div>
+      <button type="submit" form="table"> Checkout </button>
+    </div>
+  </div>
+</div>
 
 <div id="overlay">
-<div class="login-container" id="login-container">
-  <div class="substrate"></div>
-  <a class="close" id="close"><img src="images/close.svg"></a>
-  <div class="login-content">
-      <a class="block-title">Login</a class="block-title">
-  <form action="#">
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="Password">
-    <input type="checkbox" name="remember" value="remember" id="remember">
-    <label for="remember">Remember me</label>
-    <span> <a href="#"> Forgot password </a></span>
-  </form>
-  <a href="#" class="button">Sign in</a>
-  <form action="#" class="submit">
-    <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-  <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"/></svg> </button> 
-  </form>
-  <a class="sign">Sign in with social:</a>
-<div class="login-icons">
-  <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
-  <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
-  <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
-</div>
+  <div class="login-container" id="login-container">
+    <div class="substrate"></div>
+    <a class="close" id="close"><img src="images/close.svg"></a>
+    <div class="login-content">
+      <a class="block-title">Login</a>
+      <form action="#">
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Password">
+        <input type="checkbox" name="remember" value="remember" id="remember">
+        <label for="remember">Remember me</label>
+        <span> <a href="#"> Forgot password </a></span>
+      </form>
+      <a href="#" class="button">Sign in</a>
+      <form action="#" class="submit">
+        <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+          <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path></svg> </button>
+      </form>
+      <a class="sign">Sign in with social:</a>
+      <div class="login-icons">
+        <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
+        <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
+        <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</div>
-
 
 <footer>
   <div class="footer-content">
-  <ul class="footer-menu">
-    <li> <a href="#">sitemap</a></li>
-    <li> <a href="#">help</a></li>
-    <li> <a href="#">delivery</a></li>
-    <li> <a href="#">pivacy policy</a></li>
-    <li> <a href="#">accessibillity</a></li>
-  </ul>
-  <div class="about">
-    <a>About</a>
-    <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
-    <ul class="footer-links">
-      <li><a href="#">Ade books</a>
-      <p>Rare Books &amp; Textbooks</p>
-      </li>
-      <li><a href="#">DpReview</a>
-        <p>Digital Photography</p>
-      </li>
-      <li><a href="#">Audible</a>
-        <p>Download Audio Books</p>
-      </li>
-      <li><a href="#">Junglee</a>
-        <p>Shop Online in India</p>
-      </li>
-      <li><a href="#">Look</a>
-        <p>Kid's clothing &amp; Shoes</p>
-      </li>
-      <li><a href="#">MYHABIT</a>
-        <p>Private Fashion Designer Sales</p>
-      </li>
-  </ul>
-  </div>
-  <div class="social">
-  <div class="subscribe">
-    <span>Stay in touch</span>
-    <form action="#">
-    <input type="email" placeholder="Your E-mail">
-    <button type="submit"> Subscribe </button> 
-    </form>
-  </div>
-    <div class="follow">
-    <span>Follow us</span>
-    <ul class="social-icons">
-      <li><a href="#"><img src="images/facebook_icon.png"></a></li>
-      <li><a href="#"><img src="images/twitter_icon.png"></a></li>
-      <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
-      <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+    <ul class="footer-menu">
+      <li> <a href="#">sitemap</a></li>
+      <li> <a href="#">help</a></li>
+      <li> <a href="#">delivery</a></li>
+      <li> <a href="#">pivacy policy</a></li>
+      <li> <a href="#">accessibillity</a></li>
     </ul>
-</div>
-</div>
-<span class="copyright">© 2016 Bookworm. All rights reserved</span>
-</div>
+    <div class="about">
+      <a>About</a>
+      <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
+      <ul class="footer-links">
+        <li><a href="#">Ade books</a>
+          <p>Rare Books &amp; Textbooks</p>
+        </li>
+        <li><a href="#">DpReview</a>
+          <p>Digital Photography</p>
+        </li>
+        <li><a href="#">Audible</a>
+          <p>Download Audio Books</p>
+        </li>
+        <li><a href="#">Junglee</a>
+          <p>Shop Online in India</p>
+        </li>
+        <li><a href="#">Look</a>
+          <p>Kid's clothing &amp; Shoes</p>
+        </li>
+        <li><a href="#">MYHABIT</a>
+          <p>Private Fashion Designer Sales</p>
+        </li>
+      </ul>
+    </div>
+    <div class="social">
+      <div class="subscribe">
+        <span>Stay in touch</span>
+        <form action="#">
+          <input type="email" placeholder="Your E-mail">
+          <button type="submit"> Subscribe </button>
+        </form>
+      </div>
+      <div class="follow">
+        <span>Follow us</span>
+        <ul class="social-icons">
+          <li><a href="#"><img src="images/facebook_icon.png"></a></li>
+          <li><a href="#"><img src="images/twitter_icon.png"></a></li>
+          <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
+          <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+        </ul>
+      </div>
+    </div>
+    <span class="copyright">© 2016 Bookworm. All rights reserved</span>
+  </div>
 </footer>
 
 

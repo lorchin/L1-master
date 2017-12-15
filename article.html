@@ -1,300 +1,304 @@
- <!DOCTYPE html>
-   <html lang="en-us">
-   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="stylesheet" type="text/css" href="build/css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,600,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#45474b">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <meta name="Blog" content="Blog">
-   </head>
-   <body>
-	
+</head>
+<body>
+
 <div class="header">
     <div class="header-nav">
-      <div class="logo">
-        <a href="index.html" title="Bookworm">
-          <img src="images/Logo.png" width="180" alt="Bookworm">
-        </a>
-      </div>
+        <div class="logo">
+            <a href="index.html" title="Bookworm">
+                <img src="images/Logo.png" alt="Bookworm">
+            </a>
+        </div>
         <div class="mobile-btn" id="mobile"><span></span></div>
         <ul class="header-menu" id="mobile-menu">
-          <li><a class="menu" href="#">books</a></li>
-          <li><a class="menu" href="#">writers</a></li>
-          <li><a class="menu" href="#">publishers</a></li>
-          <li><a class="menu" href="article.html">blog</a></li>
-          <li><a class="menu" href="#">contact</a></li>
-          
-
-        <ul class="header-icons-container">
-        <li>
-          <a href="#" title="search">
-            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
-          <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"/>
-            </svg>
-          </a>
-          </li>
-        <li>
-          <a href="cart.html" title="cart">
-            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
-          <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="profile-link" title="profile" id="profile" >
-            <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
-          </a>
-        </li>
+            <li><a class="menu" href="#">books</a></li>
+            <li><a class="menu" href="#">writers</a></li>
+            <li><a class="menu" href="#">publishers</a></li>
+            <li><a class="menu" href="article.html">blog</a></li>
+            <li><a class="menu" href="contact.html">contact</a></li>
+            <li>
+                <ul class="header-icons-container">
+                    <li>
+                        <a href="#" title="search">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
+                                <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html" title="cart">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
+                                <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="profile-link" title="profile" id="profile" >
+                            <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
-      </ul>
-      </div>
-  </div>
+    </div>
+</div>
 
-    	<article>
-		<div class="return">
-    		<a href="#">Blog <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-  <path fill="#555963" fill-rule="evenodd" d="M17 5.6H3.7L8 1.3 6.4 0 0 6.5 6.5 13 8 11.6l-4.3-4H17z"/>
-</svg> </a> 
-    	</div>
-    		<header class="single_post_header">
-    	<h1> 12 bookstores every reader should visit in their lifetime</h1>
-    	<div class="post_author">
-    		<div class="author">Cristopher Burton</div>
-    		<div class="date">12.10.16</div>
-    		<a href="#" title="Share">
-    			<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="19.66" height="18.718" viewBox="0 0 19.66 18.718">
-  <path fill="#555963" fill-rule="evenodd" d="M19.65 8.087L10.76.005V5.42C9.03 5.42-.32 5.22.02 17.837c2.87 4.2 2.49-8.11 10.74-6.262.37.08 0 5.5 0 5.5zM2.34 13.38c.82-6.37 8.02-6.057 10.5-6.072V4.272l3.93 3.815-3.93 4.144.01-2.634s-7.5-1.51-10.51 3.784z"/>
-</svg></a>
-    		
+<article>
+    <div class="return">
+        <a href="#">Blog <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+            <path fill="#555963" fill-rule="evenodd" d="M17 5.6H3.7L8 1.3 6.4 0 0 6.5 6.5 13 8 11.6l-4.3-4H17z"></path>
+        </svg> </a>
+    </div>
+    <header class="single_post_header">
+        <h1> 12 bookstores every reader should visit in their lifetime</h1>
+        <div class="post_author">
+            <div class="author">Cristopher Burton</div>
+            <div class="date">12.10.16</div>
+            <a href="#" title="Share">
+                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="19.66" height="18.718" viewBox="0 0 19.66 18.718">
+                    <path fill="#555963" fill-rule="evenodd" d="M19.65 8.087L10.76.005V5.42C9.03 5.42-.32 5.22.02 17.837c2.87 4.2 2.49-8.11 10.74-6.262.37.08 0 5.5 0 5.5zM2.34 13.38c.82-6.37 8.02-6.057 10.5-6.072V4.272l3.93 3.815-3.93 4.144.01-2.634s-7.5-1.51-10.51 3.784z"></path>
+                </svg></a>
 
-    		<a href="#" title="Add to bookmarks">
-    			<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-  <path fill="#555963" fill-rule="evenodd" d="M13 0H1a.945.945 0 0 0-1 1v14a1 1 0 0 0 1 1 .9.9 0 0 0 .5-.1l5-2.9a1.3 1.3 0 0 1 1 0l5 2.9a.9.9 0 0 0 .5.1 1 1 0 0 0 1-1V1a.945.945 0 0 0-1-1zm-1 2v2H2V2h10zm-3.5 9.3a3.013 3.013 0 0 0-3 0l-3.5 2V6h10v7.3l-3.5-2z"/>
-</svg>
-      		</a>
-    	</div>
-    	</header>
-		<div class="post">
-			<figure class="feature_img">
-				<img src="images/bs_img.png">
-				<figcaption>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. 
-				</figcaption>
-			</figure>
-		<div class="post_content">
-			<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris.<a href="#"> Suspendisse felis sem</a>, condimentum ullamcorper est sit amet, molestie mollis nulla. Etiam lorem orci, consequat ac magna quis, facilisis vehicula neque.</p>
 
-		<blockquote>"We've already had a lot of contact with our counterparts in the U.K. and Canada and know that both Australia and New Zealand also have their own takes on bookstore day"</blockquote>
+            <a href="#" title="Add to bookmarks">
+                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                    <path fill="#555963" fill-rule="evenodd" d="M13 0H1a.945.945 0 0 0-1 1v14a1 1 0 0 0 1 1 .9.9 0 0 0 .5-.1l5-2.9a1.3 1.3 0 0 1 1 0l5 2.9a.9.9 0 0 0 .5.1 1 1 0 0 0 1-1V1a.945.945 0 0 0-1-1zm-1 2v2H2V2h10zm-3.5 9.3a3.013 3.013 0 0 0-3 0l-3.5 2V6h10v7.3l-3.5-2z"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div class="post">
+        <figure class="feature_img">
+            <img src="images/bs_img.png">
+            <figcaption>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.
+            </figcaption>
+        </figure>
+        <div class="post_content">
+            <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris.<a href="#"> Suspendisse felis sem</a>, condimentum ullamcorper est sit amet, molestie mollis nulla. Etiam lorem orci, consequat ac magna quis, facilisis vehicula neque.</p>
 
-				<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.</p>
+            <blockquote>"We've already had a lot of contact with our counterparts in the U.K. and Canada and know that both Australia and New Zealand also have their own takes on bookstore day"</blockquote>
 
-			<h2> Shakespare and Company, Paris</h2>
+            <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.</p>
 
-			<p>One of the most famous and photographed independent book shops in the world, Shakespeare and Company sits along the Seine River in Paris and was an expat-author watering hole of sorts for some of literature's biggest names — James Baldwin, Allen Ginsberg, Anais Nin, Wiliam Burroughs — in the 1960s.</p>
-			<hr>
-			<div class="h5">
-			
-			<h5>What better way to celebrate Shakespeare 400 years after his death than at a bookstore in London after a show at the Globe?</h5>  
-			<p class="small"> One of the most famous and photographed independent book shops in the world, Shakespeare and Company sits along the Seine River in Paris and was an expat-author watering hole of sorts for some of literature's biggest names — James Baldwin</p>
-      <p>
-      <img src="images/h5_img.png" class="align_center">
-      </p>
-			</div>
-			<hr>
-		<p>One of the potential beneficiaries, Jeff Williams, owner of Williams Auto World in <strong>Lansing, Mich., said on Thursday that he welcomed the compensation agreement but that the toll on his business had been heavy.</strong>
-		</p>
-		<p>“In 2012, we sold 477 new Volkswagens,” Mr. Williams said. “So far this year, we’ve sold 86 new. That’s a big, big hit.”</p>
+            <h2> Shakespare and Company, Paris</h2>
 
-		<h3>Shakespare and Company, Paris</h3>
+            <p>One of the most famous and photographed independent book shops in the world, Shakespeare and Company sits along the Seine River in Paris and was an expat-author watering hole of sorts for some of literature's biggest names — James Baldwin, Allen Ginsberg, Anais Nin, Wiliam Burroughs — in the 1960s.</p>
+            <hr>
+            <div class="h5">
 
-		<p> But he expressed hope for 2017. Next spring, Volkswagen is expected to introduce an all-new gasoline-powered <a href="#">sport utility vehicle</a>, which had been sorely missing from the Volkswagen lineup. “Once we get some S.U.V.s, that ought to kick-start things,” Mr. Williams said.</p>
-			<h4>If you're not sure where to start:</h4>
-			<ol class="h4">
-				<li>Hackathon attendees are usually software developers, and since hackathon projects are typically software-based, the ones “hacking” are the ones best equipped to do so.	
-				</li>
-				<li>Teams and projects are formed once the hackathon begins. While hackathons tend to have a focus or overall goal, the projects that participants work on are 
-				</li>
-			</ol>
-		<figure class="feature_img">
-				<img src="images/fig2.png">
-				<figcaption>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. 
-				</figcaption>
-		</figure>
+                <h5>What better way to celebrate Shakespeare 400 years after his death than at a bookstore in London after a show at the Globe?</h5>
+                <p class="small"> One of the most famous and photographed independent book shops in the world, Shakespeare and Company sits along the Seine River in Paris and was an expat-author watering hole of sorts for some of literature's biggest names — James Baldwin</p>
+                <p>
+                    <img src="images/h5_img.png" class="align_center">
+                </p>
+            </div>
+            <hr>
+            <p>One of the potential beneficiaries, Jeff Williams, owner of Williams Auto World in <strong>Lansing, Mich., said on Thursday that he welcomed the compensation agreement but that the toll on his business had been heavy.</strong>
+            </p>
+            <p>“In 2012, we sold 477 new Volkswagens,” Mr. Williams said. “So far this year, we’ve sold 86 new. That’s a big, big hit.”</p>
 
-		<p>Better yet, Lutyens &amp; Rubinstein is the closest you'll get to a real-life version of the Notting Hill book shop Hugh Grant's character owns in the 1999 rom-com. The white store and apartment fronts of the neighborhood are as charming on the outside as this chic bookstore is on the inside, with paperback birds and mobiles hanging from the ceiling and two floors of glossy covers to keep you shopping for hours.</p>
+            <h3>Shakespare and Company, Paris</h3>
 
-		<section class="h5-small-p">
-		<div class="align_left">
-		<h5>Read the original story: Most Incredible Bookstores</h5>
-		<small>Bookstore Day-worthy recommendations wouldn't be complete without a store from the city where this holiday originated — San Francisco. As San Fran bookstores go, City Lights (a Bay Area institution since 1953) is a can't-miss for its timeless storefron.
-		</small>
-		</div>
-	
-		<p><a href="#">Cras quis nulla commodo</a>, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. <strong>In feugiat orci odio, sed lacinia sem elementum quis. You can't just stick to the thrillers.</strong> In feugiat orci odio, sed lacinia sem elementum quis. You can't just stick to the thrillers. What better way to celebrate Shakespeare 400 years after his death than at a bookstore in London after a show at the Globe? Better yet, Lutyens &amp; Rubinstein is the closest you'll get to a real-life version of the Notting Hill book shop Hugh Grant's character owns in the 1999 rom-com.</p>
-	</section>
-		</div>
-	</div>
-	</article>
+            <p> But he expressed hope for 2017. Next spring, Volkswagen is expected to introduce an all-new gasoline-powered <a href="#">sport utility vehicle</a>, which had been sorely missing from the Volkswagen lineup. “Once we get some S.U.V.s, that ought to kick-start things,” Mr. Williams said.</p>
+            <h4>If you're not sure where to start:</h4>
+            <ol class="h4">
+                <li>Hackathon attendees are usually software developers, and since hackathon projects are typically software-based, the ones “hacking” are the ones best equipped to do so.
+                </li>
+                <li>Teams and projects are formed once the hackathon begins. While hackathons tend to have a focus or overall goal, the projects that participants work on are
+                </li>
+            </ol>
+            <figure class="feature_img">
+                <img src="images/fig2.png">
+                <figcaption>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.
+                </figcaption>
+            </figure>
 
-		<section class="related_posts">
-			<div class="related item1">
-				<img src="images/chinese-lamp.png">
-			<a href="#" class="reladed_title">
-			Italian newspaper Il Giornale draws criticism for 'Mein Kampf' giveaway - Reuters</a>
-			<span class="name">Lori Stevens</span>
-    		<span class="date">15.10.16</span>
-    		</div>
+            <p>Better yet, Lutyens &amp; Rubinstein is the closest you'll get to a real-life version of the Notting Hill book shop Hugh Grant's character owns in the 1999 rom-com. The white store and apartment fronts of the neighborhood are as charming on the outside as this chic bookstore is on the inside, with paperback birds and mobiles hanging from the ceiling and two floors of glossy covers to keep you shopping for hours.</p>
 
-    		<div class="related item2">
-				<img src="images/report.png">
-			<a href="#" class="reladed_title"> Report: Glenn Beck suspended by SiriusXM after author Brad Thor makes controversial</a>
-			<span class="name">Michele Taylor</span>
-    		<span class="date">28.10.16</span>
-    		</div>
+            <section class="h5-small-p">
+                <div class="align_left">
+                    <h5>Read the original story: Most Incredible Bookstores</h5>
+                    <small>Bookstore Day-worthy recommendations wouldn't be complete without a store from the city where this holiday originated — San Francisco. As San Fran bookstores go, City Lights (a Bay Area institution since 1953) is a can't-miss for its timeless storefron.
+                    </small>
+                </div>
 
-    		<div class="related item3">
-				<img src="images/sea.png">
-			<a href="#" class="reladed_title">Democratic candidate Hillary Clinton's financial documents show she earned more than $5 million in book</a>
-			<span class="name">Nicolas Gurero</span>
-    		<span class="date">15.10.16</span>
-    		</div>
-		</section>
+                <p><a href="#">Cras quis nulla commodo</a>, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. <strong>In feugiat orci odio, sed lacinia sem elementum quis. You can't just stick to the thrillers.</strong> In feugiat orci odio, sed lacinia sem elementum quis. You can't just stick to the thrillers. What better way to celebrate Shakespeare 400 years after his death than at a bookstore in London after a show at the Globe? Better yet, Lutyens &amp; Rubinstein is the closest you'll get to a real-life version of the Notting Hill book shop Hugh Grant's character owns in the 1999 rom-com.</p>
+            </section>
+        </div>
+    </div>
+</article>
+
+<section class="related_posts">
+    <div class="related item1">
+        <img src="images/chinese-lamp.png">
+        <a href="#" class="reladed_title">
+            Italian newspaper Il Giornale draws criticism for 'Mein Kampf' giveaway - Reuters</a>
+        <span class="name">Lori Stevens</span>
+        <span class="date">15.10.16</span>
+    </div>
+
+    <div class="related item2">
+        <img src="images/report.png">
+        <a href="#" class="reladed_title"> Report: Glenn Beck suspended by SiriusXM after author Brad Thor makes controversial</a>
+        <span class="name">Michele Taylor</span>
+        <span class="date">28.10.16</span>
+    </div>
+
+    <div class="related item3">
+        <img src="images/sea.png">
+        <a href="#" class="reladed_title">Democratic candidate Hillary Clinton's financial documents show she earned more than $5 million in book</a>
+        <span class="name">Nicolas Gurero</span>
+        <span class="date">15.10.16</span>
+    </div>
+</section>
 
 
 <section class="post_comments">
-	<h3>Comments</h3>
-	<div class="comments_count">120 comments</div>
-	<form class="new-comment">
-		<img src="images/com_avatar.png">
-		<input type="hidden" name="csrf-token">
-		<label for="comment_text" >Comment text</label>
-		<textarea name="comment" id="comment_text" rows="1" cols="78" placeholder="Write a response" ></textarea>
-		<button type="submit">Send</button>
-	</form>
-	<ul>
-		<li>
-			<div class="single_comment">
-					<img src="images/mc1.png">
-					<a href="#" class="name">Tamila Drake</a>
-					<a class="date">15.10.16</a>
-					<p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>	
-			</div>
-			<ul class="reply">
-				<li>
-					<div class="single_comment">
-						<img src="images/re-mc1.png">
-						<a href="#" class="name">John Cash</a>
-						<a href="#" class="prev-name">to Tamila Drake</a>
-						<a class="date">15.10.16</a>
-						<p>Bushwick meh Blue Bottle pork belly mustache skateboard 3 wolf moon. Actually beard single-origin coffee, twee 90's PBR Echo Park sartorial try-hard freegan Portland ennui. Selvage jean shorts 90's, Vice American Apparel try-hard food truck Shoreditch fap lomo Wes Anderson. Art party Thundercats High Life Tumblr, sartorial vinyl deep v fixie McSweeney's fap tousled Intelligentsia mumblecore.</p>	
-					</div>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<div class="single_comment">
-					<img src="images/mc2.png">
-					<a href="#" class="name">Billy Hudson</a>
-					<a class="date">15.10.16</a>
-					<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. </p>	
-			</div>
-		</li>
-	</ul>
-	<div class="more-btn">
-	<form action="">
-    <button type="submit"> Show more comments </button>
-	</form>
-	</div>
+    <h3>Comments</h3>
+    <div class="comments_count">120 comments</div>
+    <form class="new-comment">
+        <img src="images/com_avatar.png">
+        <input type="hidden" name="csrf-token">
+        <label for="comment_text" >Comment text</label>
+        <textarea name="comment" id="comment_text" rows="1" cols="78" placeholder="Write a response" ></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <ul>
+        <li>
+            <div class="single_comment">
+                <img src="images/mc1.png">
+                <a href="#" class="name">Tamila Drake</a>
+                <a class="date">15.10.16</a>
+                <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+            </div>
+            <ul class="reply">
+                <li>
+                    <div class="single_comment">
+                        <img src="images/re-mc1.png">
+                        <a href="#" class="name">John Cash</a>
+                        <a href="#" class="prev-name">to Tamila Drake</a>
+                        <a class="date">15.10.16</a>
+                        <p>Bushwick meh Blue Bottle pork belly mustache skateboard 3 wolf moon. Actually beard single-origin coffee, twee 90's PBR Echo Park sartorial try-hard freegan Portland ennui. Selvage jean shorts 90's, Vice American Apparel try-hard food truck Shoreditch fap lomo Wes Anderson. Art party Thundercats High Life Tumblr, sartorial vinyl deep v fixie McSweeney's fap tousled Intelligentsia mumblecore.</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div class="single_comment">
+                <img src="images/mc2.png">
+                <a href="#" class="name">Billy Hudson</a>
+                <a class="date">15.10.16</a>
+                <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. </p>
+            </div>
+        </li>
+    </ul>
+    <div class="more-btn">
+        <form action="">
+            <button type="submit"> Show more comments </button>
+        </form>
+    </div>
 </section>
 
 
 <div id="overlay">
-<div class="login-container" id="login-container">
-  <div class="substrate"></div>
-  <a class="close" id="close"><img src="images/close.svg"></a>
-  <div class="login-content">
-      <a class="block-title">Login</a class="block-title">
-  <form action="#">
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="Password">
-    <input type="checkbox" name="remember" value="remember" id="remember">
-    <label for="remember">Remember me</label>
-    <span> <a href="#"> Forgot password </a></span>
-  </form>
-  <a href="#" class="button">Sign in</a>
-  <form action="#" class="submit">
-    <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-  <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"/></svg> </button> 
-  </form>
-  <a class="sign">Sign in with social:</a>
-<div class="login-icons">
-  <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
-  <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
-  <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
+    <div class="login-container" id="login-container">
+        <div class="substrate"></div>
+        <a class="close" id="close"><img src="images/close.svg"></a>
+        <div class="login-content">
+            <a class="block-title">Login</a>
+            <form action="#">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <input type="checkbox" name="remember" value="remember" id="remember">
+                <label for="remember">Remember me</label>
+                <span> <a href="#"> Forgot password </a></span>
+            </form>
+            <a href="#" class="button">Sign in</a>
+            <form action="#" class="submit">
+                <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+                    <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path></svg> </button>
+            </form>
+            <a class="sign">Sign in with social:</a>
+            <div class="login-icons">
+                <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
+                <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
+                <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
+            </div>
+        </div>
+    </div>
 </div>
-  </div>
-</div>
-</div>
-</div>
-
 
 <footer>
-  <div class="footer-content">
-  <ul class="footer-menu">
-    <li> <a href="#">sitemap</a></li>
-    <li> <a href="#">help</a></li>
-    <li> <a href="#">delivery</a></li>
-    <li> <a href="#">pivacy policy</a></li>
-    <li> <a href="#">accessibillity</a></li>
-  </ul>
-  <div class="about">
-    <a>About</a>
-    <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
-    <ul class="footer-links">
-      <li><a href="#">Ade books</a>
-      <p>Rare Books &amp; Textbooks</p>
-      </li>
-      <li><a href="#">DpReview</a>
-        <p>Digital Photography</p>
-      </li>
-      <li><a href="#">Audible</a>
-        <p>Download Audio Books</p>
-      </li>
-      <li><a href="#">Junglee</a>
-        <p>Shop Online in India</p>
-      </li>
-      <li><a href="#">Look</a>
-        <p>Kid's clothing &amp; Shoes</p>
-      </li>
-      <li><a href="#">MYHABIT</a>
-        <p>Private Fashion Designer Sales</p>
-      </li>
-  </ul>
-  </div>
-  <div class="social">
-  <div class="subscribe">
-    <span>Stay in touch</span>
-    <form action="#">
-    <input type="email" placeholder="Your E-mail">
-    <button type="submit"> Subscribe </button> 
-    </form>
-  </div>
-    <div class="follow">
-    <span>Follow us</span>
-    <ul class="social-icons">
-      <li><a href="#"><img src="images/facebook_icon.png"></a></li>
-      <li><a href="#"><img src="images/twitter_icon.png"></a></li>
-      <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
-      <li><a href="#"><img src="images/instagram_icon.png"></a></li>
-    </ul>
-</div>
-</div>
-<span class="copyright">© 2016 Bookworm. All rights reserved</span>
-</div>
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li> <a href="#">sitemap</a></li>
+            <li> <a href="#">help</a></li>
+            <li> <a href="#">delivery</a></li>
+            <li> <a href="#">pivacy policy</a></li>
+            <li> <a href="#">accessibillity</a></li>
+        </ul>
+        <div class="about">
+            <a>About</a>
+            <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
+            <ul class="footer-links">
+                <li><a href="#">Ade books</a>
+                    <p>Rare Books &amp; Textbooks</p>
+                </li>
+                <li><a href="#">DpReview</a>
+                    <p>Digital Photography</p>
+                </li>
+                <li><a href="#">Audible</a>
+                    <p>Download Audio Books</p>
+                </li>
+                <li><a href="#">Junglee</a>
+                    <p>Shop Online in India</p>
+                </li>
+                <li><a href="#">Look</a>
+                    <p>Kid's clothing &amp; Shoes</p>
+                </li>
+                <li><a href="#">MYHABIT</a>
+                    <p>Private Fashion Designer Sales</p>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="subscribe">
+                <span>Stay in touch</span>
+                <form action="#">
+                    <input type="email" placeholder="Your E-mail">
+                    <button type="submit"> Subscribe </button>
+                </form>
+            </div>
+            <div class="follow">
+                <span>Follow us</span>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="images/facebook_icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter_icon.png"></a></li>
+                    <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="copyright">© 2016 Bookworm. All rights reserved</span>
+    </div>
 </footer>
 
 <script src="js/main.js"></script>
-    	</body>
-   	</html>
+</body>
+</html>

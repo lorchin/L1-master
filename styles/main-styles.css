@@ -3102,25 +3102,9 @@ footer form {
 	width: 100%;
 }
 
-.login-container {
-	width: 88%;
-}
-.login-content label {
-    padding-right: 0;
-}
-.login-content .submit {
-    padding: 90px 67px 0;
-}
-.sign {
-    padding: 60px 67px 0;
-}
-.login-icons {
-    padding: 10px 67px 0;
-}
 
-.footer-menu li {
-	padding: 0px 2px;
-}
+
+
 .table {
 	overflow-x:auto;
 }
@@ -3163,21 +3147,6 @@ article {
 }
 .post_comments textarea {
     width: 67%;
-}
-footer .about {
-	display: none;
-}
-footer .social {
-    margin-top: 61px;
-    display: block;
-}
-footer .subscribe {
-    width: 88%;
-    margin-right: 0;
-}
-footer .follow {
-    width: 100%;
-    margin-top: 38px;
 }
 }
 @media all and (max-width: 375px) {
