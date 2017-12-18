@@ -32,45 +32,6 @@ function showMobileMenu() {
 }
 pie.addEventListener('click',showMobileMenu);
 
-
-
-// var slide1 = document.getElementById('slide1');
-// var slide2 = document.getElementById('slide2');
-// var slide3 = document.getElementById('slide3');
-// var slide4 = document.getElementById('slide4');
-// var slide5 = document.getElementById('slide5');
-
-// var prevSlide = document.getElementById('prev');
-// var nextSlide = document.getElementById('next');
-
-// function showPrev() {
-// 	slide5.classList.toggle('show');
-
-// }
-
-// function showNext() {
-// 	slide2.classList.toggle('show');	
-
-// }
-
-// prevSlide.addEventListener('click', showPrev);
-// nextSlide.addEventListener('click', showNext);
-
-
-
-
-
-
-
-// var slides = document.querySelectorAll('#s1 .wrap');
-// var currentSlide = 0;
-// var slideInterval = setInterval(nextSlide,4000);
-// function nextSlide() {
-// slides[currentSlide].className = 'wrap';
-// currentSlide = (currentSlide+1)%slides.length;
-// slides[currentSlide].className = 'wrap show';
-// }
-
 function initMap() {
 var mapId = document.getElementById('map');
 var mapCenter = {
@@ -98,13 +59,45 @@ var infoWindow = new google.maps.InfoWindow({
 var marker = new google.maps.Marker({
 	position: coord,
 	map: map,
-	icon: "../images/map-marker.png"
+	icon: "../images/map-marker.png",
+    draggable: true,
+    animation: google.maps.Animation.DROP
 });
-
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
 marker.addListener('click', function () {
 	infoWindow.open(map, marker);
 });
 }
-
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(function(position) {
+//             var pos = {
+//                 lat: position.coords.latitude,
+//                 lng: position.coords.longitude
+//             };
+//
+//             infoWindow.setPosition(pos);
+//             infoWindow.setContent('Location found.');
+//             map.setCenter(pos);
+//         }, function() {
+//             handleLocationError(true, infoWindow, map.getCenter());
+//         });
+//     } else {
+//         // Browser doesn't support Geolocation
+//         handleLocationError(false, infoWindow, map.getCenter());
+//     }
+// }
+//
+// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+//     infoWindow.setPosition(pos);
+//     infoWindow.setContent(browserHasGeolocation ?
+//         'Error: The Geolocation service failed.' :
+//         'Error: Your browser doesn\'t support geolocation.');
+// }
 
 

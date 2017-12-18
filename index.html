@@ -1,496 +1,467 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <link rel="stylesheet" type="text/css" href="build/css/style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/manifest.json">
-  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#45474b">
-  <meta name="theme-color" content="#ffffff">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookworm</title>
-  <meta name="description" content="All about literature">
+    <link rel="stylesheet" type="text/css" href="build/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#45474b">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookworm</title>
+    <meta name="description" content="All about literature">
 </head>
 <body class="homepage scroll">
 <div class="header">
-  <div class="header-nav">
-    <div class="logo">
-      <a href="index.html" title="Bookworm">
-        <img src="images/Logo.png" alt="Bookworm">
-      </a>
-    </div>
-    <div class="mobile-btn" id="mobile"><span></span></div>
-    <ul class="header-menu" id="mobile-menu">
-      <li><a class="menu" href="#">books</a></li>
-      <li><a class="menu" href="#">writers</a></li>
-      <li><a class="menu" href="#">publishers</a></li>
-      <li><a class="menu" href="article.html">blog</a></li>
-      <li><a class="menu" href="contact.html">contact</a></li>
-      <li>
-        <ul class="header-icons-container">
-          <li>
-            <a href="#" title="search">
-              <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
-                <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"></path>
-              </svg>
+    <div class="header-nav">
+        <div class="logo">
+            <a href="index.html" title="Bookworm">
+                <img src="images/Logo.png" alt="Bookworm">
             </a>
-          </li>
-          <li>
-            <a href="cart.html" title="cart">
-              <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
-                <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="profile-link" title="profile" id="profile" >
-              <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
-            </a>
-          </li>
+        </div>
+        <div class="mobile-btn" id="mobile"><span></span></div>
+        <ul class="header-menu" id="mobile-menu">
+            <li><a class="menu" href="#">books</a></li>
+            <li><a class="menu" href="#">writers</a></li>
+            <li><a class="menu" href="#">publishers</a></li>
+            <li><a class="menu" href="article.html">blog</a></li>
+            <li><a class="menu" href="contact.html">contact</a></li>
+            <li>
+                <ul class="header-icons-container">
+                    <li>
+                        <a href="#" title="search">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
+                                <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html" title="cart">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
+                                <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="profile-link" title="profile" id="profile" >
+                            <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
-      </li>
-    </ul>
-  </div>
+    </div>
 </div>
 
 <div class="slider1">
-
-  <button id="prev"><img src="images/arrow_left.png"></button>
-  <button id="next"><img src="images/arrow_right.png"></button>
-
-  <ul class="s1" id="s1">
-    <li>
-      <div class="wrap show" id="slide1">
-        <div class="slide1">
-          <div class="slide-book">
+    <div><div class="slide-item">
+        <div class="slide-book">
             <div class="slide-book_back">
-              <img src="images/hogwarts1.png" alt="Harry Potter And The Sorserser's Stone">
-              <div class="slide-book_cover">
-                <img src="images/cover.png">
-                <div class="slide-book_genre">
-                  <a> Fantasy </a>
+                <img src="images/hogwarts1.png" alt="Harry Potter And The Sorserser's Stone">
+                <div class="slide-book_cover">
+                    <img src="images/cover.png">
+                    <div class="slide-book_genre">
+                        <a> Fantasy </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="desc">
-            <a class="slide-title"> Harry Potter And The Sorcerer's Stone </a>
-            <div class="description">
-              <a href="#" class="author">By Joan Rowling</a>
-              <span> 5 <img src="images/star.png"> </span>
-              <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
-              <a> $100 </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </li>
+        <div class="desc">
+            <a class="slide-title">Harry Potter And The Sorcerer's Stone</a>
+            <div class="description">
+                <a href="#" class="author">By Joan Rowling</a>
+                <span> 5 <img src="images/star.png"> </span>
+                <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
+                <a> $100 </a>
+            </div>
+        </div>
+    </div></div>
 
-    <li>
-      <div class="wrap" id="slide2">
-        <div class="slide2">
-          <div class="slide-book">
+    <div><div class="slide-item">
+        <div class="slide-book">
             <div class="slide-book_back">
-              <img src="images/hogwarts1.png" alt="Harry Potter and the Goblet of Fire">
-              <div class="slide-book_cover">
-                <img src="images/goblet.png">
-                <div class="slide-book_genre">
-                  <a> Fantasy </a>
+                <img src="images/hogwarts1.png" alt="Harry Potter And The Goblet of Fire">
+                <div class="slide-book_cover">
+                    <img src="images/goblet.png">
+                    <div class="slide-book_genre">
+                        <a> Fantasy </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="desc">
-            <a class="slide-title"> Harry Potter and the Goblet of Fire </a>
-            <div class="description">
-              <a href="#" class="author">By Joan Rowling</a>
-              <span> 5 <img src="images/star.png"> </span>
-              <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
-              <a> $200 </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </li>
+        <div class="desc">
+            <a class="slide-title">Harry Potter And The Goblet of Fire</a>
+            <div class="description">
+                <a href="#" class="author">By Joan Rowling</a>
+                <span> 5 <img src="images/star.png"> </span>
+                <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
+                <a> $200 </a>
+            </div>
+        </div>
+    </div></div>
 
-    <li>
-      <div class="wrap" id="slide3">
-        <div class="slide3">
-          <div class="slide-book">
+    <div><div class="slide-item">
+        <div class="slide-book">
             <div class="slide-book_back">
-              <img src="images/hogwarts1.png" alt="Harry Potter and the Half-Blood Prince">
-              <div class="slide-book_cover">
-                <img src="images/prince.png">
-                <div class="slide-book_genre">
-                  <a> Fantasy </a>
+                <img src="images/hogwarts1.png" alt="Harry Potter And The Half-Blood Prince">
+                <div class="slide-book_cover">
+                    <img src="images/prince.png">
+                    <div class="slide-book_genre">
+                        <a> Fantasy </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="desc">
-            <a class="slide-title">Harry Potter and the Half-Blood Prince</a>
-            <div class="description">
-              <a href="#" class="author">By Joan Rowling</a>
-              <span> 5 <img src="images/star.png"> </span>
-              <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
-              <a> $300 </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </li>
+        <div class="desc">
+            <a class="slide-title">Harry Potter And The Half-Blood Prince</a>
+            <div class="description">
+                <a href="#" class="author">By Joan Rowling</a>
+                <span> 5 <img src="images/star.png"> </span>
+                <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
+                <a> $300 </a>
+            </div>
+        </div>
+    </div></div>
 
-    <li>
-      <div class="wrap" id="slide4">
-        <div class="slide4">
-          <div class="slide-book">
+    <div><div class="slide-item">
+        <div class="slide-book">
             <div class="slide-book_back">
-              <img src="images/hogwarts1.png" alt="Harry Potter and the Prisoner of Azkaban">
-              <div class="slide-book_cover">
-                <img src="images/prisoner.png">
-                <div class="slide-book_genre">
-                  <a> Fantasy </a>
+                <img src="images/hogwarts1.png" alt="Harry Potter And The Prisoner of Azkaban">
+                <div class="slide-book_cover">
+                    <img src="images/prisoner.png">
+                    <div class="slide-book_genre">
+                        <a> Fantasy </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="desc">
-            <a class="slide-title"> Harry Potter and the Prisoner of Azkaban</a>
-            <div class="description">
-              <a href="#" class="author">By Joan Rowling</a>
-              <span> 5 <img src="images/star.png"> </span>
-              <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
-              <a> $400 </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </li>
+        <div class="desc">
+            <a class="slide-title">Harry Potter And The Prisoner of Azkaban</a>
+            <div class="description">
+                <a href="#" class="author">By Joan Rowling</a>
+                <span> 5 <img src="images/star.png"> </span>
+                <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
+                <a> $400 </a>
+            </div>
+        </div>
+    </div></div>
 
-    <li>
-      <div class="wrap" id="slide5">
-        <div class="slide5">
-          <div class="slide-book">
+    <div><div class="slide-item">
+        <div class="slide-book">
             <div class="slide-book_back">
-              <img src="images/hogwarts1.png" alt="Harry Potter and the Chamber of Secrets">
-              <div class="slide-book_cover">
-                <img src="images/chamber.png">
-                <div class="slide-book_genre">
-                  <a> Fantasy </a>
+                <img src="images/hogwarts1.png" alt="Harry Potter And The Chamber of Secrets">
+                <div class="slide-book_cover">
+                    <img src="images/chamber.png">
+                    <div class="slide-book_genre">
+                        <a> Fantasy </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="desc">
-            <a class="slide-title"> Harry Potter and the Chamber of Secrets </a>
-            <div class="description">
-              <a href="#" class="author">By Joan Rowling</a>
-              <span> 5 <img src="images/star.png"> </span>
-              <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
-              <a> $500 </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </li>
+        <div class="desc">
+            <a class="slide-title">Harry Potter And The Chamber of Secrets</a>
+            <div class="description">
+                <a href="#" class="author">By Joan Rowling</a>
+                <span> 5 <img src="images/star.png"> </span>
+                <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
+                <a> $500 </a>
+            </div>
+        </div>
+    </div></div>
 
-  </ul>
 </div>
 
 <div class="table1">
-  <div class="col1">
-    <a href="#" class="title"> The Da Vinci Code </a>
-    <a href="#" class="author">Dan Brown</a>
-    <span> 5 <img src="images/star.png"> </span>
-    <a href="#">
-      <img src="images/da_vinci_code.png" alt="The Da Vinci Code">
-    </a>
-  </div>
-  <div class="col2">
-    <a href="#" class="title"> A major update in the Detective section</a>
-    <a href="#"><img src="images/detective.png" alt="A major update in the Detective section">
-    </a>
-  </div>
+    <div class="col1">
+        <a href="#" class="title"> The Da Vinci Code </a>
+        <a href="#" class="author">Dan Brown</a>
+        <span> 5 <img src="images/star.png"> </span>
+        <a href="#">
+            <img src="images/da_vinci_code.png" alt="The Da Vinci Code">
+        </a>
+    </div>
+    <div class="col2">
+        <a href="#" class="title"> A major update in the Detective section</a>
+        <a href="#"><img src="images/detective.png" alt="A major update in the Detective section">
+        </a>
+    </div>
 </div>
 <div class="catalog">
-  <a class="block-title">Shopfront</a>
-  <ul class="catalog-menu">
-    <li><a href="#">All</a></li>
-    <li><a href="#">Art&amp;Photography</a></li>
-    <li><a href="#">Audio books</a></li>
-    <li><a href="#">Biography</a></li>
-    <li><a href="#">Business</a></li>
-    <li><a href="#">Childrens Book</a></li>
-  </ul>
-  <span class="dropdown"><a href="#">Popular</a></span>
-  <ul class="catalog-images">
-    <li>
-      <a href="#"><img src="images/png/1.1.png"></a>
-      <a href="#" class="title">Opaque Region</a>
-      <a href="#" class="author">Carlos Fuentes</a>
+    <a class="block-title">Shopfront</a>
+    <ul class="catalog-menu">
+        <li><a href="#">All</a></li>
+        <li><a href="#">Art&amp;Photography</a></li>
+        <li><a href="#">Audio books</a></li>
+        <li><a href="#">Biography</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Childrens Book</a></li>
+    </ul>
+    <span class="dropdown"><a href="#">Popular</a></span>
+    <ul class="catalog-images">
+        <li>
+            <a href="#"><img src="images/png/1.1.png"></a>
+            <a href="#" class="title">Opaque Region</a>
+            <a href="#" class="author">Carlos Fuentes</a>
 
-    </li>
-    <li>
-      <a href="#"><img src="images/png/1.2.png"></a>
-      <a href="#" class="title">The Meandering Corpse</a>
-      <a href="#" class="author">Richard S.Prather</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/1.3.png"></a>
-      <a href="#" class="title">English Detective Stories</a>
-      <a href="#" class="author">Patricia Craig</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/1.4.png"></a>
-      <a href="#" class="title">Die Like a Dog</a>
-      <a class="author">Brett Halliday</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/1.5.png"></a>
-      <a href="#" class="title">1984</a>
-      <a href="#" class="author">George Orwell</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/1.6.png"></a>
-      <a href="#" class="title">The Lord of the Rings</a>
-      <a href="#" class="author">J.R.R. Tolkien</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/2.1.png"></a>
-      <a href="#" class="title">Quidditch through the ages</a>
-      <a href="#" class="author">J.K. Rowling</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/2.2.png"></a>
-      <a href="#" class="title">The Tales of Beedle the Bard</a>
-      <a href="#" class="author">J.K. Rowling</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/2.3.png"></a>
-      <a href="#" class="title">Red Queen</a>
-      <a href="#" class="author">Victoria Aveyard</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/2.4.png"></a>
-      <a href="#" class="title">Twilight</a>
-      <a href="#" class="author">Stephenie Meyer</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/2.5.png"></a>
-      <a href="#" class="title">The Chronicles of Narnia</a>
-      <a href="#" class="author">C.S. Lewis</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/2.6.png"></a>
-      <a href="#" class="title">Little women</a>
-      <a href="#" class="author">Louisa May Alcott</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/3.1.png"></a>
-      <a href="#" class="title">The french lieutenans woman</a>
-      <a href="#" class="author">John Fowles</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/3.2.png"></a>
-      <a href="#" class="title">Fantastic beasts</a>
-      <a href="#" class="author">J.K. Rowling</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/3.3.png"></a>
-      <a href="#" class="title">Hollow city</a>
-      <a href="#" class="author">Ransom Riggs</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/3.4.png"></a>
-      <a href="#" class="title">The collector</a>
-      <a href="#" class="author">John Fowles</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/3.5.png"></a>
-      <a href="#" class="title">The magus</a>
-      <a href="#" class="author">John Fowles</a>
-    </li>
-    <li>
-      <a href="#"><img src="images/png/3.6.png"></a>
-      <a href="#" class="title">Everything I Never Told You</a>
-      <a href="#" class="author">Celestre Ng</a>
-    </li>
-  </ul>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/1.2.png"></a>
+            <a href="#" class="title">The Meandering Corpse</a>
+            <a href="#" class="author">Richard S.Prather</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/1.3.png"></a>
+            <a href="#" class="title">English Detective Stories</a>
+            <a href="#" class="author">Patricia Craig</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/1.4.png"></a>
+            <a href="#" class="title">Die Like a Dog</a>
+            <a class="author">Brett Halliday</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/1.5.png"></a>
+            <a href="#" class="title">1984</a>
+            <a href="#" class="author">George Orwell</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/1.6.png"></a>
+            <a href="#" class="title">The Lord of the Rings</a>
+            <a href="#" class="author">J.R.R. Tolkien</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/2.1.png"></a>
+            <a href="#" class="title">Quidditch through the ages</a>
+            <a href="#" class="author">J.K. Rowling</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/2.2.png"></a>
+            <a href="#" class="title">The Tales of Beedle the Bard</a>
+            <a href="#" class="author">J.K. Rowling</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/2.3.png"></a>
+            <a href="#" class="title">Red Queen</a>
+            <a href="#" class="author">Victoria Aveyard</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/2.4.png"></a>
+            <a href="#" class="title">Twilight</a>
+            <a href="#" class="author">Stephenie Meyer</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/2.5.png"></a>
+            <a href="#" class="title">The Chronicles of Narnia</a>
+            <a href="#" class="author">C.S. Lewis</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/2.6.png"></a>
+            <a href="#" class="title">Little women</a>
+            <a href="#" class="author">Louisa May Alcott</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/3.1.png"></a>
+            <a href="#" class="title">The french lieutenans woman</a>
+            <a href="#" class="author">John Fowles</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/3.2.png"></a>
+            <a href="#" class="title">Fantastic beasts</a>
+            <a href="#" class="author">J.K. Rowling</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/3.3.png"></a>
+            <a href="#" class="title">Hollow city</a>
+            <a href="#" class="author">Ransom Riggs</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/3.4.png"></a>
+            <a href="#" class="title">The collector</a>
+            <a href="#" class="author">John Fowles</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/3.5.png"></a>
+            <a href="#" class="title">The magus</a>
+            <a href="#" class="author">John Fowles</a>
+        </li>
+        <li>
+            <a href="#"><img src="images/png/3.6.png"></a>
+            <a href="#" class="title">Everything I Never Told You</a>
+            <a href="#" class="author">Celestre Ng</a>
+        </li>
+    </ul>
 </div>
 <a href="#" class="button">All books</a>
 <div class="slider2">
-  <a class="block-title">Popular writers</a>
-  <ul class="slider2-menu">
-    <li><a href="#">Stephen King</a></li>
-    <li><a href="#">John Fowles</a></li>
-    <li><a href="#">James Patterson</a></li>
-    <li><a href="#">John Grisham</a></li>
-    <li><a href="#">Danielle Steel</a></li>
-    <li><a href="#">Ernest Hemingway</a></li>
-    <li><a href="#">Dan Brown</a></li>
-    <li><a href="#">Rick Riordan</a></li>
-  </ul>
-  <div class="slider2-content">
-    <div class="slider2-info">
-      <a class="slider2-title"> John Fowles </a>
-      <p class="about"> 31 March 1926 Leigh-on-Sea, Essex, England </p>
-      <span>
-                  5
-                  <img src="images/star.png"> 
-                </span>
-      <p class="quotation"> You are right. He did not. But millions of Germans did betray theirselves. That was the tragedy. Not that one man had the courage to be evil. But that millons had not the courage. </p>
+    <a class="block-title">Popular writers</a>
+    <ul class="slider2-menu">
+        <li><a href="#">Stephen King</a></li>
+        <li><a href="#">John Fowles</a></li>
+        <li><a href="#">James Patterson</a></li>
+        <li><a href="#">John Grisham</a></li>
+        <li><a href="#">Danielle Steel</a></li>
+        <li><a href="#">Ernest Hemingway</a></li>
+        <li><a href="#">Dan Brown</a></li>
+        <li><a href="#">Rick Riordan</a></li>
+    </ul>
+    <div class="slider2-content">
+        <div class="slider2-info">
+            <a class="slider2-title"> John Fowles </a>
+            <p class="about"> 31 March 1926 Leigh-on-Sea, Essex, England </p>
+            <span>5<img src="images/star.png"></span>
+            <p class="quotation"> You are right. He did not. But millions of Germans did betray theirselves. That was the tragedy. Not that one man had the courage to be evil. But that millons had not the courage. </p>
+        </div>
+        <img class="image" src="images/fowles_djaongly.png">
+        <div class="slider2-about">
+            <div class="text">
+                <a>About</a>
+                <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem…</p>
+                <a>Books</a>
+            </div>
+            <div class="slider2-books">
+                <img src="images/slider2-book1.png">
+                <img src="images/slider2-book2.png">
+                <img src="images/slider2-book3.png">
+                <a href="#"><img src="images/to-all-books.png"></a>
+            </div>
+            <a href="#" class="link-author">To writer's page
+                <img src="images/to_writer_page_button.png"></a>
+        </div>
     </div>
-    <img class="image" src="images/fowles_djaongly.png">
-    <div class="slider2-about">
-      <div class="text">
-        <a>About</a>
-        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem…</p>
-        <a>Books</a>
-      </div>
-      <div class="slider2-books">
-        <img src="images/slider2-book1.png">
-        <img src="images/slider2-book2.png">
-        <img src="images/slider2-book3.png">
-        <a href="#"><img src="images/to-all-books.png"></a>
-      </div>
-      <a href="#" class="link-author">To writer's page
-        <img src="images/to_writer_page_button.png"></a>
-    </div>
-  </div>
 </div>
 <div class="table-news">
-  <a class="block-title">Literature news</a>
-  <div class="article">
-    <a href="#"><img src="images/lit_news1.png"></a>
-    <a href="#" class="title"> How literature can help people cope with mental health problems </a>
-    <a href="#" class="author">Nathan Sandoval</a>
-  </div>
-  <div class="article">
-    <a href="#"><img src="images/lit_news2.png"></a>
-    <a href="#" class="title"> Sales of 'Harry Potter and the Cursed Child' script book hit more than 2 million within 48 hours of its release in US </a>
-    <a href="#" class="author">Jacquelin Taylor</a>
-  </div>
-  <div class="article">
-    <a href="#"><img src="images/lit_news3.png"></a>
-    <a href="#" class="title"> Marvel introduces character Riri Williams, a woman who takes over as new Iron Man </a>
-    <a href="#" class="author"> Elizabeth Dixon</a>
-  </div>
-  <div class="articles">
+    <a class="block-title">Literature news</a>
     <div class="article">
-      <a href="#" class="title">Association of Former Agents of the United States Secret Service denounces anti-Clinton tell-all book - Politico</a>
-      <a href="#" class="author">Lori Steavens</a>
+        <a href="#"><img src="images/lit_news1.png"></a>
+        <a href="#" class="title"> How literature can help people cope with mental health problems </a>
+        <a href="#" class="author">Nathan Sandoval</a>
     </div>
     <div class="article">
-      <a href="#" class="title">Edmonton bookseller, publisher and activist Mel Hurtig dies at 84 - CBC</a>
-      <a href="#" class="author">Michelle Taylor</a>
+        <a href="#"><img src="images/lit_news2.png"></a>
+        <a href="#" class="title"> Sales of 'Harry Potter and the Cursed Child' script book hit more than 2 million within 48 hours of its release in US </a>
+        <a href="#" class="author">Jacquelin Taylor</a>
     </div>
     <div class="article">
-      <a href="#" class="title">5 Britons, 5 Americans, 2 Canadians and South African on short list for English literature's Man Booker Prize</a>
-      <a href="#" class="author">Nicholas Guerrero</a>
+        <a href="#"><img src="images/lit_news3.png"></a>
+        <a href="#" class="title"> Marvel introduces character Riri Williams, a woman who takes over as new Iron Man </a>
+        <a href="#" class="author"> Elizabeth Dixon</a>
     </div>
-    <div class="article">
-      <a href="#" class="title">BBC to produce Les Misérables as 6-part TV special - The Guardian</a>
-      <a href="#" class="author">Cynthia Simmons</a>
+    <div class="articles">
+        <div class="article">
+            <a href="#" class="title">Association of Former Agents of the United States Secret Service denounces anti-Clinton tell-all book - Politico</a>
+            <a href="#" class="author">Lori Steavens</a>
+        </div>
+        <div class="article">
+            <a href="#" class="title">Edmonton bookseller, publisher and activist Mel Hurtig dies at 84 - CBC</a>
+            <a href="#" class="author">Michelle Taylor</a>
+        </div>
+        <div class="article">
+            <a href="#" class="title">5 Britons, 5 Americans, 2 Canadians and South African on short list for English literature's Man Booker Prize</a>
+            <a href="#" class="author">Nicholas Guerrero</a>
+        </div>
+        <div class="article">
+            <a href="#" class="title">BBC to produce Les Misérables as 6-part TV special - The Guardian</a>
+            <a href="#" class="author">Cynthia Simmons</a>
+        </div>
     </div>
-  </div>
 </div>
 <a href="#" class="button">All news</a>
 <div class="slider3">
-  <div class="slider3-content">
-    <div class="author-photo">
-      <img src="images/author-photo.png">
+    <div class="slider3-content">
+        <div class="author-photo">
+            <img src="images/author-photo.png">
+        </div>
+        <div class="slider3-about">
+            <a class="block-title">Lily and the octopus</a>
+            <a href="#" class="author">Steven Rowley</a>
+            <span>5<img src="images/star.png"></span>
+            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            <a href="#" class="link-author">To writer's page
+                <img src="images/to_writer_page_button.png"></a>
+        </div>
+        <div class="slider3-cover">
+            <img src="images/slider3-cover.png">
+        </div>
+        <div class="slider3-label">
+            <img src="images/lable.png">
+            <p> coming on <span> 20.05.16</span></p>
+        </div>
     </div>
-    <div class="slider3-about">
-      <a class="block-title">Lily and the octopus</a>
-      <a href="#" class="author">Steven Rowley</a>
-      <span>5<img src="images/star.png"></span>
-      <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
-      <a href="#" class="link-author">To writer's page
-        <img src="images/to_writer_page_button.png"></a>
-    </div>
-    <div class="slider3-cover">
-      <img src="images/slider3-cover.png">
-    </div>
-    <div class="slider3-label">
-      <img src="images/lable.png">
-      <p> coming on <span> 20.05.16</span></p>
-    </div>
-  </div>
 </div>
 <div class="table3">
 
-  <img src="images/table3.png">
-  <div class="table3-container">
-    <div class="table3-desc">
-      <a class="block-title">Discount for novel</a>
-      <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </p>
+    <img src="images/table3.png">
+    <div class="table3-container">
+        <div class="table3-desc">
+            <a class="block-title">Discount for novel</a>
+            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </p>
+        </div>
+        <div class="table3-prices">
+            <a>1 book - 10% 2 books - 25% more than 3 - 40%</a>
+        </div>
+        <a href="#" class="button">All books</a>
     </div>
-    <div class="table3-prices">
-      <a>1 book - 10% 2 books - 25% more than 3 - 40%</a>
-    </div>
-    <a href="#" class="button">All books</a>
-  </div>
 
 </div>
 <div class="cascad">
-  <a class="block-title">Popular series</a>
-  <div class="tabs">
-    <div class="tab1">
-      <img class="thrd-pic" src="images/cascad1.3.png">
-      <img class="scnd-pic" src="images/cascad1.2.png">
-      <img class="frst-pic" src="images/cascad1.1.png">
-      <a href="#">Intellectual bestseller</a>
-      <span>20 <img class="book-icon" src="images/book_icon.png"></span>
+    <a class="block-title">Popular series</a>
+    <div class="tabs">
+        <div class="tab1">
+            <img class="thrd-pic" src="images/cascad1.3.png">
+            <img class="scnd-pic" src="images/cascad1.2.png">
+            <img class="frst-pic" src="images/cascad1.1.png">
+            <a href="#">Intellectual bestseller</a>
+            <span>20 <img class="book-icon" src="images/book_icon.png"></span>
+        </div>
+        <div class="tab2">
+            <img class="thrd-pic" src="images/cascad2.2.png">
+            <img class="scnd-pic" src="images/cascad2.3.png">
+            <img class="frst-pic" src="images/cascad2.1.png">
+            <a href="#">Hobbies</a>
+            <span>35 <img class="book-icon" src="images/book_icon.png"></span>
+        </div>
+        <div class="tab3">
+            <img class="thrd-pic" src="images/cascad3.3.png">
+            <img class="scnd-pic" src="images/cascad3.2.png">
+            <img class="frst-pic" src="images/cascad3.1.png">
+            <a href="#">Childrens literature</a>
+            <span>54 <img class="book-icon" src="images/book_icon.png"></span>
+        </div>
+        <div class="tab4">
+            <img class="thrd-pic" src="images/cascad4.3.png">
+            <img class="scnd-pic" src="images/cascad4.2.png">
+            <img class="frst-pic" src="images/cascad4.1.png">
+            <a href="#">National geographic</a>
+            <span>21 <img class="book-icon" src="images/book_icon.png"></span>
+        </div>
     </div>
-    <div class="tab2">
-      <img class="thrd-pic" src="images/cascad2.2.png">
-      <img class="scnd-pic" src="images/cascad2.3.png">
-      <img class="frst-pic" src="images/cascad2.1.png">
-      <a href="#">Hobbies</a>
-      <span>35 <img class="book-icon" src="images/book_icon.png"></span>
-    </div>
-    <div class="tab3">
-      <img class="thrd-pic" src="images/cascad3.3.png">
-      <img class="scnd-pic" src="images/cascad3.2.png">
-      <img class="frst-pic" src="images/cascad3.1.png">
-      <a href="#">Childrens literature</a>
-      <span>54 <img class="book-icon" src="images/book_icon.png"></span>
-    </div>
-    <div class="tab4">
-      <img class="thrd-pic" src="images/cascad4.3.png">
-      <img class="scnd-pic" src="images/cascad4.2.png">
-      <img class="frst-pic" src="images/cascad4.1.png">
-      <a href="#">National geographic</a>
-      <span>21 <img class="book-icon" src="images/book_icon.png"></span>
-    </div>
-  </div>
 </div>
 <div class="publishers">
-  <div class="p-info">
-    <a class="block-title">Publishers</a>
-    <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </p>
-    <a href="#" class="button">Full list</a>
-  </div>
-  <div class="p-icons">
-    <a href="#"><img src="images/company1.png"></a>
-    <a href="#"><img src="images/sanctum-books.png"></a>
-    <a href="#"><img src="images/macmillan.png"></a>
-    <a href="#"><img src="images/logo-penguin.png"></a>
-    <a href="#"><img src="images/url.png"></a>
-    <a href="#"><img src="images/vintage_logo_0.png"></a>
-    <a href="#"><img src="images/farrar.png"></a>
-    <a href="#"><img src="images/AMP_logo.png"></a>
-    <a href="#"><img src="images/quirk.png"></a>
-    <a href="#"><img src="images/saraband-logo.png"></a>
-    <a href="#"><img src="images/logo_us.png"></a>
-    <a href="#"><img src="images/bloomsbury.png"></a>
-  </div>
+    <div class="p-info">
+        <a class="block-title">Publishers</a>
+        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </p>
+        <a href="#" class="button">Full list</a>
+    </div>
+    <div class="p-icons">
+        <a href="#"><img src="images/company1.png"></a>
+        <a href="#"><img src="images/sanctum-books.png"></a>
+        <a href="#"><img src="images/macmillan.png"></a>
+        <a href="#"><img src="images/logo-penguin.png"></a>
+        <a href="#"><img src="images/url.png"></a>
+        <a href="#"><img src="images/vintage_logo_0.png"></a>
+        <a href="#"><img src="images/farrar.png"></a>
+        <a href="#"><img src="images/AMP_logo.png"></a>
+        <a href="#"><img src="images/quirk.png"></a>
+        <a href="#"><img src="images/saraband-logo.png"></a>
+        <a href="#"><img src="images/logo_us.png"></a>
+        <a href="#"><img src="images/bloomsbury.png"></a>
+    </div>
 </div>
 
 
@@ -498,90 +469,90 @@
 
 
 <div id="overlay">
-  <div class="login-container" id="login-container">
-    <div class="substrate"></div>
-    <a class="close" id="close"><img src="images/close.svg"></a>
-    <div class="login-content">
-      <a class="block-title">Login</a>
-      <form action="#">
-        <input type="email" placeholder="E-mail">
-        <input type="password" placeholder="Password">
-        <input type="checkbox" name="remember" value="remember" id="remember">
-        <label for="remember">Remember me</label>
-        <span> <a href="#"> Forgot password </a></span>
-      </form>
-      <a href="#" class="button">Sign in</a>
-      <form action="#" class="submit">
-        <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-          <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path></svg> </button>
-      </form>
-      <a class="sign">Sign in with social:</a>
-      <div class="login-icons">
-        <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
-        <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
-        <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
-      </div>
+    <div class="login-container" id="login-container">
+        <div class="substrate"></div>
+        <a class="close" id="close"><img src="images/close.svg"></a>
+        <div class="login-content">
+            <a class="block-title">Login</a>
+            <form action="#">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <input type="checkbox" name="remember" value="remember" id="remember">
+                <label for="remember">Remember me</label>
+                <span> <a href="#"> Forgot password </a></span>
+            </form>
+            <a href="#" class="button">Sign in</a>
+            <form action="#" class="submit">
+                <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+                    <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path></svg> </button>
+            </form>
+            <a class="sign">Sign in with social:</a>
+            <div class="login-icons">
+                <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
+                <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
+                <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <footer>
-  <div class="footer-content">
-    <ul class="footer-menu">
-      <li> <a href="#">sitemap</a></li>
-      <li> <a href="#">help</a></li>
-      <li> <a href="#">delivery</a></li>
-      <li> <a href="#">pivacy policy</a></li>
-      <li> <a href="#">accessibillity</a></li>
-    </ul>
-    <div class="about">
-      <a>About</a>
-      <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
-      <ul class="footer-links">
-        <li><a href="#">Ade books</a>
-          <p>Rare Books &amp; Textbooks</p>
-        </li>
-        <li><a href="#">DpReview</a>
-          <p>Digital Photography</p>
-        </li>
-        <li><a href="#">Audible</a>
-          <p>Download Audio Books</p>
-        </li>
-        <li><a href="#">Junglee</a>
-          <p>Shop Online in India</p>
-        </li>
-        <li><a href="#">Look</a>
-          <p>Kid's clothing &amp; Shoes</p>
-        </li>
-        <li><a href="#">MYHABIT</a>
-          <p>Private Fashion Designer Sales</p>
-        </li>
-      </ul>
-    </div>
-    <div class="social">
-      <div class="subscribe">
-        <span>Stay in touch</span>
-        <form action="#">
-          <input type="email" placeholder="Your E-mail">
-          <button type="submit"> Subscribe </button>
-        </form>
-      </div>
-      <div class="follow">
-        <span>Follow us</span>
-        <ul class="social-icons">
-          <li><a href="#"><img src="images/facebook_icon.png"></a></li>
-          <li><a href="#"><img src="images/twitter_icon.png"></a></li>
-          <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
-          <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li> <a href="#">sitemap</a></li>
+            <li> <a href="#">help</a></li>
+            <li> <a href="#">delivery</a></li>
+            <li> <a href="#">pivacy policy</a></li>
+            <li> <a href="#">accessibillity</a></li>
         </ul>
-      </div>
+        <div class="about">
+            <a>About</a>
+            <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
+            <ul class="footer-links">
+                <li><a href="#">Ade books</a>
+                    <p>Rare Books &amp; Textbooks</p>
+                </li>
+                <li><a href="#">DpReview</a>
+                    <p>Digital Photography</p>
+                </li>
+                <li><a href="#">Audible</a>
+                    <p>Download Audio Books</p>
+                </li>
+                <li><a href="#">Junglee</a>
+                    <p>Shop Online in India</p>
+                </li>
+                <li><a href="#">Look</a>
+                    <p>Kid's clothing &amp; Shoes</p>
+                </li>
+                <li><a href="#">MYHABIT</a>
+                    <p>Private Fashion Designer Sales</p>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="subscribe">
+                <span>Stay in touch</span>
+                <form action="#">
+                    <input type="email" placeholder="Your E-mail">
+                    <button type="submit"> Subscribe </button>
+                </form>
+            </div>
+            <div class="follow">
+                <span>Follow us</span>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="images/facebook_icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter_icon.png"></a></li>
+                    <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="copyright">© 2016 Bookworm. All rights reserved</span>
     </div>
-    <span class="copyright">© 2016 Bookworm. All rights reserved</span>
-  </div>
 </footer>
 
-  <script src="build/js/libs.js"></script>
-  <script src="build/js/app.js"></script>
+<script src="build/js/libs.js"></script>
+<script src="build/js/app.js"></script>
 
 </body>
 </html>

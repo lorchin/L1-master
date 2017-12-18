@@ -25,13 +25,14 @@ gulp.task('scripts', function(){
 		'./js/classie.js',
 		'./js/selectFx.js',
 		'./js/calc.js',
-		'./js/main.js'
+		'./js/main.js',
+		'./js/slider.js'
 	])
 		.pipe(sourcemaps.init())
 		.pipe(concat('app.js'))
 		.pipe(gulp.dest('./build/js'))
 		.pipe(minify())
-        .pipe(gulp.dest('./build/js'))
+        .pipe(gulp.dest('./build/js'));
 
 	gulp.src(['node_modules/jquery/dist/jquery.js',
 		'node_modules/slick-carousel/slick/slick.js'
