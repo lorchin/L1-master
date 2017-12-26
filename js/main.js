@@ -101,3 +101,11 @@ marker.addListener('click', function () {
 // }
 
 
+$(".pagination a").click(function() {
+    $(".pagination a").removeClass("active");
+    $(this).addClass("active");
+});
+
+$(".blend").click(function() {
+    $(".overlay").fadeToggle();
+});

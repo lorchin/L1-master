@@ -701,10 +701,24 @@ marker.addListener('click', function () {
 // }
 
 
+$(".pagination a").click(function() {
+    $(".pagination a").removeClass("active");
+    $(this).addClass("active");
+});
 
+$(".blend").click(function() {
+    $(".overlay").fadeToggle();
+});
+var pos = 0;
+//number of slides
+var totalSlides = $('slider1').length;
 $(document).ready(function(){
     $('.slider1').slick({
-        prevArrow: "<span class=\"slick-prev\"></span>",
+        prevArrow: "<span class='slick-prev'></span>",
         nextArrow: "<span class='slick-next'></span>"
-    })
+    });
+    countSlides();
 });
+function countSlides(){
+    $('#counter').html(pos+1 + ' / ' + totalSlides);
+}

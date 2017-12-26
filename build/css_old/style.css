@@ -2237,201 +2237,6 @@ span.date:before {
     padding-left: 15px;
   }
 }
-.bookshelf {
-  padding-top: 227px;
-  padding-bottom: 54px;
-  line-height: 32px;
-}
-.bookshelf-container {
-  width: 1067px;
-  margin: 0 auto;
-}
-.bookshelf-left-menu {
-  width: 265px;
-  display: inline-block;
-  float: left;
-}
-.bookshelf-left-menu .left-menu {
-  display: inline-block;
-  padding-left: 28px;
-  width: 178px;
-  font-family: 'Lato', serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.06;
-  letter-spacing: normal;
-  text-align: left;
-  color: #555963;
-}
-.bookshelf-left-menu .section-title {
-  font-family: 'Ramaraja', serif;
-  font-size: 28px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.07;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #45474b;
-}
-.bookshelf-left-menu .avatar {
-  float: left;
-}
-.bookshelf-left-menu .author-category {
-  display: block;
-}
-.bookshelf-left-menu .categories a {
-  display: block;
-}
-.bookshelf-left-menu .categories a:hover {
-  background-color: #ffbb58;
-}
-.main-content {
-  display: inline-block;
-  width: 65%;
-  padding-left: 98px;
-  position: relative;
-}
-.main-content .filters {
-  width: 540px;
-  margin-top: 20px;
-}
-.main-content form {
-  display: inline-block;
-  border: none;
-  border-bottom: solid 1px #555963;
-  width: 328px;
-  margin-bottom: 38px;
-}
-.main-content input {
-  width: 307px;
-  background-color: #ffffff;
-  border: none;
-  font-family: 'Lato', serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #bfbfbf;
-  display: inline-block;
-  padding-bottom: 15px;
-}
-.main-content .dropdown {
-  display: inline-block;
-  width: 145px;
-  border-bottom: solid 1px #45474b;
-  padding-bottom: 15px;
-  background-image: url('../../images/dropdown.png');
-  background-repeat: no-repeat;
-  background-position: 99% 30%;
-}
-.main-content .dropdown a {
-  font-family: 'Lato', serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #45474b;
-  display: block;
-}
-.main-content .info-section {
-  font-family: 'Ramaraja', serif;
-  font-size: 28px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.07;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #45474b;
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 123px;
-  z-index: 1;
-}
-.main-content .background {
-  width: 98px;
-  height: 147px;
-  background-color: #f5fdff;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 17px;
-}
-.main-content .filter1 {
-  margin-left: 33px;
-}
-.main-content .filter2 {
-  margin-right: 33px;
-}
-.main-content .filter3 {
-  margin-right: 33px;
-}
-.catalog-bookshelf {
-  padding-left: 0;
-  margin-top: 70px;
-}
-.catalog-bookshelf li {
-  display: inline-block;
-}
-.catalog-bookshelf .title,
-.catalog-bookshelf .author {
-  width: 140px;
-}
-.catalog-bookshelf li {
-  padding: 0 16px;
-  display: inline-block;
-  margin: 0;
-  vertical-align: top;
-}
-.catalog-bookshelf ul:before {
-  vertical-align: top;
-}
-.catalog-bookshelf li:nth-child(4n) {
-  padding-right: 0;
-}
-.catalog-bookshelf li:nth-child(4n+1) {
-  padding-left: 0;
-}
-.pagination {
-  display: inline-block;
-}
-li {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: 'Lato', serif;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.94;
-  letter-spacing: normal;
-  text-align: left;
-  color: #555963;
-  padding: 0 15px;
-}
-li:hover {
-  background-color: #ffbb58;
-}
-.navigation a {
-  font-family: 'Lato', serif;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.06;
-  letter-spacing: normal;
-  text-align: left;
-  color: #555963;
-  display: inline-block;
-}
 .slider1 {
   padding: 0;
   margin: 0;
@@ -2546,7 +2351,7 @@ li:hover {
   position: absolute;
   top: 510px;
   width: 32px;
-  height: 30px;
+  height: 26px;
   line-height: 50px;
   margin: 0;
   text-align: center;
@@ -2564,17 +2369,6 @@ li:hover {
   right: 152px;
   left: auto;
   background: url('../../images/arrow_right.png') no-repeat;
-}
-#counter {
-  font-size: 25px;
-  font-family: 'Yrsa', serif;
-  color: #555963;
-  font-weight: bold;
-  line-height: 1.28;
-  position: absolute;
-  left: 138px;
-  top: 641px;
-  z-index: 100;
 }
 .table1 {
   height: 465px;
@@ -2675,42 +2469,25 @@ li:hover {
   padding-bottom: 15px;
   border-bottom: solid #45474b 1px;
 }
-.book-hover {
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
 .book-overlay {
   position: absolute;
   display: block;
+  visibility: hidden;
   opacity: 0;
   width: 100%;
-  height: 99%;
+  height: 100%;
+  background: #ffbb58;
 }
 .book-overlay:hover {
-  opacity: 0.94;
-  background-color: #ffbb58;
+  visibility: visible;
+  opacity: 1.0;
 }
-.book-overlay span {
+.book-hover {
   display: block;
-  margin: 0;
-  background: none;
-  border: none;
-  font-family: 'Yrsa', serif;
-  color: #555963;
-  font-size: 23px;
-  opacity: 1;
-  padding-left: 16px;
+  position: relative;
 }
-.book-overlay a {
-  display: inline-block;
-  padding: 28px 42px 4px;
-}
-.book-overlay a:nth-child(2) {
-  padding: 0 12px 36px 21px;
-}
-.book-overlay a:nth-child(3) {
-  padding: 0;
+.book-hover:hover.book-item {
+  opacity: 0.5;
 }
 .catalog-images li {
   padding: 0 20px;

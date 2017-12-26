@@ -7,6 +7,7 @@
 @import 'billing-cart.less';
 @import 'popup.less';
 @import 'article.less';
+@import 'bookshelf.less';
 
 .slider1 {
 	padding: 0;
@@ -31,7 +32,6 @@
 }
 .slide-book {
 	display: inline-block;
-	//width: 29%;
 	margin-left: 14.3%;
 
 	&:after {
@@ -42,7 +42,6 @@
 }
 .slide-book_back {
 	position: relative;
-	//width: 45%;
 	float: left;
 }
 .slide-book_cover {
@@ -126,8 +125,8 @@
 .slick-arrow {
 	position: absolute;
 	top: 510px;
-	width: 50px;
-	height: 50px;
+	width: 32px;
+	height: 30px;
 	line-height: 50px;
 	margin: 0;
 	text-align: center;
@@ -145,6 +144,17 @@
 	right: 152px;
 	left: auto;
 	background: url('../../images/arrow_right.png') no-repeat;
+}
+#counter {
+	font-size: 25px;
+	font-family: @text-font;
+	color: rgb(85, 89, 99);
+	font-weight: bold;
+	line-height: 1.28;
+	position: absolute;
+	left: 138px;
+	top: 641px;
+	z-index: 100;
 }
 .table1 {
 	height: 465px;
@@ -246,12 +256,51 @@
 		border-bottom: solid @main-color 1px;
 	}
 }
+.book-hover {
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.book-overlay {
+	position: absolute;
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 99%;
+
+	&:hover {
+		opacity: 0.94;
+		background-color: rgb(255, 187, 88);
+	}
+	span {
+		display: block;
+		margin: 0;
+		background: none;
+		border: none;
+		font-family: @text-font;
+		color: #555963;
+		font-size: 23px;
+		opacity: 1;
+		padding-left: 16px;
+	}
+	a {
+		display: inline-block;
+		padding: 28px 42px 4px;
+	}
+	a:nth-child(2){
+		padding: 0 12px 36px 21px;
+	}
+	a:nth-child(3){
+		padding: 0;
+	}
+}
 .catalog-images li {
 	padding: 0 20px;
 	display: inline-block;
 	margin: 0;
 	vertical-align: top;
 }
+
 .catalog-menu li:nth-child(1) {
 	padding-left: 0;
 }
@@ -735,8 +784,8 @@
 		padding-bottom: 100px;
 	}
 	.slide-book {
-		width: 45%;
-		margin: 0;
+		width: 35%;
+		margin: 0 0 0 85px;
 	}
 	.slide-book_back, .slide-book_cover, .description, .description p {
 		width: 100%;
@@ -752,11 +801,17 @@
 		display: none;
 	}
 	.desc {
-		width: 45%;
+		width: 35%;
 		padding-top: 57px;
 	}
 	.slide-title {
 		font-size: 45px;
+	}
+	.slick-prev {
+		left: 29px;
+	}
+	.slick-next {
+		right: 44px;
 	}
 	.table1 {
 		width: 100%;
@@ -813,23 +868,31 @@
 	}
 	.catalog {
 		width: 100%;
-	}
-	.catalog .block-title {
-		text-align: center;
-		font-size: 42px;
-		color: #45474b;
-		font-family: 'Ramaraja', serif;
-		display: block;
-		margin: 65px auto;
+
+		.block-title {
+			text-align: center;
+			font-size: 42px;
+			color: #45474b;
+			font-family: @title-font;
+			display: block;
+			margin: 65px auto;
+		}
 	}
 	.catalog span {
-		display: none;
+		margin-left: 192px;
 	}
 	.catalog-menu {
 		margin-left: 55px;
 	}
 	.catalog-images li {
 		padding: 0 22px;
+	}
+	.book-item {
+		&:hover {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 187, 88, 0.94);
+		}
 	}
 	.catalog-images li:nth-child(6n) {
 		padding-right: 10px;
@@ -907,7 +970,7 @@
 		width: 100%;
 	}
 	.table3 {
-		width: 100%;
+		width: 98%;
 	}
 	.table3-container {
 		top: 182px;

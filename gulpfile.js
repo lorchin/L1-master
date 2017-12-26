@@ -10,7 +10,7 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('styles', function(){
 	gulp.src('./less/style.less')
-	.pipe(sourcemaps.init())
+	// .pipe(sourcemaps.init())
 	.pipe(less())
 	.pipe(autoprefixer())
 	.pipe(gulp.dest('./build/css'))
@@ -21,7 +21,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-	gulp.src ([
+	gulp.src([
 		'./js/classie.js',
 		'./js/selectFx.js',
 		'./js/calc.js',
@@ -50,7 +50,7 @@ gulp.task('watch', ['styles', 'scripts'], function() {
 	});
 		gulp.watch('less/**/*.less', ['styles']);
 		gulp.watch('js/**/*.js', ['scripts']).on('change',browserSync.reload);
-		gulp.watch('(./*.html').on('change',browserSync.reload);
+		gulp.watch('./*.html').on('change',browserSync.reload);
 
 });
 
