@@ -157,26 +157,28 @@
     </form>
     <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
   </div>
-  <div class="checkout">
+  <div class="checkout billing">
     <div class="checkbox">
       <input type="checkbox" name="terms" value="terms" id="terms">
       <label for="terms"> I accept the </label> <a href="#">Terms &amp; conditions</a>
     </div>
-    <div class="shipping-check">
-      <span class="entitle">Shipping</span>
-      <span class="price">$4.95</span>
-      <button type="submit" form="billing">Proceed to payment</button>
-    </div>
-    <div class="check">
-      <div class="subtotal">
-        <span class="entitle">Subtotal</span>
-        <span class="price">$25</span>
+    <section class="checkout-sum">
+      <div class="shipping-check">
+        <span class="entitle">Shipping</span>
+        <span class="price">$4.95</span>
       </div>
-      <div class="total">
-        <span class="entitle">Total</span>
-        <span class="price">$28.50</span>
+      <div class="check">
+        <div class="subtotal">
+          <span class="entitle">Subtotal</span>
+          <span class="price">$25</span>
+        </div>
+        <div class="total">
+          <span class="entitle">Total</span>
+          <span class="price">$28.50</span>
+        </div>
       </div>
-    </div>
+    </section>
+    <button type="submit" form="billing">Proceed to payment</button>
   </div>
 </div>
 
@@ -264,6 +266,7 @@
   </div>
 </footer>
 
+<script src="build/js/libs.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/selectFx.js"></script>
 <script>
@@ -275,8 +278,7 @@
         } );
     })();
 </script>
-
-<script src="js/main.js"></script>
+<script src="build/js/app.js"></script>
 
 </body>
 </html>

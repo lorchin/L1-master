@@ -5,12 +5,12 @@
 .billing-info, .billing-address {
 	width: 48%;
 	margin: 0 auto;
-	display: inline-block;	
+	display: inline-block;
 }
 .billing-form {
 	width: 1140px;
-    padding-top: 250px;
-    margin: 0 auto;
+	padding-top: 250px;
+	margin: 0 auto;
 }
 .billing-form span {
 	font-family: @title-font;
@@ -20,18 +20,18 @@
 	padding-bottom: 67px;
 }
 .billing-form .block-title {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    font-size: 42px;
-    color: #555963;
-    font-family: @title-font;
-    width: fit-content;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	font-size: 42px;
+	color: #555963;
+	font-family: @title-font;
+	width: fit-content;
 }
 
 .gender label {
 	padding-left: 9px;
-    padding-right: 30px;
-    position: relative;
+	padding-right: 30px;
+	position: relative;
 }
 .gender input[type="radio"] {
 	display: none;
@@ -48,7 +48,7 @@
 		left: -20px;
 		top: 50%;
 		transform: translateY(-50%);
-}
+	}
 }
 .gender input[type="radio"]:checked + label {
 	&:after {
@@ -62,7 +62,7 @@
 		left: -19px;
 		top: 50%;
 		transform: translateY(-50%);
-}
+	}
 }
 .gender span {
 	font-family: @title-font;
@@ -87,18 +87,19 @@
 }
 .require {
 	position: relative;
-	
+
 	&:after {
-	    content: '*';
-	    color: #ffbb58;
-	    position: absolute;
-	    top: 26px;
-	    left: -11px;
-}
+		content: '*';
+		color: #ffbb58;
+		position: absolute;
+		top: 26px;
+		left: -11px;
+	}
 }
 
 .field-group input	{
 	font-family: 'Lato', serif;
+	color: #959ba1;
 	font-size: 16px;
 	border: none;
 	display: inline-block;
@@ -117,15 +118,15 @@
 	width: 97%;
 
 	&:after {
-	    content: '*';
-	    color: #ffbb58;
-	    position: absolute;
-	    top: -10px;
-	    left: 0;
-}
+		content: '*';
+		color: #ffbb58;
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
 }
 .halfwidth {
-	margin-left: 40px; 
+	margin-left: 40px;
 }
 .billing-address textarea {
 	font-family: @item-font;
@@ -139,14 +140,16 @@
 }
 .countries .cs-placeholder {
 	font-family: @item-font;
-    font-size: 16px;
-    color: #959ba1;
-    border: none;
-    margin-right: 0;
-    padding: 15px 0;
-    background-image: url(../../images/dropdown.png) 228px 23px no-repeat;
+	font-size: 16px;
+	color: #959ba1;
+	border: none;
+	margin-right: 0;
+	padding: 15px 0;
+	background-image: url(../../images/dropdown.png);
+	background-position: 228px 23px;
+	background-repeat: no-repeat;
 
-}    
+}
 .pay-icon {
 	padding-left: 20px;
 }
@@ -159,7 +162,7 @@
 	padding-right: 100px;
 }
 .checkout form {
-	border: none; 
+	border: none;
 }
 .checkout a {
 	text-decoration: underline;
@@ -171,7 +174,7 @@
 	font-family: @item-font;
 	font-size: 16px;
 	position: relative;
-    padding: 40px 6px 20px 35px
+	padding: 40px 6px 20px 35px
 }
 .checkbox {
 	display: block;
@@ -291,18 +294,18 @@
 	padding-top: 47px;
 }
 .shipping-check span {
-    vertical-align: top;
+	vertical-align: top;
 }
 .shipping-check button {
 	background-color: white;
-    max-width: 190px;
-    padding: 13px 19px;;
-    text-align: center;
-    border: 2px solid @main-color;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    margin-left: 109px;
-    border-radius: 0;
+	max-width: 190px;
+	padding: 13px 19px;;
+	text-align: center;
+	border: 2px solid @main-color;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	margin-left: 109px;
+	border-radius: 0;
 }
 .shipping-check .entitle {
 	font-family: @title-font;
@@ -357,164 +360,218 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+.billing button {
+	padding: 16px 21px 13px;
+	margin-top: 50px;
+}
+@media all and (max-width: 1024px) {
+	.billing-form {
+		width: 96%;
+	}
+	.payment .method {
+		width: 33%;
+	}
+
+}
+@media all and (max-width: 812px) {
+	.field-group {
+		width: 100%;
+		margin-left: 0;
+	}
+	.billing-address textarea {
+		margin-left: 0;
+		width: 100%;
+	}
+	.address {
+		width: 100%;
+	}
+	.countries .cs-placeholder {
+		padding-top: 40px;
+		background-repeat: no-repeat;
+		background-position: 361px 74%;
+	}
+	.coupon {
+		width: 60%;
+		margin: 0 auto 35px;
+		display: block;
+	}
+
+	.billing {
+		margin: 0 auto;
+		width: 60%;
+		display: block;
+	}
+
+}
 @media all and (max-width: 769px) {
-.billing-form {
-	width: 92%;
-}
-.billing-info, .billing-address {
-    width: 100%;
-}
-.field-group {
-	width: 95%;
-}
-.billing-address {
-	margin-left: 0; 
-	padding-top: 40px;
-}
-.dropdown {
-	width: 95%;
-	margin-right: 0;
-}
-.halfwidth {
-	margin-left: 10px;
-}
-.coupon, .checkout {
-	width: 81%;
-}
-.payment {
-    margin: 0 auto;
-    width: 90%;
-}
-.shipping-check button {
-	margin-left: 250px;
-}
-.method {
-	vertical-align: top;
-}
-.payment .method {
-	width: 48%;
-}
+	.billing-form {
+		width: 92%;
+	}
+	.billing-info, .billing-address {
+		width: 100%;
+	}
+	.field-group {
+		width: 95%;
+	}
+	.billing-address {
+		margin-left: 0;
+		padding-top: 40px;
+	}
+	.dropdown {
+		width: 95%;
+		margin-right: 0;
+	}
+	.halfwidth {
+		margin-left: 10px;
+	}
+	.coupon, .checkout {
+		width: 81%;
+	}
+	.payment {
+		margin: 0 auto;
+		width: 90%;
+	}
+	.shipping-check button {
+		margin-left: 250px;
+	}
+	.method {
+		vertical-align: top;
+	}
+	.payment .method {
+		width: 48%;
+	}
 }
 @media all and (max-width: 425px) {
-.gender {
-    width: 100%;
-}
-.address {
-	margin-bottom: 20px;
-}
-.countries .cs-placeholder {
-	background-position: 358px 46px;
-	padding: 40px 0 18px 0;
-}
-.submition {
-    width: 100%;
-}
-.shipping {
-    width: 100%;
-    padding-left: 6px;
-}
-.shipping-check button {
-	margin-left: 66px;
-}
-.shipping label {
-	padding-bottom: 20px;
-}
-.shipping input[type="radio"] + label:before {
-	top: 25%;
-}
-.shipping input[type="radio"]:checked + label:after {
-	top: 25%;
-}
-.shipping .create {
-	padding-bottom: 0;
-	float: unset;
-}
-.shipping input[type="checkbox"] + label:before {
-	left: -6px;
-}
-.shipping input[type="checkbox"]:checked + label:after {
-	left: -4px;
-}
-.payment .method {
-    width: 100%;
-}
-.payment {
-    margin: 51px auto 0;
-    width: 100%;
-}
-.shipping {
-    width: 100%;
-}
-.coupon, .checkout {
-	width: 100%;
-}
+	.gender {
+		width: 100%;
+	}
+	.address {
+		margin-bottom: 20px;
+		width: 94%;
+	}
+	.halfwidth {
+		margin-left: 0;
+	}
+	.countries .cs-placeholder {
+		background-position: 358px 46px;
+		padding: 40px 0 18px 0;
+	}
+	.submition {
+		width: 90%;
+	}
+	.shipping {
+		width: 100%;
+		padding-left: 6px;
+	}
+	.shipping-check button {
+		margin-left: 66px;
+	}
+	.shipping label {
+		padding-bottom: 20px;
+	}
+	.shipping input[type="radio"] + label:before {
+		top: 25%;
+	}
+	.shipping input[type="radio"]:checked + label:after {
+		top: 25%;
+	}
+	.shipping .create {
+		padding-bottom: 0;
+		float: unset;
+	}
+	.shipping input[type="checkbox"] + label:before {
+		left: -6px;
+	}
+	.shipping input[type="checkbox"]:checked + label:after {
+		left: -4px;
+	}
+	.payment .method {
+		width: 100%;
+	}
+	.payment {
+		margin: 51px auto 0;
+		width: 100%;
+	}
+	.shipping {
+		width: 100%;
+	}
+	.coupon, .checkout {
+		width: 100%;
+	}
 }
 @media all and (max-width: 375px) {
-.coupon input {
-	width: 65%;
+	.coupon input {
+		width: 65%;
+	}
+	.shipping-check button {
+		margin-left: 20px;
+	}
+	.billing button {
+		float: none;
+	}
 }
-.shipping-check button {
-	margin-left: 20px;
-}
+@media (max-width: 360px) {
+	.coupon input {
+		width: 64%;
+	}
 }
 @media all and (max-width: 320px) {
-.billing-form {
-    width: 90%;
-    padding: 10px;
-}
-.billing-address input[list=countries], input[type=text], input[type=email], input[type=tel] {
-	width: 100%;
-	margin-right: 0;
-}
-.field-group {
-	width: 95%;
-}
-.countries .cs-placeholder {
-    background-position: 260px 46px;
-}
-.billing-address {
-    margin-left: 0;
-    width: 100%;
-    padding-top: 40px;
-}
-.billing-info {
-    margin-left: 0;
-    width: 100%;
-}
-.shipping {
-    width: 95%;
-}
-.shipping label {
-	padding-bottom: 20px;
-}
-.shipping input[type="radio"] + label:before {
-	top: 25%;
-}
-.shipping input[type="radio"]:checked + label:after {
-	top: 25%;
-}
-.shipping .create {
-	padding-bottom: 0;
-	float: unset;
-}
-.shipping input[type="checkbox"] + label:before {
-	left: -6px;
-}
-.shipping input[type="checkbox"]:checked + label:after {
-	left: -4px;
-}
-.payment .method {
-    width: 100%;
-}
-.coupon, .checkout {
-	width: 100%;
-	margin: 0;
-}
-.coupon input[type=text] {
-    width: 60%;
-}
-.shipping-check button {
-	width: 100%;
-	margin-left: 0;
-}
+	.billing-form {
+		width: 90%;
+	}
+	.billing-address input[list=countries], input[type=text], input[type=email], input[type=tel] {
+		width: 100%;
+		margin-right: 0;
+	}
+	.field-group {
+		width: 95%;
+	}
+	.countries .cs-placeholder {
+		background-position: 260px 46px;
+	}
+	.billing-address {
+		margin-left: 0;
+		width: 100%;
+		padding-top: 40px;
+	}
+	.billing-info {
+		margin-left: 0;
+		width: 100%;
+	}
+	.shipping {
+		width: 95%;
+	}
+	.shipping label {
+		padding-bottom: 20px;
+	}
+	.shipping input[type="radio"] + label:before {
+		top: 25%;
+	}
+	.shipping input[type="radio"]:checked + label:after {
+		top: 25%;
+	}
+	.shipping .create {
+		padding-bottom: 0;
+		float: unset;
+	}
+	.shipping input[type="checkbox"] + label:before {
+		left: -6px;
+	}
+	.shipping input[type="checkbox"]:checked + label:after {
+		left: -4px;
+	}
+	.payment .method {
+		width: 100%;
+	}
+	.coupon, .checkout {
+		width: 100%;
+		margin: 0;
+	}
+	.coupon input[type=text] {
+		width: 60%;
+	}
+	.shipping-check button {
+		width: 100%;
+		margin-left: 0;
+	}
 }

@@ -8,6 +8,7 @@
 @import 'popup.less';
 @import 'article.less';
 @import 'bookshelf.less';
+@import 'contact.less';
 
 .slider1 {
 	padding: 0;
@@ -621,43 +622,46 @@
 	position: relative;
 }
 .table3-container {
+	width: 49%;
 	position: absolute;
-	top: 213px;
-	right: 380px;
-}
-.table3-container .block-title {
-	padding-bottom: 58px;
-}
-.table3-desc {
-	text-align: center;
-	width: 370px;
-}
+	top: 196px;
+	right: 291px;
 
-.table3-desc p {
-	margin: 0 auto;
-	width: 333px;
-	font-family: @text-font;
-	font-size: 21px;
-	padding-bottom: 77px;
-}
-.table3-prices {
-	text-align: center;
-	width: 370px;
-	padding-bottom: 106px;
-
-	&:after, &:before {
-		content: '';
-		width: 100%;
-		height: 1px;
-		background: rgb(85, 89, 99);
-		display: inline-block;
-		margin: 5px;
+	.block-title {
+		padding-bottom: 33px;
 	}
-}
-.table3-prices a {
-	font-family: 'Amiri', serif;
-	font-size: 16px;
-	color: #dd9327;
+	.table3-desc {
+		text-align: center;
+		width: 100%;
+	}
+
+	.table3-desc p {
+		margin: 0 auto;
+		width: 311px;
+		font-family: @text-font;
+		font-size: 21px;
+		padding-bottom: 54px;
+	}
+	.table3-prices {
+		text-align: center;
+		width: 370px;
+		margin: 0 auto;
+		padding-bottom: 46px;
+
+		&:after, &:before {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background: rgb(85, 89, 99);
+			display: inline-block;
+			margin: 5px;
+		}
+	}
+	.table3-prices a {
+		font-family: 'Amiri', serif;
+		font-size: 16px;
+		color: #dd9327;
+	}
 }
 .cascad {
 	width: 1180px;
@@ -715,6 +719,10 @@
 .publishers {
 	width: 1210px;
 	margin: 118px auto;
+
+	.p-title {
+		text-align: left;
+	}
 }
 .p-info {
 	display: inline-block;
@@ -1244,6 +1252,65 @@
 		display: none;
 	}
 }
+@media all and (max-width: 732px) {
+
+	.table-news .article {
+		padding: 0 9px;
+	}
+	.table3-container {
+		right: 176px;
+
+		.block-title {
+			padding-bottom: 20px;
+		}
+		.table3-desc p {
+			padding-bottom: 32px;
+		}
+
+		.table3-prices {
+			width: 100%;
+			padding-bottom: 21px;
+		}
+	}
+}
+@media (max-width: 640px) {
+	.col1 a img {
+		right: 25px;
+	}
+	.col1 .author {
+		top: 305px
+	}
+	.col1 span {
+		top: 300px;
+	}
+	.col2 a img {
+		right: 16px;
+	}
+	.catalog-menu li {
+		padding: 0 8px;
+	}
+	.catalog-images li {
+		padding: 0 16px;
+	}
+	.table-news .article {
+		padding: 0 8px;
+	}
+	.table3-container {
+		top: 70px;
+		right: 163px;
+		width: 49%;
+
+		.block-title {
+			padding-bottom: 21px;
+		}
+	}
+	.table3-desc, .table3-desc p, .table3-prices {
+		width: 100%;
+	}
+	.table3-desc p {
+		padding-bottom: 38px;
+	}
+}
 @media all and (max-width: 425px) {
 
 	.slider1 {
@@ -1345,6 +1412,22 @@
 	}
 	.cascad {
 		margin-bottom: 0;
+	}
+}
+@media (max-width: 414px){
+
+	.col1 .title {
+		width: 152px;
+		margin-bottom: 9px;
+	}
+	.col1 .author {
+		top: 97px;
+	}
+	.col1 span {
+		top: 92px;
+	}
+	.col2 .title {
+		width: 152px;
 	}
 }
 @media all and (max-width: 375px) {

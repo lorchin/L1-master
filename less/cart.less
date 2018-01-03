@@ -179,6 +179,22 @@ table .item-desc .title {
     margin-left: 199px;
 	vertical-align: top;
 	width: 38%;
+
+	.checkout-sum {
+		display: inline-block;
+	}
+	button {
+		display: block;
+		background-color: white;
+		//margin: 30px auto;
+		max-width: 190px;
+		padding: 17px 60px;
+		text-align: center;
+		border: 2px solid @main-color;
+		font-family: @item-font;
+		font-size: 16px;
+		float: right;
+	}
 }
 .submit {
 	display: inline-block;
@@ -206,25 +222,33 @@ table .item-desc .title {
     font-family: @item-font;
     font-size: 16px;
 }
-.cart-subtotal button {
-	background-color: white;
-    margin: 0 auto;
-    max-width: 190px;
-    padding: 11px 57px;
-    text-align: center;
-    border: 2px solid @main-color;
-    border-radius: 0;
-    font-family: @item-font;
-    font-size: 16px;
-    margin-left: 121px;
-    vertical-align: text-top;
-}
 .cart-subtotal {
 	padding: 0;
-	display: inline-block;
-}
-.cart-subtotal .entitle {
-	padding-right: 7px;
+	display: block;
+
+	.entitle {
+		padding-right: 7px;
+	}
+	.price {
+		font-family: @text-font;
+		font-size: 25px;
+		display: inline-block;
+		color: #555963;
+		line-height: 21px;
+		padding-bottom: 0;
+	}
+	button {
+		background-color: white;
+		margin: 0 auto 0 121px;
+		max-width: 190px;
+		padding: 11px 57px;
+		text-align: center;
+		border: 2px solid @main-color;
+		border-radius: 0;
+		font-family: @item-font;
+		font-size: 16px;
+		vertical-align: text-top;
+	}
 }
 .subtotal .entitle {
 	font-family: @title-font;
@@ -233,14 +257,6 @@ table .item-desc .title {
 	display: inline-block;
 	padding-bottom: 0;
 	line-height: 21px;
-}
-.subtotal .price {
-	font-family: @text-font;
-	font-size: 25px;
-	display: inline-block;
-	color: #555963;
-	line-height: 21px;
-	padding-bottom: 0;
 }
 .total {
 	display: inline-block;
@@ -277,6 +293,17 @@ span .price {
 .coupon, .checkout {
 	margin: 0 50px;
 }
+}
+@media all and (max-width: 812px) {
+	.cart-submit {
+		width: 100%;
+	}
+	.checkout {
+		display: block;
+		width: 60%;
+		margin: 0 auto;
+	}
+
 }
 @media all and (max-width: 769px) {
 .table {
@@ -324,6 +351,14 @@ table th:nth-child(6) {
 .cart-subtotal button {
 	margin-left: 66px;
 }
+}
+@media all and (max-width: 360px) {
+	.cart-subtotal {
+		display: block;
+	}
+	.checkout button {
+		float: none;
+	}
 }
 @media all and (max-width: 375px) {
 .cart-subtotal button {

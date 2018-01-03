@@ -21,16 +21,22 @@ close.addEventListener('click', closePopup);
 
 
 
-var pie = document.getElementById('mobile');
-var mobileMenu = document.getElementById('mobile-menu');
-var activeMenu = document.querySelector('.mobile-btn');
+// var pie = document.getElementById('mobile');
+// var mobileMenu = document.getElementById('mobile-menu');
+// var activeMenu = document.querySelector('.mobile-btn');
+//
+// function showMobileMenu() {
+// 	mobileMenu.classList.toggle('open-menu');
+// 	document.body.classList.toggle('nonScroll');
+// 	activeMenu.classList.toggle('active')
+// }
+// pie.addEventListener('click',showMobileMenu);
 
-function showMobileMenu() {
-	mobileMenu.classList.toggle('open-menu');
-	document.body.classList.toggle('nonScroll');
-	activeMenu.classList.toggle('active')
-}
-pie.addEventListener('click',showMobileMenu);
+$('.mobile-btn').on('click', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('active');
+    $('#mobile-menu').slideToggle("fast");
+});
 
 function initMap() {
 var mapId = document.getElementById('map');
@@ -59,7 +65,7 @@ var infoWindow = new google.maps.InfoWindow({
 var marker = new google.maps.Marker({
 	position: coord,
 	map: map,
-	icon: "../images/map-marker.png",
+	icon: "images/map-marker.png",
     draggable: true,
     animation: google.maps.Animation.DROP
 });
@@ -101,11 +107,7 @@ marker.addListener('click', function () {
 // }
 
 
-$(".pagination a").click(function() {
-    $(".pagination a").removeClass("active");
+$(".pagination li").click(function() {
+    $(".pagination li").removeClass("active");
     $(this).addClass("active");
-});
-
-$(".blend").click(function() {
-    $(".overlay").fadeToggle();
 });

@@ -1,0 +1,66 @@
+#map {
+  width: 100%;
+  height: 117vh;
+  position: relative;
+}
+.contact-info {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 22px 38.22px 0.78px rgba(15, 52, 61, 0.15);
+  position: absolute;
+  left: 579px;
+  top: 224px;
+  max-width: 506px;
+  z-index: 97;
+  padding: 69px 137px 83px 57px;
+}
+.contact-title {
+  font-family: @title-font;
+  color: #555963;
+  font-size: 42px;
+  line-height: 43px;
+  text-align: left;
+  margin-top: 0;
+  width: 71%;
+  margin-bottom: 34px;
+
+}
+.details {
+  font-family: @text-font;
+  font-size: 23px;
+  line-height: 32px;
+  color: #555963;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+.contact {
+  font-family: @text-font;
+  font-size: 20px;
+  line-height: 21px;
+  color: #555963;
+  text-align: left;
+  margin: 0;
+}
+.tel {
+  margin-bottom: 10px;
+}
+.email {
+  margin-bottom: 75px;
+}
+.send-letter {
+  border: solid 2px rgb(85, 89, 99);
+  background: white;
+  font-family: @item-font;
+  font-size: 16px;
+  line-height: 1;
+  color: #555963;
+  padding: 15px 61px;
+  display: inline-block;
+}
+@media all and (max-width: 1024px) {
+  .contact-info {
+    left: 308px;
+    bottom: 1px;
+    top: unset;
+  }
+}

@@ -85,9 +85,6 @@
         display: inline-block;
     }
 }
-ul:before, li {
-    vertical-align: middle;
-}
 @media all and (min-width: 1861px) {
     .header-menu {
         font-size: large;
@@ -121,10 +118,10 @@ ul:before, li {
         }
     }
 }
-@media all and (max-width: 769px) {
+@media all and (max-width: 812px) {
     .header {
         padding: 20px 0;
-        width: 100%;
+        width: 99%;
         position: absolute;
         box-shadow: 0 0 20px 0 rgba(16, 45, 53, 0.25);
         font-weight: 400;
@@ -139,7 +136,7 @@ ul:before, li {
         width: auto;
         li {
             display: block;
-            padding: 20px 8px;
+            padding: 15px 8px;
         }
     }
     .header-icons-container li {
@@ -153,10 +150,15 @@ ul:before, li {
         display: block;
         background: #ffffff;
         box-shadow: 0 16px 20px 0 rgba(16, 45, 53, 0.25);
-        height: 100vh;
+        height: 84vh;
+        overflow: scroll;
+        top: 98px;
     }
     .header-icons-container li {
         display: block;
+    }
+    #mobile-menu {
+        background: #ffffff;
     }
     .mobile-btn {
         position: relative;
@@ -177,7 +179,7 @@ ul:before, li {
             background-color: #45474b;
             display: block;
             transition-duration: 0s;
-            transition-delay: 0.2s;
+            //transition-delay: 0.2s;
 
             &:before {
                 position: absolute;
@@ -188,8 +190,8 @@ ul:before, li {
                 background-color: #45474b;
                 display: block;
                 transition-property: margin, transform;
-                transition-duration: 0.2s;
-                transition-delay: 0.2s, 0s;
+                transition-duration: 0.3s;
+                //transition-delay: 0.2s, 0s;
 
             }
             &:after {
@@ -201,27 +203,28 @@ ul:before, li {
                 background-color: #45474b;
                 display: block;
                 transition-property: margin, transform;
-                transition-duration: 0.2s;
-                transition-delay: 0.2s, 0s;
+                transition-duration: 0.3s;
+                //transition-delay: 0.2s, 0s;
             }
         }
     }
     .mobile-btn.active span {
         background-color: rgba(0,0,0,0.0);
-        transition-delay: 0.2s;
+        //transition-delay: 0.2s;
 
         &:before {
             margin-top: 0;
             transform: rotate(45deg);
-            transition-delay: 0s, 0.2s;
+            //transition-delay: 0s, 0.2s;
         }
         &:after {
             margin-top: 0;
             transform: rotate(-45deg);
-            transition-delay: 0s, 0.2s;
+            //transition-delay: 0s, 0.2s;
         }
     }
 }
+
 @media all and (max-width: 425px) {
     .login-container {
         width: 88%;
