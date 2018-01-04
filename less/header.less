@@ -118,7 +118,7 @@
         }
     }
 }
-@media all and (max-width: 812px) {
+@media all and (max-width: 1023px) {
     .header {
         padding: 20px 0;
         width: 99%;
@@ -131,34 +131,34 @@
         display: none;
         position: absolute;
         right: 0;
-        top: 79px;
+        top: 99px;
         text-align: right;
         width: auto;
         li {
             display: block;
             padding: 15px 8px;
+            text-align: center
         }
-    }
-    .header-icons-container li {
-        display: none;
-        padding-right: 20px;
     }
     .logo {
         padding-left: 15px;
     }
     .open-menu {
-        display: block;
-        background: #ffffff;
-        box-shadow: 0 16px 20px 0 rgba(16, 45, 53, 0.25);
-        height: 84vh;
-        overflow: scroll;
-        top: 98px;
-    }
-    .header-icons-container li {
-        display: block;
+        display: none;
     }
     #mobile-menu {
+        width: 50%;
         background: #ffffff;
+        overflow: scroll;
+        height: 84vh;
+    }
+    .header-icons-container {
+        padding-left: 0;
+        float: none;
+        li {
+            display: inline-block;
+            padding: 15px 45px;
+        }
     }
     .mobile-btn {
         position: relative;
@@ -208,7 +208,7 @@
             }
         }
     }
-    .mobile-btn.active span {
+    .active span {
         background-color: rgba(0,0,0,0.0);
         //transition-delay: 0.2s;
 
@@ -226,19 +226,18 @@
 }
 
 @media all and (max-width: 425px) {
-    .login-container {
-        width: 88%;
+    #mobile-menu {
+        width: 100%;
     }
-    .login-content label {
-        padding-right: 0;
+    .header-menu li {
+        text-align: center;
     }
-    .login-content .submit {
-        padding: 90px 67px 0;
+    .header-icons-container {
+        padding-left: 0;
+        float: none;
     }
-    .sign {
-        padding: 60px 67px 0;
-    }
-    .login-icons {
-        padding: 10px 67px 0;
+    .header-icons-container li {
+        display: inline-block;
+        padding: 15px 45px;
     }
 }

@@ -16,10 +16,11 @@ a#profile {
 	background: rgba(255, 255, 255, 0.8);
 	z-index: 439;
 	overflow-y: scroll;
-	visibility: visible;
+	opacity: 0;
 
 	&.opened {
-		display: block;
+		opacity: 1;
+		transition: opacity 0.5s ease-out;
 	}
 }
 .login-container {
@@ -48,6 +49,7 @@ a#profile {
 			color: #555963;
 			font-family: @title-font;
 			width: fit-content;
+			line-height: 1;
 		}
 	}
 }
@@ -64,11 +66,54 @@ a#profile {
 	position: relative;
 	background: white;
 	box-shadow: 0 22px 39px 2px rgba(15, 52, 61, 0.15);
+
+	.button {
+		margin: 60px auto 0;
+	}
+	span {
+		float: right;
+		font-family: @item-font;
+		font-size: 16px;
+	}
+	form {
+		border-bottom: none;
+	}
+	button {
+		display: block;
+		margin: 90px auto 0;
+		border: none;
+		background: none;
+		border-bottom: 2px solid @main-color;
+		font-family: 'Lato', serif;
+		font-size: 16px;
+		width: 161px;
+		color: @main-color;
+		text-align: left;
+		line-height: 33px;
+		padding: 0;
+		border-radius: 0;
+
+		&:hover {
+			color: @font-color;
+		}
+	}
+	.sign {
+		display: block;
+		font-family: @title-font;
+		font-size: 21px;
+		margin: 60px auto 0;
+		width: fit-content;
+	}
+	.login-social {
+		padding: 15px;
+	}
+	.login-icons {
+		margin: 10px auto 0;
+		display: block;
+		width: fit-content;
+	}
 }
-.login-content form {
-	border-bottom: none;
-}
-.login-content 	input[type="email"], input[type="password"]{
+.login-content input[type="email"], input[type="password"]{
 	width: 100%;
 	font-family: 'Lato', serif;
 	font-size: 16px;
@@ -114,62 +159,12 @@ a#profile {
 	top: 50%;
 	transform: translateY(-50%);
 }
-.login-content span {
-	float: right;
-	font-family: @item-font;
-	font-size: 16px;
-
-}
 .login-content span a:hover {
 	color:#da8913;
 }
-.login-content .button {
-	margin: 60px auto 0;
-}
-.login-content button {
-	border: none;
-	background: none;
-	border-bottom: 2px solid @main-color;
-	font-family: 'Lato', serif;
-	font-size: 16px;
-	width: 161px;
-	color: @main-color;
-	text-align: left;
-	line-height: 33px;
-	padding: 0;
-	border-radius: 0;
-
-	&:hover {
-		color: @font-color;
-	}
-}
-.login-content .submit {
-	padding: 90px 100px 0 100px;
-	margin-bottom: 0;
-}
-.login-content .sign {
-	display: block;
-	font-family: @title-font;
-	font-size: 21px;
-}
-.login-content .login-social {
-	padding: 15px;
-}
-.login-submit {
-	padding: 90px 100px 0;
-	display: inline-block;
-}
-.sign {
-	padding: 60px 100px 0;
-	display: inline-block;
-}
-.login-icons {
-	padding: 10px 100px 0;
-	display: inline-block;
-}
 @media all and (max-width: 425px) {
 	.login-container {
-		width: 88%;
+		width: 100%;
 	}
 	.login-content label {
 		padding-right: 0;
@@ -177,14 +172,6 @@ a#profile {
 	.login-content .submit {
 		padding: 90px 57px 0;
 	}
-	.sign {
-		padding: 60px 64px 0;
-	}
-	.login-icons {
-		padding: 10px 67px 0;
-	}
-}
-@media (max-width: 415px) {
 	.sign {
 		padding: 60px 59px 0;
 	}
@@ -194,6 +181,9 @@ a#profile {
 	}
 }
 @media all and (max-width: 375px) {
+	.substrate {
+		margin-left: 0;
+	}
 	.login-content span {
 		float: left;
 		margin-top: 18px;
@@ -207,8 +197,18 @@ a#profile {
 	.sign {
 		padding: 60px 41px 0;
 	}
+	.login-content label {
+		display: block;
+	}
+	.login-content span {
+		display: block;
+		float: left;
+	}
 }
 @media (max-width: 360px) {
+	.login-container {
+		margin: 100px auto 50px;
+	}
 	.sign {
 		padding: 60px 36px 0;
 	}

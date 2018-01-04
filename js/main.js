@@ -5,9 +5,9 @@ var close = document.getElementById('close');
 
 function showPopup() {
 	popup.classList.toggle('opened');
-	if (mobileMenu.classList.contains('open-menu')){
-		mobileMenu.classList.toggle('open-menu');
-		activeMenu.classList.toggle('active');
+	if (($(window).width() < 1023)&&$(this).toggleClass('active')){
+        $('#mobile-menu').toggle('open-menu');
+        $('.mobile-btn').toggleClass('active');
 		document.body.classList.toggle('nonScroll');
 	}
 	document.body.classList.toggle('nonScroll')
@@ -19,24 +19,13 @@ function closePopup() {
 profileLink.addEventListener('click', showPopup);
 close.addEventListener('click', closePopup);
 
-
-
-// var pie = document.getElementById('mobile');
-// var mobileMenu = document.getElementById('mobile-menu');
-// var activeMenu = document.querySelector('.mobile-btn');
-//
-// function showMobileMenu() {
-// 	mobileMenu.classList.toggle('open-menu');
-// 	document.body.classList.toggle('nonScroll');
-// 	activeMenu.classList.toggle('active')
-// }
-// pie.addEventListener('click',showMobileMenu);
-
 $('.mobile-btn').on('click', function(event) {
     event.preventDefault();
     $(this).toggleClass('active');
-    $('#mobile-menu').slideToggle("fast");
+    $('#mobile-menu').slideToggle("slow");
+    document.body.classList.toggle('nonScroll');
 });
+
 
 function initMap() {
 var mapId = document.getElementById('map');

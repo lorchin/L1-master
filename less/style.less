@@ -272,6 +272,7 @@
 	&:hover {
 		opacity: 0.94;
 		background-color: rgb(255, 187, 88);
+		transition: opacity 0.5s ease-out;
 	}
 	span {
 		display: block;
@@ -286,7 +287,12 @@
 	}
 	a {
 		display: inline-block;
-		padding: 28px 42px 4px;
+		padding: 0;
+
+		&:hover {
+			padding: 28px 42px 4px;
+			transition: padding 0.5s linear;
+		}
 	}
 	a:nth-child(2){
 		padding: 0 12px 36px 21px;
