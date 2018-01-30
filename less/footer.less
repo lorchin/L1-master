@@ -1,19 +1,11 @@
 footer {
 	background-color: @bg-color;
+	width: 100%;
+	height: fit-content;
 }
 .footer-content {
-	width: 1140px;
+	width: 79%;
 	margin: 0 auto;
-
-	/*&:after {
-	    content: '';
-	    background: #d2d9db;
-	    width: 57%;
-	    height: 1px;
-	    position: absolute;
-	    top: auto;
-	    left: 292px;
-	}*/
 }
 .footer-menu {
 	border-bottom: 1px solid @main-color;
@@ -42,7 +34,6 @@ footer .about {
 	width: 49%;
 	text-align: left;
 	margin-top: 81px;
-	margin-right: 227px;
 }
 footer .about a {
 	font-family: @title-font;
@@ -83,17 +74,12 @@ footer input[type=email] {
 	font-size: 15px;
 	line-height: 32px;
 	color: rgba(85, 89, 99, 0.6);
-	width: 211px;
+	width: 57%;
 	border: none;
 	background: none;
 	display: inline-block;
 	padding: 0;
 	margin: 0;
-}
-footer .follow {
-	width: 350px;
-	margin-right: 0;
-	display: block;
 }
 footer .follow span {
 	font-family: @title-font;
@@ -104,7 +90,7 @@ footer .follow span {
 }
 
 footer button {
-	margin: 6px 0 8px 9px;
+	margin: 6px 0 8px 0;
 	padding: 0 33px 0 25px;
 	cursor: pointer;
 	font-family: @item-font;
@@ -119,13 +105,10 @@ footer button {
 }
 footer .social {
 	display: inline-block;
+	float: right;
+	margin-top: 81px;
+	width: 30.76%;
 }
-footer .subscribe {
-	width: 350px;
-	margin-right: 0;
-	display: block;
-}
-
 footer .subscribe span {
 	font-family: @title-font;
 	font-size: 28px;
@@ -143,11 +126,31 @@ footer .social-icons {
 	margin: 0 0;
 	vertical-align: middle;
 }
-
-@media all and (max-width: 1024px) {
-	footer {
-		width: 100%;
+.copyright {
+	display: block;
+	font-size: 15px;
+	font-family: @item-font;
+	color: rgb(85, 89, 99);
+	line-height: 1.867;
+	margin-top: 127px;
+	margin-bottom: 64px;
+	position: relative;
+	&:after {
+	    content: '';
+	    background: #d2d9db;
+	    width: 74%;
+	    height: 1px;
+	    position: absolute;
+	    top: 50%;
+	    left: 292px;
 	}
+}
+@media all and (max-width: 1400px) {
+	.footer-content {
+		width: 93%;
+	}
+}
+@media all and (max-width: 1024px) {
 	footer .about {
 		width: 100%;
 		text-align: left;
@@ -157,13 +160,13 @@ footer .social-icons {
 		height: 0;
 	}
 	footer .social {
-		margin-top: 461px;
 		display: block;
+		float: none;
+		width: 100%;
 	}
 	footer .subscribe {
-		width: 37%;
+		width: 45%;
 		display: inline-block;
-		margin-right: 358px;
 	}
 	footer .subscribe span {
 		line-height: 32px;
@@ -171,6 +174,7 @@ footer .social-icons {
 	footer .follow {
 		display: inline-block;
 		width: 24%;
+		float: right;
 	}
 	footer .follow span {
 		font-family: 'Ramaraja', serif;
@@ -186,45 +190,15 @@ footer .social-icons {
 	.footer-content {
 		width: 94%;
 	}
-	footer .social {
-		margin-top: 61px;
-		margin-bottom: 60px;
+	.copyright {
+		&:after {
+			width: 69%;
+		}
 	}
 }
-@media all and (max-width: 812px){
-	footer .subscribe {
-		width: 47%;
-		margin-right: 60px;
-	}
-	footer .follow {
-		width: 30%;
-		float: right;
-	}
-
-}
-@media all and (max-width: 769px){
+@media all and (max-width: 1000px) {
 	footer {
 		width: 100%;
-	}
-	footer .about {
-		width: 100%;
-		text-align: left;
-		display: inline-block;
-		margin-top: 55px;
-		margin-right: 0;
-		height: 0;
-	}
-	footer .social {
-		display: block;
-	}
-	footer .subscribe {
-		width: 54%;
-		display: inline-block;
-		margin-right: 107px;
-	}
-	footer .follow {
-		display: inline-block;
-		width: 28%;
 	}
 	footer .follow span {
 		font-family: @title-font;
@@ -233,43 +207,34 @@ footer .social-icons {
 		margin-bottom: 35px;
 		display: inline-block;
 	}
+
 	footer form {
 		margin-bottom: 0;
 	}
+
 	.footer-content {
 		width: 94%;
 	}
-}@media (max-width: 667px) {
+	.copyright {
+		&:after {
+			width: 59%;
+		}
+	}
+}
+@media all and (max-width: 733px) {
 	footer .subscribe {
 		width: 55%;
-		margin-right: 0;
 	}
 	footer .follow {
-		width: 31%;
+		width: 35%;
+	}
+	.copyright:after {
+		display: none;
 	}
 }
-@media all and (max-width: 640px) {
-	footer .subscribe {
-		width: 58%;
-		margin-right: 0;
-	}
-}
-@media (max-width: 568px) {
-	footer .subscribe {
-		width: 65%;
-		margin-bottom: 60px;
-	}
-	footer .follow {
-		float: none;
-		width: 32%;
-	}
-}
-@media all and (max-width: 425px) {
+@media all and (max-width: 547px) {
 	.footer-menu li {
 		padding: 0 2px;
-	}
-	footer .about {
-		display: none;
 	}
 	footer .social {
 		margin-top: 61px;
@@ -282,6 +247,13 @@ footer .social-icons {
 	footer .follow {
 		width: 100%;
 		margin-top: 38px;
+		margin-bottom: 127px;
+	}
+	.copyright {
+		margin-top: 0;
+		&:after {
+			display: none;
+		}
 	}
 }
 @media all and (max-width: 415px) {
@@ -289,7 +261,7 @@ footer .social-icons {
 		width: 100%;
 	}
 	footer input[type=email] {
-		width: 252px;
+		width: 55%;
 	}
 	.footer-menu li {
 		padding: 0 15px;
@@ -301,9 +273,6 @@ footer .social-icons {
 @media all and (max-width: 375px) {
 	footer .subscribe {
 		width: 100%;
-	}
-	footer input[type=email] {
-		width: 220px;
 	}
 	.footer-menu li {
 		padding: 9px 24px;
@@ -317,12 +286,6 @@ footer .social-icons {
 	}
 	.social-icons li {
 		padding: 0 6px;
-	}
-}
-@media (max-width: 360px) {
-
-	footer input[type=email] {
-		width: 200px;
 	}
 }
 @media all and (max-width: 320px) {

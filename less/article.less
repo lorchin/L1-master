@@ -222,7 +222,7 @@ span.date {
 	}
 }
 .post_comments {
-	max-width: 748px;
+	width: 52%;
 	margin: 116px auto 0;
 }
 .post_comments label {
@@ -243,8 +243,12 @@ span.date {
 	background: #f5fdff;
 	margin-top: 46px;
 	margin-bottom: 80px;
+	img {
+		margin-right: 30px;
+	}
 }
 .post_comments textarea {
+	width: 77%;
 	font-family: @item-font;
 	font-size: 15px;
 	font-style: italic;
@@ -307,7 +311,15 @@ span.date {
 	font-family: @item-font;
 	font-size: 16px;
 }
-@media all and (max-width: 1024px){
+@media all and (max-width: 1440px){
+	.feature_img img {
+		width: 100%;
+	}
+	.post_comments textarea {
+		width: 74%;
+	}
+}
+@media all and (max-width: 1266px){
 	.single_post_header {
 		width: auto;
 	}
@@ -316,6 +328,12 @@ span.date {
 	}
 	.related {
 		max-width: 42%;
+	}
+	.post_comments {
+		width: 81%;
+		textarea {
+			width: 72%;
+		}
 	}
 }
 @media all and (max-width: 812px) {
@@ -351,18 +369,34 @@ span.date {
 	.related {
 		max-width: 40%;
 	}
+	.post_comments {
+		width: 90%;
+	}
 }
-@media all and (max-width: 736px) {
+@media all and (max-width: 743px) {
+	article {
+		padding: 178px 79px 105px;
+	}
+	.h5 h5 {
+		width: 100%;
+	}
+	.h5 .small {
+		width: 100%;
+	}
 	.h5 p {
-		width: 50%;
+		float: none;
+		margin: 55px 0 0 0;
+	}
+	.related {
+		max-width: 90%;
 	}
 	.post_comments textarea {
-		width: 80%;
+		width: 70%;
 	}
 }
-@media (max-width: 667px) {
+@media all and (max-width: 667px) {
 	.post_comments textarea {
-		width: 79%;
+		width: 69%;
 	}
 	.align_left {
 		width: 100%;
@@ -372,16 +406,22 @@ span.date {
 }
 @media all and (max-width: 640px) {
 	.post_comments textarea {
-		width: 78%;
+		width: 65%;
 	}
 }
 @media (max-width: 568px) {
 
 	.post_comments textarea {
-		width: 75%;
+		width: 60%;
 	}
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 500px){
+	.post_comments textarea {
+		width: 55%;
+	}
+
+}
+@media all and (max-width: 447px) {
 	article {
 		padding: 178px 10px 105px;
 	}
@@ -420,7 +460,7 @@ span.date {
 		padding: 0 10px;
 	}
 	.post_comments textarea {
-		width: 65%;
+		width: 53%;
 	}
 }
 @media all and (max-width: 375px) {
@@ -429,17 +469,17 @@ span.date {
 		width: 97%;
 	}
 	.post_comments textarea {
-		width: 62%;
+		width: 50%;
 	}
 }
 @media (max-width: 360px) {
 	.post_comments textarea {
-		width: 60%;
+		width: 45%;
 	}
 }
 @media all and (max-width: 320px) {
 	.post_comments textarea {
-		width: 58%;
+		width: 30%;
 	}
 	.post_comments button {
 		padding-left: 15px;

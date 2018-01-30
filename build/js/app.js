@@ -604,17 +604,17 @@ var profileLink = document.getElementById('profile');
 var close = document.getElementById('close');
 
 function showPopup() {
-	popup.classList.toggle('opened');
-	if (($(window).width() < 1023)&&$(this).toggleClass('active')){
+    popup.classList.toggle('opened');
+    if (($(window).width() < 1023)&&$(this).toggleClass('active')){
         $('#mobile-menu').toggle('open-menu');
         $('.mobile-btn').toggleClass('active');
-		document.body.classList.toggle('nonScroll');
-	}
-	document.body.classList.toggle('nonScroll')
+        document.body.classList.toggle('nonScroll');
+    }
+    document.body.classList.toggle('nonScroll')
 }
 function closePopup() {
-	popup.classList.toggle('opened');
-	document.body.classList.toggle('nonScroll')
+    popup.classList.toggle('opened');
+    document.body.classList.toggle('nonScroll')
 }
 profileLink.addEventListener('click', showPopup);
 close.addEventListener('click', closePopup);
@@ -626,38 +626,47 @@ $('.mobile-btn').on('click', function(event) {
     document.body.classList.toggle('nonScroll');
 });
 
+var map;
+var coord = {
+    lat: 36.173380,
+    lng: -86.787027
+};
+
+$( window ).resize(function() {
+    if ($(window).width() < 1024 && coord != null && map != null) {
+        map.panTo(coord);
+    }
+});
 
 function initMap() {
-var mapId = document.getElementById('map');
-var mapCenter = {
-	lat: 36.175172, 
-	lng: -86.778092
-};
+    var mapId = document.getElementById('map');
+    var mapCenter = {
+        lat: 36.175172,
+        lng: -86.778092
+    };
 
-var coord = {
-	lat: 36.173380,
-	lng: -86.787027
-};
-
-var map = new google.maps.Map ( 
-	mapId,
-{
-	zoom: 16,
-	center: mapCenter,
-	fullscreenControl: false
-}
-);
-var infoWindow = new google.maps.InfoWindow({
-          content: "1001 5th Avenue North Nashville, TN 37219 USA"
+    map = new google.maps.Map (
+        mapId,
+        {
+            zoom: 16,
+            center: mapCenter,
+            fullscreenControl: false
         });
 
-var marker = new google.maps.Marker({
-	position: coord,
-	map: map,
-	icon: "images/map-marker.png",
-    draggable: true,
-    animation: google.maps.Animation.DROP
-});
+        if ($(window).width() < 1024) {
+            map.panTo(coord);
+        }
+
+    var infoWindow = new google.maps.InfoWindow({
+        content: "1001 5th Avenue North Nashville, TN 37219 USA"
+    });
+
+    var marker = new google.maps.Marker({
+        position: coord,
+        map: map,
+        icon: "images/map-marker.png",
+        animation: google.maps.Animation.DROP
+    });
     function toggleBounce() {
         if (marker.getAnimation() !== null) {
             marker.setAnimation(null);
@@ -665,51 +674,186 @@ var marker = new google.maps.Marker({
             marker.setAnimation(google.maps.Animation.BOUNCE);
         }
     }
-marker.addListener('click', function () {
-	infoWindow.open(map, marker);
-});
+    marker.addListener('click', function () {
+        infoWindow.open(map, marker);
+    });
 }
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(function(position) {
-//             var pos = {
-//                 lat: position.coords.latitude,
-//                 lng: position.coords.longitude
-//             };
-//
-//             infoWindow.setPosition(pos);
-//             infoWindow.setContent('Location found.');
-//             map.setCenter(pos);
-//         }, function() {
-//             handleLocationError(true, infoWindow, map.getCenter());
-//         });
-//     } else {
-//         // Browser doesn't support Geolocation
-//         handleLocationError(false, infoWindow, map.getCenter());
-//     }
-// }
-//
-// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-//     infoWindow.setPosition(pos);
-//     infoWindow.setContent(browserHasGeolocation ?
-//         'Error: The Geolocation service failed.' :
-//         'Error: Your browser doesn\'t support geolocation.');
-// }
-
 
 $(".pagination li").click(function() {
     $(".pagination li").removeClass("active");
     $(this).addClass("active");
 });
-var pos = 0;
-//number of slides
-var totalSlides = $('slider1').length;
+
 $(document).ready(function(){
     $('.slider1').slick({
         prevArrow: "<span class='slick-prev'></span>",
-        nextArrow: "<span class='slick-next'></span>"
-    });
-    countSlides();
+        nextArrow: "<span class='slick-next'></span>",
+        dots: false,
+
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    })
 });
-function countSlides(){
-    $('#counter').html(pos+1 + ' / ' + totalSlides);
-}
+$('.slider1')
+    .on('beforeChange',function(event, slick, currentSlide, nextSlide) {
+
+        var active = nextSlide + 1;
+        var prev = active - 1;
+        var next = active + 1;
+
+        if (active === 1) {
+            prev = slick.slideCount;
+        }
+        if (active === slick.slideCount) {
+            next = 1;
+        }
+
+        $('#prev-slide').html(prev + '/' + slick.slideCount);
+        $('#next-slide').html(next + '/' + slick.slideCount);
+    })
+
+    .on('init', function(event, slick) {
+        $('#prev-slide').html(slick.slideCount + '/' + slick.slideCount);
+        $('#next-slide').html(2 + '/' + slick.slideCount);
+
+    });
+// slider2
+$(document).ready(function(){
+    $(document).on('click', '.tabs a', function(e){
+        e.preventDefault();
+        var tabId = $(this).attr('href');
+        $('.nav-link, .nav-tab').removeClass('is-active');
+        $(this).addClass('is-active');
+        $(tabId).addClass('is-active');
+    });
+});
+
+$(document).ready(function() {
+    $('.slider3').slick({
+        dots: true,
+        arrows: false
+    });
+});
+$(document).ready(function() {
+    $('.slider4').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: true,
+        arrows: false,
+
+        responsive: [
+            {
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 427,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+$('#send_form').click(function () {
+    var name = $('#fname input').val();
+    if( name == "" ){
+        $('#fname .error').text('Field "First name" can not be empty')
+    }
+    else{
+        $('#fname .error').text('')
+    }
+    return false;
+});
+$('#send_form').click(function () {
+    var name = $('#lname input').val();
+    if( name == "" ){
+        $('#lname .error').text('Field "Last name" can not be empty')
+    }
+    else{
+        $('#lname .error').text('')
+    }
+    return false;
+});
+$('#send_form').click(function () {
+    var name = $('#email input').val();
+    var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var isEmail = pattern.test(name);
+
+    if( name == "" ){
+        $('#email .error').text('Field "E-mail" can not be empty');
+    }
+    else if(!isEmail){
+        $('#email .error').text('Please enter valid e-mail address');
+    }
+    else{
+        $('#email .error').text('')
+    }
+    return false
+});
+$('#send_form').click(function () {
+    var name = $('#phone input').val();
+    var pattern = /\d{10,13}/;
+    var isPhone = pattern.test(name);
+
+    if( name == "" ){
+        $('#phone .error').text('Field "Phone" can not be empty')
+    }
+    else if(!isPhone){
+        $('#phone .error').text('Please enter valid phone number')
+    }
+    else{
+        $('#phone .error').text('')
+    }
+    return false;
+
+});$('#send_form').click(function () {
+    var name = $('#address textarea').val();
+    if( name == "" ){
+        $('#address .error').text('Field "Address" can not be empty')
+    }
+    else{
+        $('#address .error').text('')
+    }
+    return false;
+});
+$('#send_form').click(function () {
+    var name = $('#city input').val();
+    if( name == "" ){
+        $('#city .error').text('Field "City" can not be empty')
+    }
+    else{
+        $('#city .error').text('')
+    }
+    return false;
+});
+$('#send_form').click(function () {
+    var name = $('#state input').val();
+    if( name == "" ){
+        $('#state .error').text('Field "State/Providence" can not be empty')
+    }
+    else{
+        $('#state .error').text('')
+    }
+    return false;
+});

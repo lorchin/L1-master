@@ -118,9 +118,7 @@
     width: 145px;
     border-bottom: solid 1px #45474b;
     padding-bottom: 15px;
-    background-image: url('../../images/dropdown.png');
-    background-repeat: no-repeat;
-    background-position: 99% 30%;
+    background: url('/images/dropdown.png') 99% 30% no-repeat;
 
     a {
       font-family: @item-font;
@@ -299,10 +297,13 @@
   }
   .bookshelf-left-menu {
     width: 26%;
+    .categories:after {
+      width: inherit;
+    }
   }
   .main-content {
-    padding-left: 29px;
-    width: 71%;
+    padding-left: 0;
+    width: 74%;
 
     .filters {
       width: 510px;
@@ -324,6 +325,16 @@
     margin: 0 10px 118px auto;
   }
 }
+@media (max-width: 1000px) {
+  .main-content {
+    .info-section, .background {
+      display: none;
+    }
+    .catalog-bookshelf li {
+      padding: 0 15px;
+    }
+  }
+}
 @media all and (max-width: 768px) {
   .bookshelf-container {
     width: 98%;
@@ -342,56 +353,55 @@
 
   .main-content {
     width: 95%;
+    padding-left: 29px;
 
     .filters {
       width: 510px;
     }
-    .info-section {
-      //display: none;
-    }
-    .background {
-      //display: none;
+    .catalog-bookshelf li {
+      padding: 0 12px;
     }
   }
-
-  //.catalog-bookshelf li {
-  //  padding: 0 10px;
-  //}
-  //.catalog-bookshelf li:nth-child(3n+1) {
-  //  padding: 0 10px;
-  //}
-  //.catalog-bookshelf li:nth-child(3n) {
-  //  padding: 0 10px;
-  //}
-  //.catalog-bookshelf li:nth-child(4n) {
-  //  padding: 0 10px;
-  //}
-  //.catalog-bookshelf li:nth-child(4n+1) {
-  //  padding: 0 10px;
-  //}
-  //.catalog-bookshelf:after {
-  //  width: inherit;
-  //}
-  //.navigation {
-  //  margin: 0 10px 118px auto;
-  //}
+  .navigation {
+    width: 90%;
+    .load-more {
+      margin-right: 15%;
+    }
+    .prev-page {
+      margin-right: 10%;
+    }
+    .next-page {
+      margin-left: 10%;
+    }
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 556px) {
+  .bookshelf-container {
+    width: 90%;
+  }
   .catalog-bookshelf {
     margin-top: 38px;
     &:after {
       margin-top: 0;
     }
   }
-  .main-content {
-    width: 93%;
-    padding-left: 29px;
-
-    .filter1 {
-      margin-left: 0;
+  .categories {
+    &:after {
+      width: auto;
     }
-    .filter2 {
-      margin-left: 33px;
+    .left-menu {
+      padding-left: 0;
+    }
+  }
+  .main-content {
+    width: 100%;
+    padding-left: 0;
+    input {
+      width: 95%;
+    }
+    .filter1, .filter2, .filter3 {
+      margin-left: 0;
+      margin-right: 0;
     }
     .info-section {
       display: none;
@@ -399,8 +409,12 @@
     .background {
       display: none;
     }
-    .dropdown {
+    .dropdown, form {
+      width: 100%;
       margin-bottom: 38px;
+    }
+    .catalog-bookshelf li {
+      padding: 0 10px;
     }
   }
   .main-content .filters {
@@ -415,29 +429,34 @@
       margin: 0 auto 20px;
     }
     .prev-page {
-      margin-right: 50px;
+      margin-right: 0;
     }
     .next-page {
-      margin-left: 50px;
+      margin-left: 0;
     }
-  }
-  .catalog-bookshelf li:nth-child(2n) {
-    padding-left: 15px;
-    padding-right: 0;
-  }
-  .catalog-bookshelf li:nth-child(2n+1) {
-    padding-right: 15px;
-    padding-left: 0;
+    .pagination {
+      margin: 16px 25px;
+    }
+    .nav-cover {
+      width: 85%;
+      margin: 0 auto;
+    }
   }
 }
-@media (max-width: 415px) {
+@media all and (max-width: 466px) {
+  .main-content input {
+    width: 92%;
+  }
+}
+@media all and (max-width: 425px) {
+  .navigation .nav-cover {
+    width: 90%;
+  }
+}
+@media all and (max-width: 415px) {
   .navigation {
-    .prev-page {
-      margin-right: 40px;
-    }
-
-    .next-page {
-      margin-left: 40px;
+    .nav-cover {
+      width: 100%;
     }
   }
   .categories {
@@ -454,19 +473,10 @@
   .main-content .filter2 {
     margin-right: 0;
   }
-  .navigation {
-    .prev-page {
-      margin-right: 20px;
-    }
-
-    .next-page {
-      margin-left: 20px;
-    }
-  }
 }
 @media (max-width: 360px) {
   .main-content {
-    padding-left: 14px;
+    padding-left: 0;
     .filters {
       width: 100%;
 
@@ -496,12 +506,17 @@
   .popular-writers {
     padding-left: 14px;
   }
-}
-@media (max-width: 425px) {
-
-  .catalog-bookshelf li:nth-child(2n) {
-    padding-right: 15px;
-    padding-left: 0;
+  .navigation {
+    margin-bottom: 34px;
+    .nav-cover {
+      width: 77%;
+    }
+    .next-page {
+      float: right;
+    }
+    .pagination {
+      display: none;
+    }
   }
 }
 @media all and (max-width: 321px) {

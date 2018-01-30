@@ -26,7 +26,8 @@ gulp.task('scripts', function(){
 		'./js/selectFx.js',
 		'./js/calc.js',
 		'./js/main.js',
-		'./js/slider.js'
+		'./js/slider.js',
+		'./js/validation.js'
 	])
 		.pipe(sourcemaps.init())
 		.pipe(concat('app.js'))
