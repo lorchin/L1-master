@@ -2,7 +2,8 @@
 <html lang="en-us">
 <head>
     <link rel="stylesheet" type="text/css" href="build/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-select.css">
+    <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-skin-underline.css">
     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -26,12 +27,16 @@
         </div>
         <div class="mobile-btn" id="mobile"><span></span></div>
         <ul class="header-menu" id="mobile-menu">
-            <li><a class="menu" href="#">books</a></li>
-            <li><a class="menu" href="#">writers</a></li>
-            <li><a class="menu" href="#">publishers</a></li>
-            <li><a class="menu" href="article.html">blog</a></li>
-            <li><a class="menu" href="contact.html">contact</a></li>
-            <li>
+            <li class="menu-nav">
+                <ul>
+                    <li><a class="menu" href="bookpage.html">books</a></li>
+                    <li><a class="menu" href="writerspage.html">writers</a></li>
+                    <li><a class="menu" href="#">publishers</a></li>
+                    <li><a class="menu" href="blog.html">blog</a></li>
+                    <li><a class="menu" href="contact.html">contact</a></li>
+                </ul>
+            </li>
+            <li class="menu-icons">
                 <ul class="header-icons-container">
                     <li>
                         <a href="#" title="search">
@@ -41,7 +46,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="cart.html" title="cart">
+                        <a href="cart.html" id="cart" title="cart">
+                            <span class="item-amount">3</span>
                             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
                                 <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
                             </svg>
@@ -76,7 +82,7 @@
             <div class="description">
                 <a href="#" class="author">By Joan Rowling</a>
                 <span> 5 <img src="images/star.png"> </span>
-                <p> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
+                <p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. </p>
                 <a> $100 </a>
             </div>
         </div>
@@ -176,6 +182,7 @@
 </div>
 <span id="prev-slide"></span>
 <span id="next-slide"></span>
+
 <div class="table1">
     <div class="col1">
         <a href="#" class="title"> The Da Vinci Code </a>
@@ -201,7 +208,14 @@
         <li><a href="#">Business</a></li>
         <li><a href="#">Childrens Book</a></li>
     </ul>
-    <span class="dropdown"><a href="#">Popular</a></span>
+    <div class="dropdown">
+        <select class="cs-select cs-skin-underline cs-selected">
+            <option value="" disabled selected>Popular</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
     <ul class="catalog-images">
         <li>
             <div class="book-hover">
@@ -548,15 +562,15 @@
     <a class="block-title">Popular writers</a>
     <div id="tabs">
         <ul class="slider2-menu tabs">
-        <li><a href="#sking" class="nav-link">Stephen King</a></li>
-        <li><a href="#jfowles" class="nav-link is-active">John Fowles</a></li>
-        <li><a href="#jpatterson" class="nav-link">James Patterson</a></li>
-        <li><a href="#jgrisham" class="nav-link">John Grisham</a></li>
-        <li><a href="#dsteel" class="nav-link">Danielle Steel</a></li>
-        <li><a href="#ehemingway" class="nav-link">Ernest Hemingway</a></li>
-        <li><a href="#dbrown" class="nav-link">Dan Brown</a></li>
-        <li><a href="#rriordan" class="nav-link">Rick Riordan</a></li>
-    </ul>
+            <li><a href="#sking" class="nav-link">Stephen King</a></li>
+            <li><a href="#jfowles" class="nav-link is-active">John Fowles</a></li>
+            <li><a href="#jpatterson" class="nav-link">James Patterson</a></li>
+            <li><a href="#jgrisham" class="nav-link">John Grisham</a></li>
+            <li><a href="#dsteel" class="nav-link">Danielle Steel</a></li>
+            <li><a href="#ehemingway" class="nav-link">Ernest Hemingway</a></li>
+            <li><a href="#dbrown" class="nav-link">Dan Brown</a></li>
+            <li><a href="#rriordan" class="nav-link">Rick Riordan</a></li>
+        </ul>
     </div>
     <div class="tabs-content">
         <div class="slider2-content nav-tab" id="sking">
@@ -564,7 +578,8 @@
                 <a class="slider2-title"> Stephen King</a>
                 <p class="about"> 18 March 1926 Leigh-on-Sea, Essex, England </p>
                 <span>5<img src="images/star.png"></span>
-                <p class="quotation"> You are right. He did not. But millions of Germans did betray theirselves. That was the tragedy. Not that one man had the courage to be evil. But that millons had not the courage. </p>
+
+                <p class="quotation"> You are right. He did not. But millions of Germans did betray theirselves. That was the tragedy. Not that one man had the courage to be evil. But that millons had not the courage.</p>
             </div>
             <img class="image" src="images/fowles_djaongly.png">
             <div class="slider2-about">
@@ -859,125 +874,193 @@
 </div>
 <a class="block-title">Popular series</a>
 <div class="slider4">
-    <div><div class="tab1">
-        <img class="thrd-pic" src="images/cascad1.3.png">
-        <img class="scnd-pic" src="images/cascad1.2.png">
-        <img class="frst-pic" src="images/cascad1.1.png">
-        <a href="#">Intellectual bestseller</a>
-        <span>20 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab2">
-        <img class="thrd-pic" src="images/cascad2.2.png">
-        <img class="scnd-pic" src="images/cascad2.3.png">
-        <img class="frst-pic" src="images/cascad2.1.png">
-        <a href="#">Hobbies</a>
-        <span>35 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab3">
-        <img class="thrd-pic" src="images/cascad3.3.png">
-        <img class="scnd-pic" src="images/cascad3.2.png">
-        <img class="frst-pic" src="images/cascad3.1.png">
-        <a href="#">Childrens literature</a>
-        <span>54 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab4">
-        <img class="thrd-pic" src="images/cascad4.3.png">
-        <img class="scnd-pic" src="images/cascad4.2.png">
-        <img class="frst-pic" src="images/cascad4.1.png">
-        <a href="#">National geographic</a>
-        <span>21 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab2">
-        <img class="thrd-pic" src="images/cascad2.2.png">
-        <img class="scnd-pic" src="images/cascad2.3.png">
-        <img class="frst-pic" src="images/cascad2.1.png">
-        <a href="#">Hobbies</a>
-        <span>35 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab4">
-        <img class="thrd-pic" src="images/cascad4.3.png">
-        <img class="scnd-pic" src="images/cascad4.2.png">
-        <img class="frst-pic" src="images/cascad4.1.png">
-        <a href="#">National geographic</a>
-        <span>21 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab3">
-        <img class="thrd-pic" src="images/cascad3.3.png">
-        <img class="scnd-pic" src="images/cascad3.2.png">
-        <img class="frst-pic" src="images/cascad3.1.png">
-        <a href="#">Childrens literature</a>
-        <span>54 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab1">
-        <img class="thrd-pic" src="images/cascad1.3.png">
-        <img class="scnd-pic" src="images/cascad1.2.png">
-        <img class="frst-pic" src="images/cascad1.1.png">
-        <a href="#">Intellectual bestseller</a>
-        <span>20 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab4">
-        <img class="thrd-pic" src="images/cascad4.3.png">
-        <img class="scnd-pic" src="images/cascad4.2.png">
-        <img class="frst-pic" src="images/cascad4.1.png">
-        <a href="#">National geographic</a>
-        <span>21 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab2">
-        <img class="thrd-pic" src="images/cascad2.2.png">
-        <img class="scnd-pic" src="images/cascad2.3.png">
-        <img class="frst-pic" src="images/cascad2.1.png">
-        <a href="#">Hobbies</a>
-        <span>35 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab1">
-        <img class="thrd-pic" src="images/cascad1.3.png">
-        <img class="scnd-pic" src="images/cascad1.2.png">
-        <img class="frst-pic" src="images/cascad1.1.png">
-        <a href="#">Intellectual bestseller</a>
-        <span>20 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab3">
-        <img class="thrd-pic" src="images/cascad3.3.png">
-        <img class="scnd-pic" src="images/cascad3.2.png">
-        <img class="frst-pic" src="images/cascad3.1.png">
-        <a href="#">Childrens literature</a>
-        <span>54 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab1">
-        <img class="thrd-pic" src="images/cascad1.3.png">
-        <img class="scnd-pic" src="images/cascad1.2.png">
-        <img class="frst-pic" src="images/cascad1.1.png">
-        <a href="#">Intellectual bestseller</a>
-        <span>20 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab4">
-        <img class="thrd-pic" src="images/cascad4.3.png">
-        <img class="scnd-pic" src="images/cascad4.2.png">
-        <img class="frst-pic" src="images/cascad4.1.png">
-        <a href="#">National geographic</a>
-        <span>21 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab2">
-        <img class="thrd-pic" src="images/cascad2.2.png">
-        <img class="scnd-pic" src="images/cascad2.3.png">
-        <img class="frst-pic" src="images/cascad2.1.png">
-        <a href="#">Hobbies</a>
-        <span>35 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab1">
-        <img class="thrd-pic" src="images/cascad1.3.png">
-        <img class="scnd-pic" src="images/cascad1.2.png">
-        <img class="frst-pic" src="images/cascad1.1.png">
-        <a href="#">Intellectual bestseller</a>
-        <span>20 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
-    <div><div class="tab3">
-        <img class="thrd-pic" src="images/cascad3.3.png">
-        <img class="scnd-pic" src="images/cascad3.2.png">
-        <img class="frst-pic" src="images/cascad3.1.png">
-        <a href="#">Childrens literature</a>
-        <span>54 <img class="book-icon" src="images/book_icon.png"></span>
-    </div></div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad1.3.png">
+                <img class="scnd-pic" src="images/cascad1.2.png">
+                <img class="frst-pic" src="images/cascad1.1.png">
+                <a href="#" class="book-genre">Intellectual bestseller</a>
+                <span class="qtty">20 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad2.2.png">
+                <img class="scnd-pic" src="images/cascad2.3.png">
+                <img class="frst-pic" src="images/cascad2.1.png">
+                <a href="#" class="book-genre">Hobbies</a>
+                <span class="qtty">35 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad3.3.png">
+                <img class="scnd-pic" src="images/cascad3.2.png">
+                <img class="frst-pic" src="images/cascad3.1.png">
+                <a href="#" class="book-genre">Childrens literature</a>
+                <span class="qtty">54 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad4.3.png">
+                <img class="scnd-pic" src="images/cascad4.2.png">
+                <img class="frst-pic" src="images/cascad4.1.png">
+                <a href="#" class="book-genre">National geographic</a>
+                <span class="qtty">21 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad2.2.png">
+                <img class="scnd-pic" src="images/cascad2.3.png">
+                <img class="frst-pic" src="images/cascad2.1.png">
+                <a href="#" class="book-genre">Hobbies</a>
+                <span class="qtty">35 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad4.3.png">
+                <img class="scnd-pic" src="images/cascad4.2.png">
+                <img class="frst-pic" src="images/cascad4.1.png">
+                <a href="#" class="book-genre">National geographic</a>
+                <span class="qtty">21 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad3.3.png">
+                <img class="scnd-pic" src="images/cascad3.2.png">
+                <img class="frst-pic" src="images/cascad3.1.png">
+                <a href="#" class="book-genre">Childrens literature</a>
+                <span class="qtty">54 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad1.3.png">
+                <img class="scnd-pic" src="images/cascad1.2.png">
+                <img class="frst-pic" src="images/cascad1.1.png">
+                <a href="#" class="book-genre">Intellectual bestseller</a>
+                <span class="qtty">20 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad4.3.png">
+                <img class="scnd-pic" src="images/cascad4.2.png">
+                <img class="frst-pic" src="images/cascad4.1.png">
+                <a href="#" class="book-genre">National geographic</a>
+                <span class="qtty">21 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad2.2.png">
+                <img class="scnd-pic" src="images/cascad2.3.png">
+                <img class="frst-pic" src="images/cascad2.1.png">
+                <a href="#" class="book-genre">Hobbies</a>
+                <span class="qtty">35 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad1.3.png">
+                <img class="scnd-pic" src="images/cascad1.2.png">
+                <img class="frst-pic" src="images/cascad1.1.png">
+                <a href="#" class="book-genre">Intellectual bestseller</a>
+                <span class="qtty">20 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad3.3.png">
+                <img class="scnd-pic" src="images/cascad3.2.png">
+                <img class="frst-pic" src="images/cascad3.1.png">
+                <a href="#" class="book-genre">Childrens literature</a>
+                <span class="qtty">54 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad1.3.png">
+                <img class="scnd-pic" src="images/cascad1.2.png">
+                <img class="frst-pic" src="images/cascad1.1.png">
+                <a href="#" class="book-genre">Intellectual bestseller</a>
+                <span class="qtty">20 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad4.3.png">
+                <img class="scnd-pic" src="images/cascad4.2.png">
+                <img class="frst-pic" src="images/cascad4.1.png">
+                <a href="#" class="book-genre">National geographic</a>
+                <span class="qtty">21 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad2.2.png">
+                <img class="scnd-pic" src="images/cascad2.3.png">
+                <img class="frst-pic" src="images/cascad2.1.png">
+                <a href="#" class="book-genre">Hobbies</a>
+                <span class="qtty">35 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad1.3.png">
+                <img class="scnd-pic" src="images/cascad1.2.png">
+                <img class="frst-pic" src="images/cascad1.1.png">
+                <a href="#" class="book-genre">Intellectual bestseller</a>
+                <span class="qtty">20 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="tab-item-cover">
+            <div class="tab-item">
+                <img class="thrd-pic" src="images/cascad3.3.png">
+                <img class="scnd-pic" src="images/cascad3.2.png">
+                <img class="frst-pic" src="images/cascad3.1.png">
+                <a href="#" class="book-genre">Childrens literature</a>
+                <span class="qtty">54 <img class="book-icon" src="images/book_icon.png"></span>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="publishers">
@@ -1001,7 +1084,9 @@
         <a href="#"><img src="images/bloomsbury.png"></a>
     </div>
 </div>
-
+<button class="scroll-btn" style="display:none;">
+    <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
+</button>
 <!--popup-->
 
 <div id="overlay">
@@ -1086,7 +1171,17 @@
         <span class="copyright">© 2016 Bookworm. All rights reserved</span>
     </div>
 </footer>
-
+<script src="js/classie.js"></script>
+<script src="js/selectFx.js"></script>
+<script>
+    (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+            new SelectFx(el, {
+                stickyPlaceholder: false
+            });
+        } );
+    })();
+</script>
 <script src="build/js/libs.js"></script>
 <script src="build/js/app.js"></script>
 

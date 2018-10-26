@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="build/css/style.css">
+    <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-select.css">
+    <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-skin-underline.css">
+    <link rel="stylesheet" type="text/css" href="styles/dropdown.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#45474b">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body class="homepage scroll">
+<div class="header">
+    <div class="header-nav">
+        <div class="logo">
+            <a href="index.html" title="Bookworm">
+                <img src="images/Logo.png" alt="Bookworm">
+            </a>
+        </div>
+        <div class="mobile-btn" id="mobile"><span></span></div>
+        <ul class="header-menu" id="mobile-menu">
+            <li class="menu-nav">
+                <ul>
+                    <li><a class="menu" href="bookpage.html">books</a></li>
+                    <li><a class="menu" href="writerspage.html">writers</a></li>
+                    <li><a class="menu" href="#">publishers</a></li>
+                    <li><a class="menu" href="blog.html">blog</a></li>
+                    <li><a class="menu" href="contact.html">contact</a></li>
+                </ul>
+            </li>
+            <li class="menu-icons">
+                <ul class="header-icons-container">
+                    <li>
+                        <a href="#" title="search">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.9" viewBox="0 0 23.06 22.937">
+                                <path fill="#555963" fill-rule="evenodd" d="M18.5 16.5a11.2 11.2 0 0 1-1.3 1.5l4.4 4.5L23 21l-4.5-4.5m-9 .7A7.3 7.3 0 0 1 4 15 7.7 7.7 0 0 1 4 4.3 7.3 7.3 0 0 1 9.5 2a7.3 7.3 0 0 1 5.2 2.3 7.7 7.7 0 0 1 0 10.7 7.3 7.3 0 0 1-5.2 2.2M9.5 0a9.6 9.6 0 1 0 9.2 9.6A9.5 9.5 0 0 0 9.4 0M23 21.5L21.8 23l-6.4-6.6 1.4-1.4z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html" id="cart" title="cart">
+                            <span class="item-amount">3</span>
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
+                                <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="profile-link" title="profile" id="profile" >
+                            <img src="images/profile-foto.png" width="39" height="39" alt="profile" >
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="blog-page">
+    <a class="block-title">
+        Ever interesting from literary world
+    </a>
+    <div class="filters">
+        <form class="search">
+            <input type="text" placeholder="Search by keyword">
+            <a href="#"><img src='images/small-search.png'></a>
+        </form>
+        <div class="dropdown">
+            <select class="cs-select cs-skin-underline cs-selected">
+                <option value="" disabled selected>Popular</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+            </select>
+        </div>
+    </div>
+    <div class="articles blog-articles">
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/joystick.png"></a>
+                <a href="#" class="title">Video games and literary fiction 'can help make you a better person'</a>
+                <a href="#" class="author">George Brown</a>
+                <div class="date">15.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/SplitShire-5548-1800x1200-970x500.png"></a>
+                <a href="#" class="title">The Hay Festival is an embarrassing celebrations of elitism</a>
+                <a href="#" class="author">Sara Shepard</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/cookies.png"></a>
+                <a href="#" class="title">To’re not the only one feeling miserable about Christmas</a>
+                <a href="#" class="author">Sara Shepard</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/bookshelf.png"></a>
+                <a href="#" class="title">The best book to read in 2016</a>
+                <a href="#" class="author">Laura Patel</a>
+                <div class="date">15.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/pages.png"></a>
+                <a href="#" class="title">How literature can help people cope with mental health problems</a>
+                <a href="#" class="author">Nathan Sandoval</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/city.png"></a>
+                <a href="#" class="title">Bad-taste Britain has had a splendid week</a>
+                <a href="#" class="author">Alice Ortega</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-slider">
+        <div><div class="slide-element">
+            <img src="images/maxresdefault.png">
+            <div class="slider-pagination">
+                <a href="#" class="left">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="64" height="14"><path fill-rule="evenodd" fill="#FFF" d="M63.984 6.192H4.056l4.102-3.99L6.695.779l-5.242 5.1L-.01 7.303l1.463 1.423 5.242 5.101 1.463-1.423-4.315-4.199h60.141V6.192z"></path>
+                    </svg>
+                    <span>Are you a fantasist or a realist, in literary terms?</span>
+                </a>
+                <a href="#" class="right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="13"><path fill-rule="evenodd" fill="#FFF" d="M-.015 5.398h59.957l-4.104-3.981 1.463-1.42 5.246 5.089 1.463 1.42-1.463 1.419-5.246 5.089-1.463-1.419 4.317-4.189H-.015V5.398z"></path>
+                    </svg>
+                    <span>Why are so many of our most cherished fictional heroes orphans?</span>
+                </a>
+            </div>
+            <p class="slider-title">Books round-up: Boxing  day reads Kick back with  Sacks, Bukowski and a curious cat</p>
+            <div class="more return">
+                <a href="#">Read more
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13"><path fill-rule="evenodd" fill="#ffffff" d="M19.547 6.788c-.157.225-3.448 5.645-9.324 5.645-5.877 0-9.169-5.42-9.325-5.645a.66.66 0 0 1 0-.753C1.054 5.809 4.346.39 10.223.39c5.876 0 9.167 5.419 9.324 5.645a.66.66 0 0 1 0 .753zm-9.324-4.893c-4.154 0-6.896 3.387-7.68 4.516.784 1.129 3.526 4.516 7.68 4.516 4.152 0 6.895-3.387 7.678-4.516-.783-1.129-3.526-4.516-7.678-4.516zm0 7.527c-1.724 0-3.135-1.355-3.135-3.011 0-1.656 1.411-3.011 3.135-3.011 1.723 0 3.134 1.355 3.134 3.011 0 1.656-1.411 3.011-3.134 3.011zm0-4.516c-.863 0-1.568.677-1.568 1.505 0 .828.705 1.506 1.568 1.506.861 0 1.567-.678 1.567-1.506s-.706-1.505-1.567-1.505z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div></div>
+    </div>
+    <div class="articles blog-articles">
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/eng.png"></a>
+                <a href="#" class="title">Video games and literary fiction 'can help make you a better person'</a>
+                <a href="#" class="author">George Brown</a>
+                <div class="date">15.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/bibliotek.png"></a>
+                <a href="#" class="title">Mauris non tempor quam, et lacinia sapien</a>
+                <a href="#" class="author">Sara Shepard</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/letters.png"></a>
+                <a href="#" class="title">To’re not the only one feeling miserable about Christmas</a>
+                <a href="#" class="author">Sara Shepard</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/light.png"></a>
+                <a href="#" class="title">The best book to read in 2016</a>
+                <a href="#" class="author">Laura Patel</a>
+                <div class="date">15.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/photo-1422049091443-449e59456bab.png"></a>
+                <a href="#" class="title">How literature can help people cope with mental health problems</a>
+                <a href="#" class="author">Nathan Sandoval</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="article">
+                <a href="#"><img src="images/stamp.png"></a>
+                <a href="#" class="title">Bad-taste Britain has had a splendid week</a>
+                <a href="#" class="author">Alice Ortega</a>
+                <div class="date">12.10.16</div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <a href="#" class="load-more">Load more<svg class="svg-icon load" xmlns="http://www.w3.org/2000/svg" width="20" height="17"><path fill="#555963" fill-rule="evenodd" d="M19.378 6.062l-2.244 2.953a.81.81 0 0 1-.382.346l-.015.009a1.04 1.04 0 0 1-.397.077.928.928 0 0 1-.536-.171.122.122 0 0 0-.017-.007c-.003-.003-.005-.008-.008-.01-.041-.03-.092-.05-.126-.086l-2.996-2.131c-.368-.267-.46-.89-.184-1.247.276-.356.829-.445 1.289-.178l1.287.916c-.862-2.458-3.223-4.211-6.075-4.211-1.749 0-3.314.623-4.603 1.781C3.175 5.261 2.53 6.864 2.53 8.556c0 3.474 2.854 6.235 6.444 6.235 1.75 0 3.315-.624 4.604-1.782a.91.91 0 0 1 1.288 0 .84.84 0 0 1 0 1.247c-1.564 1.514-3.682 2.316-5.892 2.316-4.603 0-8.285-3.563-8.285-8.016 0-2.137.828-4.186 2.393-5.7C4.648 1.342 6.765.54 8.974.54c3.787 0 6.945 2.412 7.948 5.746l.983-1.292c.276-.357.92-.446 1.289-.178.368.267.46.89.184 1.246z"></path></svg>
+        </a>
+        <div class="nav-cover">
+            <a href="#" class="prev-page">
+                <svg class="svg-icon prev" xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path fill="#45474B" fill-rule="evenodd" d="M17.508 6.433H4.209l4.196-4.168L7.016.885l-6.544 6.5.024.024-.024.023 6.544 6.501 1.389-1.38-4.196-4.168h13.299V6.433z"></path></svg><span class="prev-page-label">Prev</span>
+            </a>
+            <ul class="pagination">
+                <li class="page"><a href="#">1</a></li>
+                <li class="page"><a href="blog-page2.html">2</a></li>
+                <li class="page"><a href="#">3</a></li>
+                <li class="page"><a href="#">4</a></li>
+                <li class="page"><a href="#">5</a></li>
+            </ul>
+            <a href="#" class="next-page">
+                <span class="next-page-label">Next</span><svg class="svg-icon next" xmlns="http://www.w3.org/2000/svg" width="17" height="13"><path fill="#45474B" fill-rule="evenodd" d="M-.008 5.532h13.275L9.078 1.383 10.465.009l6.532 6.47-.024.024.024.023-6.532 6.47-1.387-1.374 4.189-4.148H-.008V5.532z"></path></svg>
+            </a>
+        </div>
+    </div>
+</div>
+<button class="scroll-btn" style="display:none;">
+    <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
+</button>
+<div id="overlay">
+    <div class="login-container" id="login-container">
+        <div class="substrate"></div>
+        <a class="close" id="close"><img src="images/close.svg"></a>
+        <div class="login-content">
+            <a class="block-title">Login</a>
+            <form action="#">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <input type="radio" name="remember" value="remember" id="remember">
+                <label for="remember">Remember me</label>
+                <span> <a href="#"> Forgot password </a></span>
+            </form>
+            <a href="#" class="button">Sign in</a>
+            <form action="#" class="login-submit">
+                <button type="submit"> Create an account <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+                    <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path></svg> </button>
+            </form>
+            <a class="sign">Sign in with social:</a>
+            <div class="login-icons">
+                <a class="login-social" href="http://facebook.com"><img src="images/facebook.png"></a>
+                <a class="login-social" href="http://twitter.com"><img src="images/twitter.png"></a>
+                <a class="login-social" href="http://google.com"><img src="images/google.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li> <a href="#">sitemap</a></li>
+            <li> <a href="#">help</a></li>
+            <li> <a href="#">delivery</a></li>
+            <li> <a href="#">pivacy policy</a></li>
+            <li> <a href="#">accessibillity</a></li>
+        </ul>
+        <div class="about">
+            <a>About</a>
+            <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. </p>
+            <ul class="footer-links">
+                <li><a href="#">Ade books</a>
+                    <p>Rare Books &amp; Textbooks</p>
+                </li>
+                <li><a href="#">DpReview</a>
+                    <p>Digital Photography</p>
+                </li>
+                <li><a href="#">Audible</a>
+                    <p>Download Audio Books</p>
+                </li>
+                <li><a href="#">Junglee</a>
+                    <p>Shop Online in India</p>
+                </li>
+                <li><a href="#">Look</a>
+                    <p>Kid's clothing &amp; Shoes</p>
+                </li>
+                <li><a href="#">MYHABIT</a>
+                    <p>Private Fashion Designer Sales</p>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="subscribe">
+                <span>Stay in touch</span>
+                <form action="#">
+                    <input type="email" placeholder="Your E-mail">
+                    <button type="submit"> Subscribe </button>
+                </form>
+            </div>
+            <div class="follow">
+                <span>Follow us</span>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="images/facebook_icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter_icon.png"></a></li>
+                    <li><a href="#"><img src="images/pinterest_icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="copyright">© 2016 Bookworm. All rights reserved</span>
+    </div>
+</footer>
+<script src="js/classie.js"></script>
+<script src="js/selectFx.js"></script>
+<script>
+    (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+            new SelectFx(el, {
+                stickyPlaceholder: false
+            });
+        } );
+    })();
+</script>
+<script src="build/js/libs.js"></script>
+<script src="build/js/app.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+</body>
+</html>

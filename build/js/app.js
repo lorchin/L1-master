@@ -598,7 +598,6 @@ function getSubTotal(){
 
 
 
-
 var popup = document.getElementById('overlay');
 var profileLink = document.getElementById('profile');
 var close = document.getElementById('close');
@@ -636,6 +635,7 @@ $( window ).resize(function() {
     if ($(window).width() < 1024 && coord != null && map != null) {
         map.panTo(coord);
     }
+
 });
 
 function initMap() {
@@ -684,6 +684,43 @@ $(".pagination li").click(function() {
     $(this).addClass("active");
 });
 
+$(document).ready(function() {
+
+    // hide button on load if already at top of screen by removing display none styling
+    if ($(window).scrollTop() != 0) {
+        $(".scroll-btn").removeAttr('style');
+    }
+
+    // scroll top button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() != 0) {
+            $(".scroll-btn").fadeIn(1000);
+        } else {
+            $(".scroll-btn").fadeOut(1000);
+        }
+    });
+
+    $(function() {
+        $(".scroll-btn").click(function() {
+            $("html, body").animate(
+                {
+                    scrollTop: "0px"
+                },
+                700
+            );
+        });
+    });
+});
+
+$('.book-format').click(function () {
+    var price =  $(this).find('input').val();
+    $( "#price" ).html(price);
+});
+$('.blog-articles').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 345,
+    gutter: 51
+});
 $(document).ready(function(){
     $('.slider1').slick({
         prevArrow: "<span class='slick-prev'></span>",
@@ -751,7 +788,7 @@ $(document).ready(function() {
 
         responsive: [
             {
-                breakpoint: 1023,
+                breakpoint: 1025,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3

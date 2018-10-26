@@ -1,7 +1,225 @@
 @main-color: #45474b;
-@font-color: #dd9327;
+@font-orange: #dd9327;
 @bg-color: rgba(223, 250, 255, 0.4);
 @title-color: #555963;
-@title-font: 'Ramaraja', serif;
 @item-font: 'Lato', serif;
 @text-font: 'Yrsa', serif;
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url(../font/MyriadPro-Regular.eot?#iefix) format('embedded-opentype'),
+  url(../font/MyriadPro-Regular.otf)  format('opentype'),
+  url(../font/MyriadPro-Regular.woff) format('woff'),
+  url(../font/MyriadPro-Regular.ttf)  format('truetype'),
+  url(../font/MyriadPro-Regular.svg#MyriadPro-Regular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Yrsa-Bold';
+  src: url(..font/Yrsa-Bold.eot?#iefix) format('embedded-opentype'),
+  url(../font/Yrsa-Bold.woff) format('woff'),
+  url(../font/Yrsa-Bold.ttf)  format('truetype'),
+  url(../font/Yrsa-Bold.svg#Yrsa-Bold) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Yrsa-Regular';
+  src: url(../font/Yrsa-Regular.eot);
+  src: url(../font/Yrsa-Regular.woff) format('woff'),
+  url(../font/Yrsa-Regular.ttf) format('truetype'),
+  url(../font/Yrsa-Regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Yrsa-Light';
+  src: url(../fonts/Yrsa-Light.eot);
+  src: url(../font/Yrsa-Light.woff) format('woff'),
+  url(../font/Yrsa-Light.ttf) format('truetype'),
+  url(../font/Yrsa-Light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Yrsa-Medium';
+  src: url(../font/Yrsa-Medium.eot);
+  src: url(../font/Yrsa-Medium.woff) format('woff'),
+  url(../font/Yrsa-Medium.ttf) format('truetype'),
+  url(../font/Yrsa-Medium.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Yrsa-SemiBold';
+  src: url(../font/Yrsa-SemiBold.eot);
+  src: url(../font/Yrsa-SemiBold.woff) format('woff'),
+  url(../font/Yrsa-SemiBold.ttf) format('truetype'),
+  url(../font/Yrsa-SemiBold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Amiri-Bold';
+  src: url(../font/Amiri-Bold.eot);
+  src: url(../font/Amiri-Bold.woff) format('woff'),
+  url(../font/Amiri-Bold.ttf) format('truetype'),
+  url(../font/Amiri-Bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Amiri-BoldItalic';
+  src: url(../font/Amiri-BoldItalic.eot);
+  src: url(../font/Amiri-BoldItalic.woff) format('woff'),
+  url(../font/Amiri-BoldItalic.ttf) format('truetype'),
+  url(../font/Amiri-BoldItalic.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Amiri-Italic';
+  src: url(../font/Amiri-Italic.eot);
+  src: url(../font/Amiri-Italic.woff) format('woff'),
+  url(../font/Amiri-Italic.ttf) format('truetype'),
+  url(../font/Amiri-Italic.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Amiri-Regular';
+  src: url(../font/Amiri-Regular.eot);
+  src: url(../font/Amiri-Regular.woff) format('woff'),
+  url(../font/Amiri-Regular.ttf) format('truetype'),
+  url(../font/Amiri-Regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ramaraja';
+  src: url(../font/Ramaraja.eot?#iefix) format('embedded-opentype'),
+  url(../font/Ramaraja.woff) format('woff'),
+  url(../font/Ramaraja.ttf)  format('truetype'),
+  url(../font/Ramaraja.svg#Ramaraja) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif-Regular';
+  src: url(../font/PTSerif-Regular.eot?#iefix) format('embedded-opentype'),
+  url(../font/PTSerif-Regular.woff) format('woff'),
+  url(../font/PTSerif-Regular.ttf)  format('truetype'),
+  url(../font/PTSerif-Regular.svg#PTSerif-Regular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif-Italic';
+  src: url(../font/PTSerif-Italic.eot?#iefix) format('embedded-opentype'),
+  url(../font/PTSerif-Italic.woff) format('woff'),
+  url(../font/PTSerif-Italic.ttf)  format('truetype'),
+  url(../font/PTSerif-Italic.svg#PTSerif-Italic) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif-BoldItalic';
+  src: url(../font/PTSerif-BoldItalic.eot?#iefix) format('embedded-opentype'),
+  url(../font/PTSerif-BoldItalic.woff) format('woff'),
+  url(../font/PTSerif-BoldItalic.ttf)  format('truetype'),
+  url(../font/PTSerif-BoldItalic.svg#PTSerif-BoldItalic) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif-Bold';
+  src: url(../font/PTSerif-Bold.eot?#iefix) format('embedded-opentype'),
+  url(../font/PTSerif-Bold.woff) format('woff'),
+  url(../font/PTSerif-Bold.ttf)  format('truetype'),
+  url(../font/PTSerif-Bold.svg#PTSerif-Bold) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(../font/Lato-Regular.eot?#iefix) format('embedded-opentype'),
+  url(../font/Lato-Regular.woff) format('woff'),
+  url(../font/Lato-Regular.ttf)  format('truetype'),
+  url(../font/Lato-Regular.svg#Lato-Regular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: url(../font/Lato-LightItalic.eot?#iefix) format('embedded-opentype'),
+  url(../font/Lato-LightItalic.woff) format('woff'),
+  url(../font/Lato-LightItalic.ttf)  format('truetype'),
+  url(../font/Lato-LightItalic.svg#Lato-LightItalic) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url(../font/Lato-Light.eot?#iefix) format('embedded-opentype'),
+  url(../font/Lato-Light.woff) format('woff'),
+  url(../font/Lato-Light.ttf)  format('truetype'),
+  url(../font/Lato-Light.svg#Lato-Light) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url(../font/Lato-Italic.eot?#iefix) format('embedded-opentype'),
+  url(../font/Lato-Italic.woff) format('woff'),
+  url(../font/Lato-Italic.ttf)  format('truetype'),
+  url(../font/Lato-Italic.svg#Lato-Italic) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-BoldItalic';
+  src: url(../font/Lato-BoldItalic.eot?#iefix) format('embedded-opentype'),
+  url(../font/Lato-BoldItalic.woff) format('woff'),
+  url(../font/Lato-BoldItalic.ttf)  format('truetype'),
+  url(../font/Lato-BoldItalic.svg#Lato-BoldItalic) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(../font/Lato-Bold.eot?#iefix) format('embedded-opentype'),
+  url(../font/Lato-Bold.woff) format('woff'),
+  url(../font/Lato-Bold.ttf)  format('truetype'),
+  url(../font/Lato-Bold.svg#Lato-Bold) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url(../font/Lato-Medium.eot);
+  src: url(../font/Lato-Medium.woff) format('woff'),
+  url(../font/Lato-Medium.ttf) format('truetype'),
+  url(../font/Lato-Medium.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url(../font/Lato-Semibold.eot);
+  src: url(../font/Lato-Semibold.woff) format('woff'),
+  url(../font/Lato-Semibold.ttf) format('truetype'),
+  url(../font/Lato-Semibold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url(../font/WorkSans-SemiBold.eot);
+  src: url(../font/WorkSans-SemiBold.woff) format('woff'),
+  url(../font/WorkSans-SemiBold.ttf) format('truetype'),
+  url(../font/WorkSans-SemiBold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

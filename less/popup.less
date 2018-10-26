@@ -40,7 +40,7 @@ a#profile {
 		z-index: 200;
 
 		&:hover {
-			color: @font-color;
+			color: @font-orange;
 		}
 
 		.block-title {
@@ -48,7 +48,7 @@ a#profile {
 			padding-bottom: 20px;
 			font-size: 42px;
 			color: #555963;
-			font-family: @title-font;
+			font-family: 'Ramaraja', serif;
 			width: fit-content;
 			line-height: 1;
 		}
@@ -95,12 +95,13 @@ a#profile {
 		border-radius: 0;
 
 		&:hover {
-			color: @font-color;
+			color: @font-orange;
+			border-color: @font-orange;
 		}
 	}
 	.sign {
 		display: block;
-		font-family: @title-font;
+		font-family: 'Ramaraja', serif;
 		font-size: 21px;
 		margin: 60px auto 0;
 		width: fit-content;
@@ -112,6 +113,9 @@ a#profile {
 		margin: 10px auto 0;
 		display: block;
 		width: fit-content;
+	}
+	.block-title {
+		line-height: 0.762;
 	}
 }
 .login-content input[type="email"], input[type="password"]{

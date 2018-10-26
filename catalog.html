@@ -2,6 +2,8 @@
 <html lang="en-us">
 <head>
     <link rel="stylesheet" type="text/css" href="build/css/style.css">
+    <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-select.css">
+    <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-skin-underline.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -13,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookworm</title>
+    <title>Bookshelf</title>
     <meta name="description" content="All about literature">
 </head>
 <body class="homepage scroll">
@@ -26,12 +28,16 @@
         </div>
         <div class="mobile-btn" id="mobile"><span></span></div>
         <ul class="header-menu" id="mobile-menu">
-            <li><a class="menu" href="#">books</a></li>
-            <li><a class="menu" href="#">writers</a></li>
-            <li><a class="menu" href="#">publishers</a></li>
-            <li><a class="menu" href="article.html">blog</a></li>
-            <li><a class="menu" href="contact.html">contact</a></li>
-            <li>
+            <li class="menu-nav">
+                <ul>
+                    <li><a class="menu" href="bookpage.html">books</a></li>
+                    <li><a class="menu" href="writerspage.html">writers</a></li>
+                    <li><a class="menu" href="#">publishers</a></li>
+                    <li><a class="menu" href="blog.html">blog</a></li>
+                    <li><a class="menu" href="contact.html">contact</a></li>
+                </ul>
+            </li>
+            <li class="menu-icons">
                 <ul class="header-icons-container">
                     <li>
                         <a href="#" title="search">
@@ -41,7 +47,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="cart.html" title="cart">
+                        <a href="cart.html" id="cart" title="cart">
+                            <span class="item-amount">3</span>
                             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19.9" viewBox="0 0 22 19.906">
                                 <path fill="#555963" fill-rule="evenodd" d="M19 11H4a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h17a1 1 0 0 1 .8.4 1 1 0 0 1 .2.8l-2 9a1 1 0 0 1-1 .7zM5 9h13.2l1.6-7H5v7zM4 2H1a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2zm0 0A1 1 0 0 1 3.3.3a1 1 0 0 1 1.4 0A1 1 0 0 1 4 2zm2 14a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm11 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 15a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm15 0H4a1 1 0 1 1 0-2h15a1 1 0 1 1 0 2z"></path>
                             </svg>
@@ -113,14 +120,47 @@
     </div>
     <div class="main-content">
         <div class="filters">
-            <form>
+            <form class="search">
                 <input type="text" placeholder="Search by keyword">
                 <a href="#"><img src='images/small-search.png'></a>
             </form>
-            <span class="dropdown filter1"><a href="#">Paperback</a></span>
-            <span class="dropdown filter2"><a href="#">All languages</a></span>
-            <span class="dropdown filter3"><a href="#">Pre order</a></span>
-            <span class="dropdown filter4"><a href="#">Popular</a></span>
+            <div class="dropdown filter1">
+                <select class="cs-select cs-skin-underline cs-selected">
+                    <option value="" disabled selected>Paperback</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="dropdown filter2">
+                <select class="cs-select cs-skin-underline cs-selected">
+                    <option value="" disabled selected>All languages</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+            <div class="dropdown filter3">
+                <select class="cs-select cs-skin-underline cs-selected">
+                    <option value="" disabled selected>Pre order</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+            </div>
+            <div class="dropdown filter4">
+                <select class="cs-select cs-skin-underline cs-selected">
+                    <option value="" disabled selected>Popular</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                    <option value="6">Option 6</option>
+                    <option value="7">Option 7</option>
+                </select>
+            </div>
         </div>
         <span class="info-section">Showing <br> 1 to 30 <br> of 100 results</span>
         <span class="background"></span>
@@ -285,26 +325,31 @@
             </li>
         </ul>
     </div>
-</div>
-<div class="navigation">
-    <a href="#" class="load-more">Load more<svg class="svg-icon load" xmlns="http://www.w3.org/2000/svg" width="20" height="17"><path fill="#555963" fill-rule="evenodd" d="M19.378 6.062l-2.244 2.953a.81.81 0 0 1-.382.346l-.015.009a1.04 1.04 0 0 1-.397.077.928.928 0 0 1-.536-.171.122.122 0 0 0-.017-.007c-.003-.003-.005-.008-.008-.01-.041-.03-.092-.05-.126-.086l-2.996-2.131c-.368-.267-.46-.89-.184-1.247.276-.356.829-.445 1.289-.178l1.287.916c-.862-2.458-3.223-4.211-6.075-4.211-1.749 0-3.314.623-4.603 1.781C3.175 5.261 2.53 6.864 2.53 8.556c0 3.474 2.854 6.235 6.444 6.235 1.75 0 3.315-.624 4.604-1.782a.91.91 0 0 1 1.288 0 .84.84 0 0 1 0 1.247c-1.564 1.514-3.682 2.316-5.892 2.316-4.603 0-8.285-3.563-8.285-8.016 0-2.137.828-4.186 2.393-5.7C4.648 1.342 6.765.54 8.974.54c3.787 0 6.945 2.412 7.948 5.746l.983-1.292c.276-.357.92-.446 1.289-.178.368.267.46.89.184 1.246z"></path></svg>
-    </a>
-    <div class="nav-cover">
-        <a href="#" class="prev-page">
-            <svg class="svg-icon prev" xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path fill="#45474B" fill-rule="evenodd" d="M17.508 6.433H4.209l4.196-4.168L7.016.885l-6.544 6.5.024.024-.024.023 6.544 6.501 1.389-1.38-4.196-4.168h13.299V6.433z"></path></svg><span class="prev-page-label">Prev</span>
+    <div class="navigation">
+        <a href="#" class="load-more">Load more<svg class="svg-icon load" xmlns="http://www.w3.org/2000/svg" width="20" height="17"><path fill="#555963" fill-rule="evenodd" d="M19.378 6.062l-2.244 2.953a.81.81 0 0 1-.382.346l-.015.009a1.04 1.04 0 0 1-.397.077.928.928 0 0 1-.536-.171.122.122 0 0 0-.017-.007c-.003-.003-.005-.008-.008-.01-.041-.03-.092-.05-.126-.086l-2.996-2.131c-.368-.267-.46-.89-.184-1.247.276-.356.829-.445 1.289-.178l1.287.916c-.862-2.458-3.223-4.211-6.075-4.211-1.749 0-3.314.623-4.603 1.781C3.175 5.261 2.53 6.864 2.53 8.556c0 3.474 2.854 6.235 6.444 6.235 1.75 0 3.315-.624 4.604-1.782a.91.91 0 0 1 1.288 0 .84.84 0 0 1 0 1.247c-1.564 1.514-3.682 2.316-5.892 2.316-4.603 0-8.285-3.563-8.285-8.016 0-2.137.828-4.186 2.393-5.7C4.648 1.342 6.765.54 8.974.54c3.787 0 6.945 2.412 7.948 5.746l.983-1.292c.276-.357.92-.446 1.289-.178.368.267.46.89.184 1.246z"></path></svg>
         </a>
-        <ul class="pagination">
-            <li class="page"><a href="#">1</a></li>
-            <li class="page"><a href="#">2</a></li>
-            <li class="page"><a href="#">3</a></li>
-            <li class="page"><a href="#">4</a></li>
-            <li class="page"><a href="#">5</a></li>
-        </ul>
-        <a href="#" class="next-page">
-            <span class="next-page-label">Next</span><svg class="svg-icon next" xmlns="http://www.w3.org/2000/svg" width="17" height="13"><path fill="#45474B" fill-rule="evenodd" d="M-.008 5.532h13.275L9.078 1.383 10.465.009l6.532 6.47-.024.024.024.023-6.532 6.47-1.387-1.374 4.189-4.148H-.008V5.532z"></path></svg>
-        </a>
+        <div class="nav-cover">
+            <a href="#" class="prev-page">
+                <svg class="svg-icon prev" xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path fill="#45474B" fill-rule="evenodd" d="M17.508 6.433H4.209l4.196-4.168L7.016.885l-6.544 6.5.024.024-.024.023 6.544 6.501 1.389-1.38-4.196-4.168h13.299V6.433z"></path></svg><span class="prev-page-label">Prev</span>
+            </a>
+            <ul class="pagination">
+                <li class="page"><a href="#">1</a></li>
+                <li class="page"><a href="#">2</a></li>
+                <li class="page"><a href="#">3</a></li>
+                <li class="page"><a href="#">4</a></li>
+                <li class="page"><a href="#">5</a></li>
+            </ul>
+            <a href="#" class="next-page">
+                <span class="next-page-label">Next</span><svg class="svg-icon next" xmlns="http://www.w3.org/2000/svg" width="17" height="13"><path fill="#45474B" fill-rule="evenodd" d="M-.008 5.532h13.275L9.078 1.383 10.465.009l6.532 6.47-.024.024.024.023-6.532 6.47-1.387-1.374 4.189-4.148H-.008V5.532z"></path></svg>
+            </a>
+        </div>
     </div>
 </div>
+
+<button class="scroll-btn" style="display:none;">
+    <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
+</button>
+
 <div id="overlay">
     <div class="login-container" id="login-container">
         <div class="substrate"></div>
@@ -322,7 +367,7 @@
             <form action="#" class="login-submit">
                 <button type="submit"> Create an account
                     <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-                    <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path>
+                        <path fill="#555963" fill-rule="evenodd" d="M0 5.6h13.3L9 1.3 10.6 0 17 6.5 10.5 13 9 11.6l4.3-4H0z"></path>
                     </svg>
                 </button>
             </form>
@@ -390,7 +435,17 @@
         <span class="copyright">© 2016 Bookworm. All rights reserved</span>
     </div>
 </footer>
-
+<script src="js/classie.js"></script>
+<script src="js/selectFx.js"></script>
+<script>
+    (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+            new SelectFx(el, {
+                stickyPlaceholder: false
+            });
+        } );
+    })();
+</script>
 <script src="build/js/libs.js"></script>
 <script src="build/js/app.js"></script>
 

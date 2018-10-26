@@ -36,6 +36,7 @@ $( window ).resize(function() {
     if ($(window).width() < 1024 && coord != null && map != null) {
         map.panTo(coord);
     }
+
 });
 
 function initMap() {
@@ -82,4 +83,42 @@ function initMap() {
 $(".pagination li").click(function() {
     $(".pagination li").removeClass("active");
     $(this).addClass("active");
+});
+
+$(document).ready(function() {
+
+    // hide button on load if already at top of screen by removing display none styling
+    if ($(window).scrollTop() != 0) {
+        $(".scroll-btn").removeAttr('style');
+    }
+
+    // scroll top button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() != 0) {
+            $(".scroll-btn").fadeIn(1000);
+        } else {
+            $(".scroll-btn").fadeOut(1000);
+        }
+    });
+
+    $(function() {
+        $(".scroll-btn").click(function() {
+            $("html, body").animate(
+                {
+                    scrollTop: "0px"
+                },
+                700
+            );
+        });
+    });
+});
+
+$('.book-format').click(function () {
+    var price =  $(this).find('input').val();
+    $( "#price" ).html(price);
+});
+$('.blog-articles').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 345,
+    gutter: 51
 });

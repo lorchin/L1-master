@@ -9,7 +9,9 @@ var rename = require ('gulp-rename');
 var browserSync = require('browser-sync').create();
 
 gulp.task('styles', function(){
-	gulp.src('./less/style.less')
+	gulp.src([
+        './less/style.less'
+	])
 	// .pipe(sourcemaps.init())
 	.pipe(less())
 	.pipe(autoprefixer())
@@ -35,8 +37,10 @@ gulp.task('scripts', function(){
 		.pipe(minify())
         .pipe(gulp.dest('./build/js'));
 
-	gulp.src(['node_modules/jquery/dist/jquery.js',
-		'node_modules/slick-carousel/slick/slick.js'
+	gulp.src([
+		'node_modules/jquery/dist/jquery.js',
+		'node_modules/slick-carousel/slick/slick.js',
+        'js/masonry.js'
 	])
         .pipe(sourcemaps.init())
         .pipe(concat('libs.js'))
@@ -54,4 +58,11 @@ gulp.task('watch', ['styles', 'scripts'], function() {
 		gulp.watch('./*.html').on('change',browserSync.reload);
 
 });
-
+gulp.task('fonts', function () {
+	gulp.src([
+		'./font-awesome/fonts/*.*',
+		'./fonts/*.*',
+		'./fontawesome-free-5.0.7/svg-with-js/js/fontawesome-all.js'
+	])
+        .pipe(gulp.dest('./build/font'))
+});

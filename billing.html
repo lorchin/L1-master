@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Serif:400,400i,700,700i|Ramaraja|Yrsa:300,400,500,600,700&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,telugu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="build/css/style.css">
   <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-select.css">
+  <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-skin-underline.css">
   <link rel="stylesheet" type="text/css" href="styles/dropdown.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -27,12 +28,16 @@
     </div>
     <div class="mobile-btn" id="mobile"><span></span></div>
     <ul class="header-menu" id="mobile-menu">
-      <li><a class="menu" href="#">books</a></li>
-      <li><a class="menu" href="#">writers</a></li>
-      <li><a class="menu" href="#">publishers</a></li>
-      <li><a class="menu" href="article.html">blog</a></li>
-      <li><a class="menu" href="contact.html">contact</a></li>
-      <li>
+      <li class="menu-nav">
+        <ul>
+          <li><a class="menu" href="bookpage.html">books</a></li>
+          <li><a class="menu" href="writerspage.html">writers</a></li>
+          <li><a class="menu" href="#">publishers</a></li>
+          <li><a class="menu" href="blog.html">blog</a></li>
+          <li><a class="menu" href="contact.html">contact</a></li>
+        </ul>
+      </li>
+      <li class="menu-icons">
         <ul class="header-icons-container">
           <li>
             <a href="#" title="search">
@@ -93,7 +98,7 @@
         <p class="error"></p>
       </div>
       <div class="dropdown field-group">
-        <select class="countries cs-select cs-skin-border cs-selected">
+        <select class="countries cs-select cs-skin-underline cs-selected">
           <option value="" disabled selected>Country</option>
           <option value="1">France</option>
           <option value="2">Georgia</option>
@@ -188,6 +193,9 @@
   </div>
 </div>
 
+<button class="scroll-btn" style="display:none;">
+  <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
+</button>
 
 <div id="overlay">
   <div class="login-container" id="login-container">

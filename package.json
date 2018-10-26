@@ -18,6 +18,7 @@
   "homepage": "https://github.com/lorchin/L1-master#readme",
   "dependencies": {
     "jquery": "^3.2.1",
+    "masonry-layout": "^4.2.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

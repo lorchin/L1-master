@@ -3,19 +3,8 @@ article {
 }
 article h1 {
 	color: #555963;
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 57px;
-}
-.return a {
-	border-bottom: 2px solid @main-color;
-	display: inline-block;
-	font-family: 'Lato',serif;
-	font-size: 16px;
-	line-height: 33px;
-
-	&:hover {
-		color: @font-color;
-	}
 }
 .return img{
 	padding-left: 14px;
@@ -37,12 +26,13 @@ article h1 {
 		width: 2px;
 		background: rgba(229, 230, 231, .5);
 		position: absolute;
-		left: 128px;
+		left: 129px;
 		top: 9px;
 	}
 }
 .post_author .author, .post_author .date {
 	display: inline-block;
+	padding-right: 27px;
 }
 .post_author a {
 	float: right;
@@ -77,7 +67,7 @@ figcaption {
 	}
 }
 .post_content a {
-	color: @font-color;
+	color: @font-orange;
 }
 blockquote {
 	font-family: 'PT Serif', serif;
@@ -88,7 +78,7 @@ blockquote {
 	margin: 0 auto;
 }
 .post_content h2 {
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 42px;
 	color: #555963;
 }
@@ -105,7 +95,7 @@ blockquote {
 	display: inline-block;
 }
 .h5 h5 {
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 21px;
 	line-height: 23px;
 	color: #555963;
@@ -128,12 +118,12 @@ blockquote {
 	margin: -93px 0 0;
 }
 h3 {
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 28px;
 	color: #555963;
 }
 h4 {
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 24px;
 	color: #555963;
 }
@@ -162,7 +152,7 @@ h4 {
 	margin-top: 0;
 }
 h5 {
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 21px;
 	color: #555963;
 	line-height: 23px;
@@ -198,14 +188,14 @@ span.name {
 }
 .related a {
 	display: block;
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 21px;
 	color: #555963;
 	line-height: 23px;
 	padding-bottom: 16px;
 
 	&:hover {
-		color:@font-color;
+		color:@font-orange;
 	}
 }
 span.date {
@@ -224,59 +214,62 @@ span.date {
 .post_comments {
 	width: 52%;
 	margin: 116px auto 0;
-}
-.post_comments label {
-	display: none;
-}
-.post_comments h3 {
-	margin: 0;
-	display: inline-block;
-}
-.comments_count {
-	float: right;
-	color: #bfbfbf;
-	font-family: @item-font;
-	font-size: 16px;
-}
-.new-comment {
-	padding: 28px;
-	background: #f5fdff;
-	margin-top: 46px;
-	margin-bottom: 80px;
-	img {
-		margin-right: 30px;
+	label {
+		display: none;
+	}
+	h3 {
+		margin: 0;
+		display: inline-block;
+	}
+	.comments_count {
+		float: right;
+		color: #bfbfbf;
+		font-family: @item-font;
+		font-size: 16px;
+	}
+	.new-comment {
+		padding: 28px;
+		background: #f5fdff;
+		margin-top: 46px;
+		margin-bottom: 80px;
+		img {
+			margin-right: 30px;
+		}
+	}
+	textarea {
+		width: 77%;
+		font-family: 'Lato-Italic', serif;
+		font-size: 15px;
+		font-style: italic;
+		line-height: 32px;
+		color: rgba(85, 89, 99, 0.6);
+		border: none;
+		background: none;
+		display: inline-block;
+		padding-left: 20px;
+		margin: 0;
+		border-bottom: 2px solid @main-color;
+	}
+	button {
+		padding: 0 0 0 25px;
+		cursor: pointer;
+		font-family: @item-font;
+		font-size: 15px;
+		border: none;
+		color: rgb(85, 89, 99);
+		background: none;
+		vertical-align: super;
+		height: 21px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	.reply {
+		padding: 17px 40px;
+		background: url('/images/reply-arrow.png') no-repeat 15px 17px;
 	}
 }
-.post_comments textarea {
-	width: 77%;
-	font-family: @item-font;
-	font-size: 15px;
-	font-style: italic;
-	line-height: 32px;
-	color: rgba(85, 89, 99, 0.6);
-	border: none;
-	background: none;
-	display: inline-block;
-	padding-left: 20px;
-	margin: 0;
-	border-bottom: 2px solid @main-color;
-}
-.post_comments button {
-	padding: 0 0 0 25px;
-	cursor: pointer;
-	font-family: @item-font;
-	font-size: 15px;
-	border: none;
-	color: rgb(85, 89, 99);
-	background: none;
-	vertical-align: super;
-	height: 21px;
-}
-.post_comments ul {
-	list-style: none;
-	padding: 0;
-}
-
 .single_comment img {
 	float: left;
 	padding-right: 16px;
@@ -285,7 +278,7 @@ span.date {
 	display: block;
 }
 .single_comment .name {
-	font-family: @title-font;
+	font-family: 'Ramaraja', serif;
 	font-size: 21px;
 	color: #555963;
 }
@@ -310,6 +303,12 @@ span.date {
 	margin-bottom: 120px;
 	font-family: @item-font;
 	font-size: 16px;
+}
+@media all and (max-width: 2560px){
+	figure img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 @media all and (max-width: 1440px){
 	.feature_img img {
@@ -409,7 +408,7 @@ span.date {
 		width: 65%;
 	}
 }
-@media (max-width: 568px) {
+@media all and (max-width: 568px) {
 
 	.post_comments textarea {
 		width: 60%;
@@ -472,7 +471,7 @@ span.date {
 		width: 50%;
 	}
 }
-@media (max-width: 360px) {
+@media all and (max-width: 360px) {
 	.post_comments textarea {
 		width: 45%;
 	}
